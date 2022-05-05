@@ -2,9 +2,20 @@ name: Financial_Reporting
 description: ''
 version: 0.0.1-SNAPSHOT
 author: anshuman@simpledatalabs.com
-pipelines: {}
+pipelines:
+  pipelines/load_acc_status_silver:
+    name: load_acc_status_silver
+    description: null
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-05-05 17:10:21'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 jobs: {}
 libraries: []
-dependencies: '[]'
+dependencies: []
 template: '[]'
