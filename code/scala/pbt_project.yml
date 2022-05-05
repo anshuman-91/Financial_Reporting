@@ -1,0 +1,10 @@
+name: Financial_Reporting
+description: ''
+version: 0.0.1-SNAPSHOT
+author: anshuman@simpledatalabs.com
+pipelines: {}
+datasets: {}
+jobs: {}
+libraries: []
+dependencies: '[]'
+template: '[]'
