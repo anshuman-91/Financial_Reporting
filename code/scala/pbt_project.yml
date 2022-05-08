@@ -4,18 +4,118 @@ version: 0.0.1-SNAPSHOT
 author: anshuman@simpledatalabs.com
 pipelines:
   pipelines/load_acc_status_silver:
-    name: load_acc_status_silver
-    description: null
+    name: load_acc_status_silver_python
+    description: ''
     author: anshuman@simpledatalabs.com
     mode: batch
     language: python
     createdAt: '2022-05-05 17:10:21'
     datasets:
+      inputs:
+      - 4088/datasets/load_acc_status_silver
+      - 4088/datasets/acc_status_bronze
+      outputs:
+      - 4088/datasets/acc_status_silver
+    dependencies: {}
+  pipelines/load_person_silver:
+    name: load_person_silver
+    description: null
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-08 10:35:57'
+    datasets:
       inputs: []
       outputs: []
     dependencies: {}
-datasets: {}
+  pipelines/load_acc_status_silver_scala:
+    name: load_acc_status_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-07 11:06:37'
+    datasets:
+      inputs:
+      - 4088/datasets/acc_status_bronze
+      outputs:
+      - 4088/datasets/acc_status_silver
+    dependencies: {}
+datasets:
+  datasets/person_silver:
+    name: person_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-06 12:51:36'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-06 12:51:36'
+  datasets/acc_status_bronze:
+    name: acc_status_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-05 17:32:06'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-05 17:32:06'
+      anshuman:
+        fabricId: 811
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-07 11:07:27'
+  datasets/acc_status_archive:
+    name: acc_status_archive
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-05 17:51:55'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-05 17:51:55'
+  datasets/acc_status_silver:
+    name: acc_status_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-05 17:38:40'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-05 17:38:40'
+      anshuman:
+        fabricId: 811
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-06 12:40:30'
+  datasets/person_bronze:
+    name: person_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-06 12:49:39'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-06 12:49:39'
 jobs: {}
 libraries: []
+subgraphs: {}
 dependencies: []
 template: '[]'

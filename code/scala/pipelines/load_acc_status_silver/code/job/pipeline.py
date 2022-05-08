@@ -6,7 +6,10 @@ from job.udfs.UDFs import *
 from job.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-pass
+    df_load = load(spark)
+    df_schema = schema(spark, df_load)
+    df_latest_data = latest_data(spark, df_schema)
+    save(spark, df_latest_data)
 
 def main():
     Utils.initializeFromArgs(Utils.parseArgs())

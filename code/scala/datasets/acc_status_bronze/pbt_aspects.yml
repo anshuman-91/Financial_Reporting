@@ -1,0 +1,24 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: acc_id
+    type: integer
+    nullable: false
+    metadata: {}
+  - name: person_id
+    type: integer
+    nullable: false
+    metadata: {}
+  - name: product_id
+    type: integer
+    nullable: false
+    metadata: {}
+  - name: business_date
+    type: date
+    nullable: false
+    metadata: {}
+  - name: balance
+    type: double
+    nullable: false
+    metadata: {}

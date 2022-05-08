@@ -1,0 +1,28 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: id
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: email
+    type: string
+    nullable: true
+    metadata: {}
+  - name: name
+    type: string
+    nullable: true
+    metadata: {}
+  - name: updated_at
+    type: timestamp
+    nullable: true
+    metadata: {}
+  - name: business_date
+    type: date
+    nullable: false
+    metadata: {}
+  - name: import_ts
+    type: timestamp
+    nullable: false
+    metadata: {}

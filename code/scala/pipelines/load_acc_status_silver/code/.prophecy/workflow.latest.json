@@ -2,8 +2,8 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "811",
-    "frontEndLanguage" : "sql",
+    "fabricId" : "838",
+    "frontEndLanguage" : "python",
     "mode" : "batch",
     "interimMode" : "Full",
     "udfs" : {
@@ -36,8 +36,178 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ]
   },
-  "connections" : [ ],
-  "processes" : { },
+  "connections" : [ {
+    "id" : "LDOVjhD3Nv985XKjDDaQ3",
+    "source" : "340iy51Dux5ZRF2Iw5-0p",
+    "sourcePort" : "NVo3QHG8ZOPjK-oZYHGMa",
+    "target" : "FRFqab_Ouq9ejHfV7keWv",
+    "targetPort" : "sF5B9yBHwjATyR1GJLYc4"
+  }, {
+    "id" : "HCiaEAZvO_S0VFUnluwcz",
+    "source" : "FRFqab_Ouq9ejHfV7keWv",
+    "sourcePort" : "8cuIA3axNXAwUE1-V-KrW",
+    "target" : "SFiDmNfqgOeeb01iqoIm2",
+    "targetPort" : "gps1hdHZjR43p3Y6YXEO8"
+  }, {
+    "id" : "r6Udw50-42k9P58Y2DLMg",
+    "source" : "SFiDmNfqgOeeb01iqoIm2",
+    "sourcePort" : "5C1wu7ys84XC20PEt2Tpp",
+    "target" : "D6dYPs7JzL-FcSZqAyBuq",
+    "targetPort" : "mfh8uuMkBmM7g2VTEwKSv"
+  } ],
+  "processes" : {
+    "D6dYPs7JzL-FcSZqAyBuq" : {
+      "id" : "D6dYPs7JzL-FcSZqAyBuq",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "save",
+        "slug" : "save",
+        "x" : -2604.5,
+        "y" : -1283,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mfh8uuMkBmM7g2VTEwKSv",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_silver"
+      }
+    },
+    "340iy51Dux5ZRF2Iw5-0p" : {
+      "id" : "340iy51Dux5ZRF2Iw5-0p",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "load",
+        "slug" : "load",
+        "x" : -3174,
+        "y" : -1286,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "NVo3QHG8ZOPjK-oZYHGMa",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_bronze"
+      }
+    },
+    "FRFqab_Ouq9ejHfV7keWv" : {
+      "id" : "FRFqab_Ouq9ejHfV7keWv",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "schema",
+        "slug" : "schema",
+        "x" : -2986,
+        "y" : -1278,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sF5B9yBHwjATyR1GJLYc4",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "8cuIA3axNXAwUE1-V-KrW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "sF5B9yBHwjATyR1GJLYc4##business_date", "sF5B9yBHwjATyR1GJLYc4##product_id", "sF5B9yBHwjATyR1GJLYc4##person_id", "sF5B9yBHwjATyR1GJLYc4##balance", "sF5B9yBHwjATyR1GJLYc4##acc_id" ],
+        "expressions" : [ {
+          "target" : "acc_id",
+          "expression" : {
+            "format" : "python",
+            "expression" : "col(\"acc_id\").cast(IntegerType())"
+          },
+          "description" : ""
+        }, {
+          "target" : "person_id",
+          "expression" : {
+            "format" : "python",
+            "expression" : "col(\"person_id\").cast(IntegerType())"
+          },
+          "description" : ""
+        }, {
+          "target" : "product_id",
+          "expression" : {
+            "format" : "python",
+            "expression" : "col(\"product_id\").cast(IntegerType())"
+          },
+          "description" : ""
+        }, {
+          "target" : "balance",
+          "expression" : {
+            "format" : "python",
+            "expression" : "col(\"balance\").cast(DoubleType())"
+          },
+          "description" : ""
+        }, {
+          "target" : "business_date",
+          "expression" : {
+            "format" : "python",
+            "expression" : "col(\"business_date\").cast(DateType())"
+          },
+          "description" : ""
+        }, {
+          "target" : "import_ts",
+          "expression" : {
+            "format" : "python",
+            "expression" : "current_timestamp()"
+          },
+          "description" : ""
+        } ]
+      }
+    },
+    "SFiDmNfqgOeeb01iqoIm2" : {
+      "id" : "SFiDmNfqgOeeb01iqoIm2",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "latest_data",
+        "slug" : "latest_data",
+        "x" : -2795.75,
+        "y" : -1278.5,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gps1hdHZjR43p3Y6YXEO8",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "5C1wu7ys84XC20PEt2Tpp",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "w = Window.partitionBy('acc_id').orderBy(col('business_date').desc())\nout0 = in0.withColumn('row_n', row_number().over(w)).filter(col('row_n') == 1).drop('row_n')",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
