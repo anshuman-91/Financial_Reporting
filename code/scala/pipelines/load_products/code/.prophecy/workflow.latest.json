@@ -322,8 +322,8 @@
       "id" : "FyEH2_DKLvIuC0EXi5tH_",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "flatten",
-        "slug" : "flatten",
+        "label" : "flatten_schema",
+        "slug" : "flatten_schema",
         "x" : -1463,
         "y" : -1050,
         "language" : "scala",

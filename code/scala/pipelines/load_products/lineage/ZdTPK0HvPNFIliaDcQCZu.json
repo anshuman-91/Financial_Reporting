@@ -5,137 +5,137 @@
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "id",
-      "exprId" : 10752
+      "exprId" : 10821
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "id",
-      "exprId" : 10752
+      "exprId" : 10821
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "name",
-      "exprId" : 10753
+      "exprId" : 10822
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "name",
-      "exprId" : 10753
+      "exprId" : 10822
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "properties",
-      "exprId" : 10754
+      "exprId" : 10823
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "properties",
-      "exprId" : 10754
+      "exprId" : 10823
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "slug",
-      "exprId" : 10755
+      "exprId" : 10824
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "slug",
-      "exprId" : 10755
+      "exprId" : 10824
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "updated_at",
-      "exprId" : 10756
+      "exprId" : 10825
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "updated_at",
-      "exprId" : 10756
+      "exprId" : 10825
     }
   }, {
     "sources" : [ {
       "port" : "",
       "name" : "row_num",
-      "exprId" : 10764
+      "exprId" : 10833
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "row_num",
-      "exprId" : 10764
+      "exprId" : 10833
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "id",
-      "exprId" : 10752
+      "exprId" : 10821
     } ],
     "destination" : {
       "port" : "",
       "name" : "id",
-      "exprId" : 10752
+      "exprId" : 10821
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "name",
-      "exprId" : 10753
+      "exprId" : 10822
     } ],
     "destination" : {
       "port" : "",
       "name" : "name",
-      "exprId" : 10753
+      "exprId" : 10822
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "properties",
-      "exprId" : 10754
+      "exprId" : 10823
     } ],
     "destination" : {
       "port" : "",
       "name" : "properties",
-      "exprId" : 10754
+      "exprId" : 10823
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "slug",
-      "exprId" : 10755
+      "exprId" : 10824
     } ],
     "destination" : {
       "port" : "",
       "name" : "slug",
-      "exprId" : 10755
+      "exprId" : 10824
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "updated_at",
-      "exprId" : 10756
+      "exprId" : 10825
     } ],
     "destination" : {
       "port" : "",
       "name" : "updated_at",
-      "exprId" : 10756
+      "exprId" : 10825
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "id",
-      "exprId" : 10752
+      "exprId" : 10821
     }, {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "updated_at",
-      "exprId" : 10756
+      "exprId" : 10825
     } ],
     "destination" : {
       "port" : "",
       "name" : "row_num",
-      "exprId" : 10764
+      "exprId" : 10833
     },
     "transformation" : "row_number() OVER (PARTITION BY `id` ORDER BY `updated_at` DESC NULLS LAST ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)"
   } ]

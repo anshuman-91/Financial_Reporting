@@ -18,7 +18,7 @@ pipelines:
     dependencies: {}
   pipelines/load_transactions:
     name: load_transactions
-    description: null
+    description: ''
     author: anshuman@simpledatalabs.com
     mode: batch
     language: scala
@@ -32,7 +32,7 @@ pipelines:
     dependencies: {}
   pipelines/load_products:
     name: load_products
-    description: null
+    description: ''
     author: anshuman@simpledatalabs.com
     mode: batch
     language: scala
@@ -188,18 +188,22 @@ jobs:
     name: import_products
     description: ''
     fabricUID: null
-    scheduler: null
-    jobSize: null
-    scheduleCron: null
+    scheduler:
+      Airflow: {}
+    jobSize: Small
+    scheduleCron: 0 0 0 1/1 * ? *
     timeout: null
     alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
+      emails: anshuman@simpledatalabs.com
+      onStart: true
+      onSuccess: true
+      onFailure: true
     pipelines:
+    - 4088/pipelines/load_transactions
+    - 4088/pipelines/load_acc_status_silver_scala
+    - 4088/pipelines/load_person_silver
     - 4088/pipelines/load_products
-    enabled: null
+    enabled: true
     createdAt: '2022-05-08 15:33:04'
     author: anshuman@simpledatalabs.com
 libraries: []

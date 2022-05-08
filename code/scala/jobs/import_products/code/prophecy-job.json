@@ -4,65 +4,128 @@
     "fabricId" : "811",
     "name" : "import_products",
     "schedule" : "0 0 0 1/1 * ? *",
-    "enabled" : false,
+    "enabled" : true,
     "defaultClusterSize" : "Small",
     "availableClusterSizes" : [ "Small", "small" ],
     "alerting" : {
-      "emails" : "",
-      "onStart" : false,
-      "onSuccess" : false,
-      "onFailure" : false
+      "emails" : "anshuman@simpledatalabs.com",
+      "onStart" : true,
+      "onSuccess" : true,
+      "onFailure" : true
     },
     "processDefaultSettings" : {
       "type" : "Inherited",
       "retries" : 1,
       "alerting" : {
-        "emails" : "",
-        "onStart" : false,
-        "onSuccess" : false,
-        "onFailure" : false
+        "emails" : "anshuman@simpledatalabs.com",
+        "onStart" : true,
+        "onSuccess" : true,
+        "onFailure" : true
       }
     }
   },
   "processes" : {
-    "V5-DkVn4rjuapTHUWN5Gp" : {
-      "id" : "V5-DkVn4rjuapTHUWN5Gp",
-      "component" : "Script",
+    "s_RHTA5Qq_87zYQPN4iaD" : {
+      "id" : "s_RHTA5Qq_87zYQPN4iaD",
+      "component" : "Pipeline",
       "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script",
-        "x" : 500,
-        "y" : 171
+        "label" : "transactions_load",
+        "slug" : "transactions_load",
+        "x" : 980,
+        "y" : 184
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "jKhizO1wvWAcVDPJbqljO"
+          "id" : "bzCqF-n5MaG5fKnnQQAXl"
         } ],
         "outputs" : [ {
-          "id" : "mwN92jwxa5-ZHsfQOfHpi"
+          "id" : "0cqZNcciuuGdTcznYgKrw"
         } ]
       },
       "settings" : {
-        "type" : "Inherited",
+        "type" : "UserDefined",
         "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
+          "emails" : "anshuman@simpledatalabs.com",
+          "onStart" : true,
+          "onSuccess" : true,
+          "onFailure" : true
         }
       },
       "properties" : {
-        "code" : ""
+        "pipelineId" : "4088/pipelines/load_transactions",
+        "configurations" : [ ]
+      }
+    },
+    "HaTf5_fWOnFD-cehl7huO" : {
+      "id" : "HaTf5_fWOnFD-cehl7huO",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "acc_status_load",
+        "slug" : "acc_status_load",
+        "x" : 753,
+        "y" : 193
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "g17aOH25fjz9pOLolBiOl"
+        } ],
+        "outputs" : [ {
+          "id" : "ot2G9h9UOr7mbuMYHy2Et"
+        } ]
+      },
+      "settings" : {
+        "type" : "UserDefined",
+        "alerting" : {
+          "emails" : "anshuman@simpledatalabs.com",
+          "onStart" : true,
+          "onSuccess" : true,
+          "onFailure" : true
+        }
+      },
+      "properties" : {
+        "pipelineId" : "4088/pipelines/load_acc_status_silver_scala",
+        "configurations" : [ ]
+      }
+    },
+    "REEdFFx6H53D4dOkmWr1s" : {
+      "id" : "REEdFFx6H53D4dOkmWr1s",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "people_load",
+        "slug" : "people_load",
+        "x" : 402,
+        "y" : 343
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "rEvzzY3GRlQhUzouaVsXZ"
+        } ],
+        "outputs" : [ {
+          "id" : "SYkKE0KBytMsfZUoHZdB8"
+        } ]
+      },
+      "settings" : {
+        "type" : "UserDefined",
+        "alerting" : {
+          "emails" : "anshuman@simpledatalabs.com",
+          "onStart" : true,
+          "onSuccess" : true,
+          "onFailure" : true
+        }
+      },
+      "properties" : {
+        "pipelineId" : "4088/pipelines/load_person_silver",
+        "configurations" : [ ]
       }
     },
     "Bnmm9nrQy6hlUJt-Cc-Ph" : {
       "id" : "Bnmm9nrQy6hlUJt-Cc-Ph",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "Pipeline_0",
-        "slug" : "Pipeline",
-        "x" : 309,
-        "y" : 191
+        "label" : "products_load",
+        "slug" : "products_load",
+        "x" : 398,
+        "y" : 116
       },
       "ports" : {
         "inputs" : [ {
@@ -88,10 +151,22 @@
     }
   },
   "connections" : [ {
-    "id" : "wYMBLVXyAgsTMVNfK3mIR",
+    "id" : "MuuqodiyYuNNCs_jzXG0e",
+    "source" : "REEdFFx6H53D4dOkmWr1s",
+    "target" : "HaTf5_fWOnFD-cehl7huO",
+    "sourcePort" : "SYkKE0KBytMsfZUoHZdB8",
+    "targetPort" : "g17aOH25fjz9pOLolBiOl"
+  }, {
+    "id" : "AUOd0oGyE8QoTtBr332Jv",
     "source" : "Bnmm9nrQy6hlUJt-Cc-Ph",
-    "target" : "V5-DkVn4rjuapTHUWN5Gp",
+    "target" : "HaTf5_fWOnFD-cehl7huO",
     "sourcePort" : "XOKChTlCgF-cnyp_rEMGI",
-    "targetPort" : "jKhizO1wvWAcVDPJbqljO"
+    "targetPort" : "g17aOH25fjz9pOLolBiOl"
+  }, {
+    "id" : "WR5Z-E40mT4tfyM3_YFkF",
+    "source" : "HaTf5_fWOnFD-cehl7huO",
+    "target" : "s_RHTA5Qq_87zYQPN4iaD",
+    "sourcePort" : "ot2G9h9UOr7mbuMYHy2Et",
+    "targetPort" : "bzCqF-n5MaG5fKnnQQAXl"
   } ]
 }

@@ -9,7 +9,7 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object flatten {
+object flatten_schema {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
     in.select(col("id"),
