@@ -1,0 +1,39 @@
+{
+  "name" : "3zV_UgH8M8UwHougY0u8n",
+  "component" : "Aggregate",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "VgefXVwBLu17NelEcLqAs",
+      "name" : "acc_id",
+      "exprId" : 10060
+    } ],
+    "destination" : {
+      "port" : "0uWG-4CWMUO6n8Iwo6EGb",
+      "name" : "acc_id",
+      "exprId" : 10060
+    }
+  }, {
+    "sources" : [ {
+      "port" : "VgefXVwBLu17NelEcLqAs",
+      "name" : "business_date",
+      "exprId" : 10061
+    } ],
+    "destination" : {
+      "port" : "0uWG-4CWMUO6n8Iwo6EGb",
+      "name" : "business_date",
+      "exprId" : 10061
+    }
+  }, {
+    "sources" : [ {
+      "port" : "VgefXVwBLu17NelEcLqAs",
+      "name" : "signed_tran_amount",
+      "exprId" : 10129
+    } ],
+    "destination" : {
+      "port" : "0uWG-4CWMUO6n8Iwo6EGb",
+      "name" : "signed_tran_amount",
+      "exprId" : 10163
+    },
+    "transformation" : "sum(`signed_tran_amount`)"
+  } ]
+}

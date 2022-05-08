@@ -1,0 +1,8 @@
+{
+  "name" : "Da_57WI5dXLJ3bL6Is_II",
+  "component" : "Filter",
+  "transformations" : [ {
+    "sources" : [ ],
+    "transformation" : "Filter(NOT (balance#10210 = signed_tran_amount#10211))"
+  } ]
+}

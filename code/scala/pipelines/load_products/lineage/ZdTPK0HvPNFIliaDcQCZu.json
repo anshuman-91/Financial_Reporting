@@ -1,0 +1,142 @@
+{
+  "name" : "ZdTPK0HvPNFIliaDcQCZu",
+  "component" : "WindowFunction",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "id",
+      "exprId" : 10752
+    } ],
+    "destination" : {
+      "port" : "ulvyu7iEnlQpiqYURq3Ib",
+      "name" : "id",
+      "exprId" : 10752
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "name",
+      "exprId" : 10753
+    } ],
+    "destination" : {
+      "port" : "ulvyu7iEnlQpiqYURq3Ib",
+      "name" : "name",
+      "exprId" : 10753
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "properties",
+      "exprId" : 10754
+    } ],
+    "destination" : {
+      "port" : "ulvyu7iEnlQpiqYURq3Ib",
+      "name" : "properties",
+      "exprId" : 10754
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "slug",
+      "exprId" : 10755
+    } ],
+    "destination" : {
+      "port" : "ulvyu7iEnlQpiqYURq3Ib",
+      "name" : "slug",
+      "exprId" : 10755
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "updated_at",
+      "exprId" : 10756
+    } ],
+    "destination" : {
+      "port" : "ulvyu7iEnlQpiqYURq3Ib",
+      "name" : "updated_at",
+      "exprId" : 10756
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "row_num",
+      "exprId" : 10764
+    } ],
+    "destination" : {
+      "port" : "ulvyu7iEnlQpiqYURq3Ib",
+      "name" : "row_num",
+      "exprId" : 10764
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "id",
+      "exprId" : 10752
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "id",
+      "exprId" : 10752
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "name",
+      "exprId" : 10753
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "name",
+      "exprId" : 10753
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "properties",
+      "exprId" : 10754
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "properties",
+      "exprId" : 10754
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "slug",
+      "exprId" : 10755
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "slug",
+      "exprId" : 10755
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "updated_at",
+      "exprId" : 10756
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "updated_at",
+      "exprId" : 10756
+    }
+  }, {
+    "sources" : [ {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "id",
+      "exprId" : 10752
+    }, {
+      "port" : "za_ArjxfR_1ZoazWLNsbD",
+      "name" : "updated_at",
+      "exprId" : 10756
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "row_num",
+      "exprId" : 10764
+    },
+    "transformation" : "row_number() OVER (PARTITION BY `id` ORDER BY `updated_at` DESC NULLS LAST ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)"
+  } ]
+}

@@ -3,30 +3,45 @@ description: ''
 version: 0.0.1-SNAPSHOT
 author: anshuman@simpledatalabs.com
 pipelines:
-  pipelines/load_acc_status_silver:
-    name: load_acc_status_silver_python
-    description: ''
-    author: anshuman@simpledatalabs.com
-    mode: batch
-    language: python
-    createdAt: '2022-05-05 17:10:21'
-    datasets:
-      inputs:
-      - 4088/datasets/load_acc_status_silver
-      - 4088/datasets/acc_status_bronze
-      outputs:
-      - 4088/datasets/acc_status_silver
-    dependencies: {}
   pipelines/load_person_silver:
     name: load_person_silver
-    description: null
+    description: ''
     author: anshuman@simpledatalabs.com
     mode: batch
     language: scala
     createdAt: '2022-05-08 10:35:57'
     datasets:
-      inputs: []
-      outputs: []
+      inputs:
+      - 4088/datasets/person_bronze
+      outputs:
+      - 4088/datasets/person_silver
+    dependencies: {}
+  pipelines/load_transactions:
+    name: load_transactions
+    description: null
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-08 13:27:50'
+    datasets:
+      inputs:
+      - 4088/datasets/transactions_bronze
+      - 4088/datasets/acc_status_silver
+      outputs:
+      - 4088/datasets/transactions_silver
+    dependencies: {}
+  pipelines/load_products:
+    name: load_products
+    description: null
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-08 14:52:28'
+    datasets:
+      inputs:
+      - 4088/datasets/products_bronze
+      outputs:
+      - 4088/datasets/products_silver
     dependencies: {}
   pipelines/load_acc_status_silver_scala:
     name: load_acc_status_silver
@@ -42,6 +57,30 @@ pipelines:
       - 4088/datasets/acc_status_silver
     dependencies: {}
 datasets:
+  datasets/transactions_bronze:
+    name: transactions_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-08 13:33:04'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-08 13:33:04'
+  datasets/products_silver:
+    name: products_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-08 15:30:22'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-08 15:30:22'
   datasets/person_silver:
     name: person_silver
     description: ''
@@ -54,6 +93,18 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-06 12:51:36'
+  datasets/products_bronze:
+    name: products_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-08 14:59:54'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-08 14:59:54'
   datasets/acc_status_bronze:
     name: acc_status_bronze
     description: ''
@@ -72,6 +123,18 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-07 11:07:27'
+  datasets/transactions_silver:
+    name: transactions_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-08 14:08:42'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-08 14:08:42'
   datasets/acc_status_archive:
     name: acc_status_archive
     description: ''
@@ -114,7 +177,31 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-06 12:49:39'
-jobs: {}
+      anshuman:
+        fabricId: 811
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-08 10:38:45'
+jobs:
+  jobs/import_products:
+    name: import_products
+    description: ''
+    fabricUID: null
+    scheduler: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - 4088/pipelines/load_products
+    enabled: null
+    createdAt: '2022-05-08 15:33:04'
+    author: anshuman@simpledatalabs.com
 libraries: []
 subgraphs: {}
 dependencies: []

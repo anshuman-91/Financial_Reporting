@@ -1,0 +1,11 @@
+{
+  "name" : "NUZEJeQAqUbH8lQSdgBu8",
+  "component" : "RowDistributor",
+  "transformations" : [ {
+    "sources" : [ ],
+    "transformation" : "Filter((type#10295 = PRIMARY))"
+  }, {
+    "sources" : [ ],
+    "transformation" : "Filter((type#10295 = ALTERNATE))"
+  } ]
+}

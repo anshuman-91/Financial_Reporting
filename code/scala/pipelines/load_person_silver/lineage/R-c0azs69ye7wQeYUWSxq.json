@@ -1,0 +1,64 @@
+{
+  "name" : "R-c0azs69ye7wQeYUWSxq",
+  "component" : "Aggregate",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "id",
+      "exprId" : 10262
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "id",
+      "exprId" : 10262
+    }
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "email",
+      "exprId" : 10263
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "email",
+      "exprId" : 10342
+    },
+    "transformation" : "first(`email`)"
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "name",
+      "exprId" : 10264
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "name",
+      "exprId" : 10344
+    },
+    "transformation" : "first(`name`)"
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "updated_at",
+      "exprId" : 10266
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "updated_at",
+      "exprId" : 10346
+    },
+    "transformation" : "first(`updated_at`)"
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "address_string",
+      "exprId" : 10317
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "address_string",
+      "exprId" : 10348
+    },
+    "transformation" : "collect_list(`address_string`)"
+  } ]
+}

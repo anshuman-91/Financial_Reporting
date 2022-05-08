@@ -1,0 +1,97 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "811",
+    "name" : "import_products",
+    "schedule" : "0 0 0 1/1 * ? *",
+    "enabled" : false,
+    "defaultClusterSize" : "Small",
+    "availableClusterSizes" : [ "Small", "small" ],
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 1,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    }
+  },
+  "processes" : {
+    "V5-DkVn4rjuapTHUWN5Gp" : {
+      "id" : "V5-DkVn4rjuapTHUWN5Gp",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script",
+        "x" : 500,
+        "y" : 171
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jKhizO1wvWAcVDPJbqljO"
+        } ],
+        "outputs" : [ {
+          "id" : "mwN92jwxa5-ZHsfQOfHpi"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : ""
+      }
+    },
+    "Bnmm9nrQy6hlUJt-Cc-Ph" : {
+      "id" : "Bnmm9nrQy6hlUJt-Cc-Ph",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline",
+        "x" : 309,
+        "y" : 191
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Wf0HrXAncW_rY2kZc9dMN"
+        } ],
+        "outputs" : [ {
+          "id" : "XOKChTlCgF-cnyp_rEMGI"
+        } ]
+      },
+      "settings" : {
+        "type" : "UserDefined",
+        "alerting" : {
+          "emails" : "anshuman@simpledatalabs.com",
+          "onStart" : true,
+          "onSuccess" : true,
+          "onFailure" : true
+        }
+      },
+      "properties" : {
+        "pipelineId" : "4088/pipelines/load_products",
+        "configurations" : [ ]
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "wYMBLVXyAgsTMVNfK3mIR",
+    "source" : "Bnmm9nrQy6hlUJt-Cc-Ph",
+    "target" : "V5-DkVn4rjuapTHUWN5Gp",
+    "sourcePort" : "XOKChTlCgF-cnyp_rEMGI",
+    "targetPort" : "jKhizO1wvWAcVDPJbqljO"
+  } ]
+}

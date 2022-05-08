@@ -1,0 +1,60 @@
+{
+  "name" : "uGl0hJ6lO_M96tWrLK2r1",
+  "component" : "Source",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "",
+      "name" : "acc_id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "YlcjtViFWYJRWSyPXYXzY",
+      "name" : "acc_id",
+      "exprId" : 10060
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "business_date",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "YlcjtViFWYJRWSyPXYXzY",
+      "name" : "business_date",
+      "exprId" : 10061
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_amount",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "YlcjtViFWYJRWSyPXYXzY",
+      "name" : "tran_amount",
+      "exprId" : 10062
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_type",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "YlcjtViFWYJRWSyPXYXzY",
+      "name" : "tran_type",
+      "exprId" : 10063
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_ts",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "YlcjtViFWYJRWSyPXYXzY",
+      "name" : "tran_ts",
+      "exprId" : 10064
+    }
+  } ]
+}

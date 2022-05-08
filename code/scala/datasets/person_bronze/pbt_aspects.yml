@@ -2,6 +2,18 @@ version: 1
 schema:
   type: struct
   fields:
+  - name: id
+    type: integer
+    nullable: false
+    metadata: {}
+  - name: email
+    type: string
+    nullable: false
+    metadata: {}
+  - name: name
+    type: string
+    nullable: true
+    metadata: {}
   - name: addresses
     type:
       type: array
@@ -10,15 +22,15 @@ schema:
         fields:
         - name: address_line1
           type: string
-          nullable: true
+          nullable: false
           metadata: {}
         - name: address_line2
           type: string
           nullable: true
           metadata: {}
         - name: postal_code
-          type: long
-          nullable: true
+          type: string
+          nullable: false
           metadata: {}
         - name: type
           type: string
@@ -27,19 +39,7 @@ schema:
       containsNull: true
     nullable: true
     metadata: {}
-  - name: email
-    type: string
-    nullable: true
-    metadata: {}
-  - name: id
-    type: long
-    nullable: true
-    metadata: {}
-  - name: name
-    type: string
-    nullable: true
-    metadata: {}
   - name: updated_at
-    type: string
-    nullable: true
+    type: timestamp
+    nullable: false
     metadata: {}

@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "811",
+    "fabricId" : "838",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "interimMode" : "Full",
@@ -36,8 +36,786 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ]
   },
-  "connections" : [ ],
-  "processes" : { },
+  "connections" : [ {
+    "id" : "eyML7KnyFhiqxZqkBkaY9",
+    "source" : "NUZEJeQAqUbH8lQSdgBu8",
+    "sourcePort" : "out0",
+    "target" : "brdQ6p22Z1l1sNCaXLT2Y",
+    "targetPort" : "lZN_3wGH8ZdgSix282Q-D"
+  }, {
+    "id" : "sXZBvE4phetBiqnJ13aMO",
+    "source" : "R-c0azs69ye7wQeYUWSxq",
+    "sourcePort" : "voA-ZoHsz1k5TVzBo80UY",
+    "target" : "brdQ6p22Z1l1sNCaXLT2Y",
+    "targetPort" : "Z6k94wMliU_h33LNGOEwn"
+  }, {
+    "id" : "w_92QEClDAXylxaFJ7TJf",
+    "source" : "NUZEJeQAqUbH8lQSdgBu8",
+    "sourcePort" : "out1",
+    "target" : "iQm061Hv90qvRwNU0_9VH",
+    "targetPort" : "ao61NUgHpOuCTwbZ1UMIb"
+  }, {
+    "id" : "CSWlztugU01cSj6CTmA0Q",
+    "source" : "iQm061Hv90qvRwNU0_9VH",
+    "sourcePort" : "Hr4d4xPpJiGbuLGoo85_J",
+    "target" : "R-c0azs69ye7wQeYUWSxq",
+    "targetPort" : "e0OFsSA23cpxQdDYcWTYN"
+  }, {
+    "id" : "vIldnw5RruXKbVJRisbgh",
+    "source" : "brdQ6p22Z1l1sNCaXLT2Y",
+    "sourcePort" : "bBsbenOmRoJWAhBs8jI5r",
+    "target" : "XfLZg0DI-guWXq77w6YVt",
+    "targetPort" : "1KLE3t0ey5JQxj536IZGO"
+  }, {
+    "id" : "q52poHIQ8QSFH8WFS7Li7",
+    "source" : "XfLZg0DI-guWXq77w6YVt",
+    "sourcePort" : "WRjkED5iNL6NxXLw7HvRk",
+    "target" : "MwRsicaU4gN0fH-QzUD-b",
+    "targetPort" : "JDmkGzywydL7lhNultHyy"
+  }, {
+    "id" : "IUFFkJ59pNfN2SoQ9MI03",
+    "source" : "BI6AtLg783dbsB3TRHCYv",
+    "sourcePort" : "ohyJXZ53Sk1kpCumdHv68",
+    "target" : "YY9mhgTuMW1PHSF1ccsAw",
+    "targetPort" : "-OJD6G_iLOO_QuyXBhiKE"
+  }, {
+    "id" : "2flpt6mBUc-fPzPz-lgKJ",
+    "source" : "MwRsicaU4gN0fH-QzUD-b",
+    "sourcePort" : "FUP35hPiKV_HkkTARQloo",
+    "target" : "BI6AtLg783dbsB3TRHCYv",
+    "targetPort" : "-NAdgAUUGGuexOFf99OcO"
+  }, {
+    "id" : "pFVcRdZBKnRcjUrRnL9CK",
+    "source" : "btYtrqEVEyYXnNvyRxso2",
+    "sourcePort" : "6Iy3SLcX4PLtOyHGfclnn",
+    "target" : "s6CDvhs-NnSgw0GZn2ZHk",
+    "targetPort" : "p8JcWmRRYKZGUo5x23NIN"
+  }, {
+    "id" : "7h8w6L_Ny8yBCeUlPzFQ2",
+    "source" : "s6CDvhs-NnSgw0GZn2ZHk",
+    "sourcePort" : "gwQ3VW-hpaItHbvaDa_YP",
+    "target" : "O3qbr_EmQlVn83wHOfQTd",
+    "targetPort" : "Xohzv1oLioUZOcxcEu8qT"
+  }, {
+    "id" : "wUQnNL4COftXrTMfntEY3",
+    "source" : "O3qbr_EmQlVn83wHOfQTd",
+    "sourcePort" : "yTcNahNeXlqcj6GXYiFcM",
+    "target" : "NUZEJeQAqUbH8lQSdgBu8",
+    "targetPort" : "lRMG_RzqZId4la1tbHIDi"
+  } ],
+  "processes" : {
+    "R-c0azs69ye7wQeYUWSxq" : {
+      "id" : "R-c0azs69ye7wQeYUWSxq",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "collect",
+        "slug" : "collect",
+        "x" : -897,
+        "y" : -950,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "e0OFsSA23cpxQdDYcWTYN",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "voA-ZoHsz1k5TVzBo80UY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "doPivot" : false,
+        "aggregate" : [ {
+          "_row_id" : null,
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(email)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(name)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "updated_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(updated_at)"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "address_string",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "collect_list(address_string)"
+          },
+          "description" : ""
+        } ],
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "e0OFsSA23cpxQdDYcWTYN##id", "e0OFsSA23cpxQdDYcWTYN##email", "e0OFsSA23cpxQdDYcWTYN##name", "e0OFsSA23cpxQdDYcWTYN##updated_at", "e0OFsSA23cpxQdDYcWTYN##address_string" ],
+        "groupBy" : [ {
+          "_row_id" : null,
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        } ]
+      }
+    },
+    "XfLZg0DI-guWXq77w6YVt" : {
+      "id" : "XfLZg0DI-guWXq77w6YVt",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "null_check",
+        "slug" : "null_check",
+        "x" : -617,
+        "y" : -1109,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "1KLE3t0ey5JQxj536IZGO",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "WRjkED5iNL6NxXLw7HvRk",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "if (in0.filter(\n    col(\"id\").isNull\n    or col(\"email\").isNull or col(\"email\") === \"\"\n    or col(\"updated_at\").isNull\n    or col(\"primary_postal_code\").isNull or col(\"primary_postal_code\") === \"\"\n    or col(\"primary_address_line1\").isNull or col(\"primary_address_line1\") === \"\"\n    ).count()> 0){\n    throw new RuntimeException(\"Schema Validation Failed\")\n}\nval out0 = in0\nout0",
+        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame): DataFrame = {",
+        "scriptMethodFooter" : "    out0\n}"
+      }
+    },
+    "MwRsicaU4gN0fH-QzUD-b" : {
+      "id" : "MwRsicaU4gN0fH-QzUD-b",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "import_ts",
+        "slug" : "import_ts",
+        "x" : -452,
+        "y" : -1108.5,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "JDmkGzywydL7lhNultHyy",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "FUP35hPiKV_HkkTARQloo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "transformations" : [ {
+          "kind" : "AddReplaceColumn",
+          "AddReplaceColumn" : {
+            "sourceColumn" : "import_ts",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "current_timestamp()"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          }
+        }, {
+          "kind" : "AddReplaceColumn",
+          "AddReplaceColumn" : {
+            "sourceColumn" : "business_date",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "current_date()"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          }
+        } ]
+      }
+    },
+    "NUZEJeQAqUbH8lQSdgBu8" : {
+      "id" : "NUZEJeQAqUbH8lQSdgBu8",
+      "component" : "RowDistributor",
+      "metadata" : {
+        "label" : "address_distributor",
+        "slug" : "address_distributor",
+        "x" : -1167,
+        "y" : -1105,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lRMG_RzqZId4la1tbHIDi",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out0",
+          "slug" : "out0"
+        }, {
+          "id" : "out1",
+          "slug" : "out1"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "outports" : [ {
+          "path" : "out0",
+          "id" : "out0",
+          "model" : {
+            "format" : "sql",
+            "expression" : "type == 'PRIMARY'"
+          }
+        }, {
+          "path" : "out1",
+          "id" : "out1",
+          "model" : {
+            "format" : "sql",
+            "expression" : "type = 'ALTERNATE'"
+          }
+        } ]
+      }
+    },
+    "btYtrqEVEyYXnNvyRxso2" : {
+      "id" : "btYtrqEVEyYXnNvyRxso2",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : -1617,
+        "y" : -881,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6Iy3SLcX4PLtOyHGfclnn",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/person_bronze"
+      }
+    },
+    "s6CDvhs-NnSgw0GZn2ZHk" : {
+      "id" : "s6CDvhs-NnSgw0GZn2ZHk",
+      "component" : "SubGraph",
+      "metadata" : {
+        "label" : "dedup",
+        "slug" : "dedup",
+        "x" : -1484,
+        "y" : -982,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "p8JcWmRRYKZGUo5x23NIN",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "gwQ3VW-hpaItHbvaDa_YP",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { },
+      "connections" : [ {
+        "id" : "egzAKaDx5QPqZInsHwqNR",
+        "source" : "s6CDvhs-NnSgw0GZn2ZHk",
+        "sourcePort" : "p8JcWmRRYKZGUo5x23NIN",
+        "target" : "k8YaVFldaT-eC6theHJU1",
+        "targetPort" : "XaHwNiEcONNAW31Eloxar"
+      }, {
+        "id" : "YWaBPAZhQnfJc5dVvu7Yb",
+        "source" : "k8YaVFldaT-eC6theHJU1",
+        "sourcePort" : "g51pAIKA0oa_iJWIHUqB-",
+        "target" : "HqoQRZw2r4LlJ6-h-Ccj9",
+        "targetPort" : "e646SCQ9QBHtrrFlu7Hez"
+      }, {
+        "id" : "b7wixNZHBw24qZwa9mMW1",
+        "source" : "HqoQRZw2r4LlJ6-h-Ccj9",
+        "sourcePort" : "LvSIz-Z168Z25E6CMgJh7",
+        "target" : "s6CDvhs-NnSgw0GZn2ZHk",
+        "targetPort" : "gwQ3VW-hpaItHbvaDa_YP"
+      } ],
+      "processes" : {
+        "k8YaVFldaT-eC6theHJU1" : {
+          "id" : "k8YaVFldaT-eC6theHJU1",
+          "component" : "WindowFunction",
+          "metadata" : {
+            "label" : "WindowFunction_1",
+            "slug" : "WindowFunction_1",
+            "x" : 171,
+            "y" : 215,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "XaHwNiEcONNAW31Eloxar",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "g51pAIKA0oa_iJWIHUqB-",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "userSpecifiedEnd" : null,
+            "expressionColumns" : [ {
+              "_row_id" : "c_10",
+              "target" : "row_num",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "row_number()"
+              },
+              "description" : ""
+            } ],
+            "frameType" : "row",
+            "partitionColumns" : [ {
+              "format" : "sql",
+              "expression" : "id"
+            } ],
+            "activeTab" : "windowOrder",
+            "columnsSelector" : [ "XaHwNiEcONNAW31Eloxar##id", "XaHwNiEcONNAW31Eloxar##updated_at" ],
+            "specifyFrame" : false,
+            "frameStart" : null,
+            "orderColumns" : [ {
+              "expression" : {
+                "format" : "sql",
+                "expression" : "updated_at"
+              },
+              "sortType" : "desc"
+            } ],
+            "frameEnd" : null,
+            "userSpecifiedStart" : null
+          }
+        },
+        "HqoQRZw2r4LlJ6-h-Ccj9" : {
+          "id" : "HqoQRZw2r4LlJ6-h-Ccj9",
+          "component" : "Filter",
+          "metadata" : {
+            "label" : "Filter_1",
+            "slug" : "Filter_1",
+            "x" : 1084,
+            "y" : 271,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "e646SCQ9QBHtrrFlu7Hez",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "LvSIz-Z168Z25E6CMgJh7",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ "e646SCQ9QBHtrrFlu7Hez##row_num" ],
+            "condition" : {
+              "format" : "sql",
+              "expression" : "row_num = 1"
+            }
+          }
+        }
+      }
+    },
+    "brdQ6p22Z1l1sNCaXLT2Y" : {
+      "id" : "brdQ6p22Z1l1sNCaXLT2Y",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "primary_join_alternate",
+        "slug" : "primary_join_alternate",
+        "x" : -790,
+        "y" : -1106,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lZN_3wGH8ZdgSix282Q-D",
+          "slug" : "in0"
+        }, {
+          "id" : "Z6k94wMliU_h33LNGOEwn",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "bBsbenOmRoJWAhBs8jI5r",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.id == in0.id"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "_row_id" : null,
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.id"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.email"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "updated_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.updated_at"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "primary_address_line1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.address_line1"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "primary_address_line2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.address_line2"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "primary_postal_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.postal_code"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : null,
+          "target" : "alternate_addresses",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.address_string"
+          },
+          "description" : ""
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "lZN_3wGH8ZdgSix282Q-D##id", "lZN_3wGH8ZdgSix282Q-D##id", "lZN_3wGH8ZdgSix282Q-D##email", "lZN_3wGH8ZdgSix282Q-D##name", "lZN_3wGH8ZdgSix282Q-D##updated_at", "lZN_3wGH8ZdgSix282Q-D##address_line1", "lZN_3wGH8ZdgSix282Q-D##address_line2", "lZN_3wGH8ZdgSix282Q-D##postal_code", "Z6k94wMliU_h33LNGOEwn##address_string" ],
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "O3qbr_EmQlVn83wHOfQTd" : {
+      "id" : "O3qbr_EmQlVn83wHOfQTd",
+      "component" : "FlattenSchema",
+      "metadata" : {
+        "label" : "FlattenSchema_1",
+        "slug" : "FlattenSchema_1",
+        "x" : -1330,
+        "y" : -1094,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Xohzv1oLioUZOcxcEu8qT",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "yTcNahNeXlqcj6GXYiFcM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "explodedColsNewName" : [ {
+          "originalColToExplode" : "addresses",
+          "updatedColToExplode" : "addresses",
+          "colNameAfterExplode" : "addresses"
+        } ],
+        "fsExpressions" : [ {
+          "exploded" : "",
+          "flattenedExpression" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "targetTokens" : [ "id" ],
+          "target" : "id"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "targetTokens" : [ "email" ],
+          "target" : "email"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name"
+          },
+          "targetTokens" : [ "name" ],
+          "target" : "name"
+        }, {
+          "exploded" : "",
+          "flattenedExpression" : "updated_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "updated_at"
+          },
+          "targetTokens" : [ "updated_at" ],
+          "target" : "updated_at"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "addresses.address_line1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "addresses.address_line1"
+          },
+          "targetTokens" : [ "addresses", "address_line1" ],
+          "target" : "address_line1"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "addresses.address_line2",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "addresses.address_line2"
+          },
+          "targetTokens" : [ "addresses", "address_line2" ],
+          "target" : "address_line2"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "addresses.postal_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "addresses.postal_code"
+          },
+          "targetTokens" : [ "addresses", "postal_code" ],
+          "target" : "postal_code"
+        }, {
+          "exploded" : "✓",
+          "flattenedExpression" : "addresses.type",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "addresses.type"
+          },
+          "targetTokens" : [ "addresses", "type" ],
+          "target" : "type"
+        } ],
+        "columnsSelector" : [ ],
+        "explodeColumns" : [ "addresses" ],
+        "delimiter" : "-"
+      }
+    },
+    "iQm061Hv90qvRwNU0_9VH" : {
+      "id" : "iQm061Hv90qvRwNU0_9VH",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "compress",
+        "slug" : "compress",
+        "x" : -1058,
+        "y" : -950,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ao61NUgHpOuCTwbZ1UMIb",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "Hr4d4xPpJiGbuLGoo85_J",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "ao61NUgHpOuCTwbZ1UMIb##id", "ao61NUgHpOuCTwbZ1UMIb##email", "ao61NUgHpOuCTwbZ1UMIb##name", "ao61NUgHpOuCTwbZ1UMIb##updated_at", "ao61NUgHpOuCTwbZ1UMIb##address_line1", "ao61NUgHpOuCTwbZ1UMIb##address_line2", "ao61NUgHpOuCTwbZ1UMIb##postal_code" ],
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "target" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name"
+          },
+          "description" : ""
+        }, {
+          "target" : "updated_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "updated_at"
+          },
+          "description" : ""
+        }, {
+          "target" : "address_string",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat_ws(\"$$$\",address_line1,address_line2, postal_code)"
+          },
+          "description" : ""
+        } ]
+      }
+    },
+    "YY9mhgTuMW1PHSF1ccsAw" : {
+      "id" : "YY9mhgTuMW1PHSF1ccsAw",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : -153,
+        "y" : -866,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-OJD6G_iLOO_QuyXBhiKE",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/person_silver"
+      }
+    },
+    "BI6AtLg783dbsB3TRHCYv" : {
+      "id" : "BI6AtLg783dbsB3TRHCYv",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "dvr_pass",
+        "slug" : "dvr_pass",
+        "x" : -304,
+        "y" : -939.5,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-NAdgAUUGGuexOFf99OcO",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ohyJXZ53Sk1kpCumdHv68",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "\nval out0 = in0\n    ",
+        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame): DataFrame = {",
+        "scriptMethodFooter" : "    out0\n}"
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],

@@ -1,0 +1,8 @@
+{
+  "name" : "BbrU6JaVbNlzegCtwFMQC",
+  "component" : "Filter",
+  "transformations" : [ {
+    "sources" : [ ],
+    "transformation" : "Filter((row_num#10764 = 1))"
+  } ]
+}

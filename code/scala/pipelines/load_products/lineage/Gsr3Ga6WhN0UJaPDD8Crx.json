@@ -1,0 +1,82 @@
+{
+  "name" : "Gsr3Ga6WhN0UJaPDD8Crx",
+  "component" : "Target",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "id",
+      "exprId" : 10752
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "id",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "name",
+      "exprId" : 10753
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "name",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "slug",
+      "exprId" : 10755
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "slug",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "bonus_rate",
+      "exprId" : 10778
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "bonus_rate",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "lock_in_period",
+      "exprId" : 10779
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "lock_in_period",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "import_ts",
+      "exprId" : 10801
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "import_ts",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "Xm3EChhFaMRI5oB7IsHy6",
+      "name" : "business_date",
+      "exprId" : 10808
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "business_date",
+      "exprId" : -1
+    }
+  } ]
+}

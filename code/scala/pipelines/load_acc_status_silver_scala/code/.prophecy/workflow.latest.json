@@ -43,12 +43,6 @@
     "target" : "8rPURr76JciV0CeVwu-4Z",
     "targetPort" : "4qYk6Q9RSN_hij_iiAc0D"
   }, {
-    "id" : "zdRK6dTKTqdKGWJ9fNa9Z",
-    "source" : "BGnGX1MIcUQl3eapfr2gY",
-    "sourcePort" : "Qt_HRMfmXwqbkTpSjUBNk",
-    "target" : "ssBJOJyHiF5-MiVgXPK13",
-    "targetPort" : "ABCKoXhrNF75vfVC20HS_"
-  }, {
     "id" : "LxAJJJrXyJFIeFCMzGXec",
     "source" : "8rPURr76JciV0CeVwu-4Z",
     "sourcePort" : "aiAcOfw_BA5p_7ZCXmase",
@@ -60,16 +54,28 @@
     "sourcePort" : "YZhRpQLMMeWnnAYbiu1ay",
     "target" : "BZYMDuL1Giz5OI_Cew1Rf",
     "targetPort" : "kdu7M9A4V9_D8XpdWz5XS"
+  }, {
+    "id" : "TLuR6dWhZlSz_sc9XXHU1",
+    "source" : "BGnGX1MIcUQl3eapfr2gY",
+    "sourcePort" : "Qt_HRMfmXwqbkTpSjUBNk",
+    "target" : "0NaJ-hDjEE5-qU1FXHp1G",
+    "targetPort" : "0pt2yrJ0v5W8kpPc72_ms"
+  }, {
+    "id" : "G7C5-BvOLX3dcNmxrTchs",
+    "source" : "0NaJ-hDjEE5-qU1FXHp1G",
+    "sourcePort" : "-oMhDMmMiA6b7U6KzeXM5",
+    "target" : "ssBJOJyHiF5-MiVgXPK13",
+    "targetPort" : "ABCKoXhrNF75vfVC20HS_"
   } ],
   "processes" : {
     "yt0Kyk0Fw2vfDwWvgwPol" : {
       "id" : "yt0Kyk0Fw2vfDwWvgwPol",
       "component" : "Script",
       "metadata" : {
-        "label" : "validate balances",
-        "slug" : "validate_balances",
-        "x" : -323,
-        "y" : -483.5,
+        "label" : "dvr",
+        "slug" : "dvr",
+        "x" : -350,
+        "y" : -482.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -98,8 +104,8 @@
       "metadata" : {
         "label" : "import_ts",
         "slug" : "import_ts",
-        "x" : -667,
-        "y" : -477.5,
+        "x" : -660,
+        "y" : -482.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -137,14 +143,44 @@
         } ]
       }
     },
+    "0NaJ-hDjEE5-qU1FXHp1G" : {
+      "id" : "0NaJ-hDjEE5-qU1FXHp1G",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "null_check",
+        "slug" : "null_check",
+        "x" : -813,
+        "y" : -481,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0pt2yrJ0v5W8kpPc72_ms",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "-oMhDMmMiA6b7U6KzeXM5",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "if (in0.filter(\n    col(\"acc_id\").isNull\n    or col(\"person_id\").isNull\n    or col(\"product_id\").isNull\n    or col(\"business_date\").isNull\n    or col(\"balance\").isNull\n    ).count()> 0){\n    throw new RuntimeException(\"Schema Validation Failed\")\n}\nval out0 = in0\nout0",
+        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame): DataFrame = {",
+        "scriptMethodFooter" : "    out0\n}"
+      }
+    },
     "8rPURr76JciV0CeVwu-4Z" : {
       "id" : "8rPURr76JciV0CeVwu-4Z",
       "component" : "Deduplicate",
       "metadata" : {
         "label" : "dedupe",
         "slug" : "dedupe",
-        "x" : -476,
-        "y" : -479.5,
+        "x" : -503,
+        "y" : -483.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -179,8 +215,8 @@
       "metadata" : {
         "label" : "Target_1",
         "slug" : "Target_1",
-        "x" : -148,
-        "y" : -475.5,
+        "x" : -164,
+        "y" : -485.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -204,7 +240,7 @@
       "metadata" : {
         "label" : "Source_0",
         "slug" : "Source_0",
-        "x" : -880,
+        "x" : -1062,
         "y" : -480,
         "language" : "scala",
         "phase" : 0,

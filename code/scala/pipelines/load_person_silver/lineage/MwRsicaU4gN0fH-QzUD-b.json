@@ -1,0 +1,208 @@
+{
+  "name" : "MwRsicaU4gN0fH-QzUD-b",
+  "component" : "SchemaTransform",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "id",
+      "exprId" : 10438
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "id",
+      "exprId" : 10438
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "email",
+      "exprId" : 10439
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "email",
+      "exprId" : 10439
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "name",
+      "exprId" : 10440
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "name",
+      "exprId" : 10440
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "updated_at",
+      "exprId" : 10441
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "updated_at",
+      "exprId" : 10441
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "primary_address_line1",
+      "exprId" : 10442
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "primary_address_line1",
+      "exprId" : 10442
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "primary_address_line2",
+      "exprId" : 10443
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "primary_address_line2",
+      "exprId" : 10443
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "primary_postal_code",
+      "exprId" : 10444
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "primary_postal_code",
+      "exprId" : 10444
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "alternate_addresses",
+      "exprId" : 10445
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "alternate_addresses",
+      "exprId" : 10445
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "import_ts",
+      "exprId" : 10469
+    } ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "import_ts",
+      "exprId" : 10469
+    }
+  }, {
+    "sources" : [ ],
+    "destination" : {
+      "port" : "FUP35hPiKV_HkkTARQloo",
+      "name" : "business_date",
+      "exprId" : 10479
+    },
+    "transformation" : "current_date()"
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "id",
+      "exprId" : 10438
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "id",
+      "exprId" : 10438
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "email",
+      "exprId" : 10439
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "email",
+      "exprId" : 10439
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "name",
+      "exprId" : 10440
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "name",
+      "exprId" : 10440
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "updated_at",
+      "exprId" : 10441
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "updated_at",
+      "exprId" : 10441
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "primary_address_line1",
+      "exprId" : 10442
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "primary_address_line1",
+      "exprId" : 10442
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "primary_address_line2",
+      "exprId" : 10443
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "primary_address_line2",
+      "exprId" : 10443
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "primary_postal_code",
+      "exprId" : 10444
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "primary_postal_code",
+      "exprId" : 10444
+    }
+  }, {
+    "sources" : [ {
+      "port" : "JDmkGzywydL7lhNultHyy",
+      "name" : "alternate_addresses",
+      "exprId" : 10445
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "alternate_addresses",
+      "exprId" : 10445
+    }
+  }, {
+    "sources" : [ ],
+    "destination" : {
+      "port" : "",
+      "name" : "import_ts",
+      "exprId" : 10469
+    },
+    "transformation" : "current_timestamp()"
+  } ]
+}

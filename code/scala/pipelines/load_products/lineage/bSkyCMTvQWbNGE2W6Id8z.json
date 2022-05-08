@@ -1,0 +1,60 @@
+{
+  "name" : "bSkyCMTvQWbNGE2W6Id8z",
+  "component" : "Source",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "",
+      "name" : "id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "id",
+      "exprId" : 10752
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "name",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "name",
+      "exprId" : 10753
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "properties",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "properties",
+      "exprId" : 10754
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "slug",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "slug",
+      "exprId" : 10755
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "updated_at",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "updated_at",
+      "exprId" : 10756
+    }
+  } ]
+}

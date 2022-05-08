@@ -14,11 +14,15 @@
 
     <modules>
         
-        <module>load_acc_status_silver_scala</module>
+        <module>load_person_silver</module>
+        
+        <module>load_transactions</module>
         
         <module>load_acc_status_silver_python</module>
         
-        <module>load_person_silver</module>
+        <module>load_products</module>
+        
+        <module>load_acc_status_silver</module>
         
     </modules>
 

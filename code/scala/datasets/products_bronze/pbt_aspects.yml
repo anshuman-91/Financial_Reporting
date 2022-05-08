@@ -1,0 +1,34 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: id
+    type: integer
+    nullable: false
+    metadata: {}
+  - name: name
+    type: string
+    nullable: false
+    metadata: {}
+  - name: properties
+    type:
+      type: struct
+      fields:
+      - name: bonus_rate
+        type: double
+        nullable: false
+        metadata: {}
+      - name: lock_in_period
+        type: integer
+        nullable: true
+        metadata: {}
+    nullable: false
+    metadata: {}
+  - name: slug
+    type: string
+    nullable: false
+    metadata: {}
+  - name: updated_at
+    type: timestamp
+    nullable: false
+    metadata: {}

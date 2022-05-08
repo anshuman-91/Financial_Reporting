@@ -1,0 +1,93 @@
+{
+  "name" : "brdQ6p22Z1l1sNCaXLT2Y",
+  "component" : "Join",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "id",
+      "exprId" : 10262
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "id",
+      "exprId" : 10438
+    }
+  }, {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "email",
+      "exprId" : 10263
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "email",
+      "exprId" : 10439
+    }
+  }, {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "name",
+      "exprId" : 10264
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "name",
+      "exprId" : 10440
+    }
+  }, {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "updated_at",
+      "exprId" : 10266
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "updated_at",
+      "exprId" : 10441
+    }
+  }, {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "address_line1",
+      "exprId" : 10292
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "primary_address_line1",
+      "exprId" : 10442
+    }
+  }, {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "address_line2",
+      "exprId" : 10293
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "primary_address_line2",
+      "exprId" : 10443
+    }
+  }, {
+    "sources" : [ {
+      "port" : "lZN_3wGH8ZdgSix282Q-D",
+      "name" : "postal_code",
+      "exprId" : 10294
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "primary_postal_code",
+      "exprId" : 10444
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "address_string",
+      "exprId" : 10348
+    } ],
+    "destination" : {
+      "port" : "bBsbenOmRoJWAhBs8jI5r",
+      "name" : "alternate_addresses",
+      "exprId" : 10445
+    }
+  } ]
+}

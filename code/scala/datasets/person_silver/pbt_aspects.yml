@@ -4,11 +4,11 @@ schema:
   fields:
   - name: id
     type: integer
-    nullable: true
+    nullable: false
     metadata: {}
   - name: email
     type: string
-    nullable: true
+    nullable: false
     metadata: {}
   - name: name
     type: string
@@ -16,13 +16,32 @@ schema:
     metadata: {}
   - name: updated_at
     type: timestamp
+    nullable: false
+    metadata: {}
+  - name: primary_address_line1
+    type: string
     nullable: true
     metadata: {}
-  - name: business_date
-    type: date
-    nullable: false
+  - name: primary_address_line2
+    type: string
+    nullable: true
+    metadata: {}
+  - name: primary_postal_code
+    type: string
+    nullable: true
+    metadata: {}
+  - name: alternate_addresses
+    type:
+      type: array
+      elementType: string
+      containsNull: false
+    nullable: true
     metadata: {}
   - name: import_ts
     type: timestamp
+    nullable: false
+    metadata: {}
+  - name: business_date
+    type: date
     nullable: false
     metadata: {}

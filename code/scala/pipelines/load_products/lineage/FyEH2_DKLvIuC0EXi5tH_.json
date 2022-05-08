@@ -1,0 +1,62 @@
+{
+  "name" : "FyEH2_DKLvIuC0EXi5tH_",
+  "component" : "Reformat",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "OPC5pGk6rix6WSlmQOg-H",
+      "name" : "id",
+      "exprId" : 10752
+    } ],
+    "destination" : {
+      "port" : "_VNDdbuwri3i_CZzmz-le",
+      "name" : "id",
+      "exprId" : 10752
+    }
+  }, {
+    "sources" : [ {
+      "port" : "OPC5pGk6rix6WSlmQOg-H",
+      "name" : "name",
+      "exprId" : 10753
+    } ],
+    "destination" : {
+      "port" : "_VNDdbuwri3i_CZzmz-le",
+      "name" : "name",
+      "exprId" : 10753
+    }
+  }, {
+    "sources" : [ {
+      "port" : "OPC5pGk6rix6WSlmQOg-H",
+      "name" : "slug",
+      "exprId" : 10755
+    } ],
+    "destination" : {
+      "port" : "_VNDdbuwri3i_CZzmz-le",
+      "name" : "slug",
+      "exprId" : 10755
+    }
+  }, {
+    "sources" : [ {
+      "port" : "OPC5pGk6rix6WSlmQOg-H",
+      "name" : "properties",
+      "exprId" : 10754
+    } ],
+    "destination" : {
+      "port" : "_VNDdbuwri3i_CZzmz-le",
+      "name" : "bonus_rate",
+      "exprId" : 10778
+    },
+    "transformation" : "`properties`.`bonus_rate`"
+  }, {
+    "sources" : [ {
+      "port" : "OPC5pGk6rix6WSlmQOg-H",
+      "name" : "properties",
+      "exprId" : 10754
+    } ],
+    "destination" : {
+      "port" : "_VNDdbuwri3i_CZzmz-le",
+      "name" : "lock_in_period",
+      "exprId" : 10779
+    },
+    "transformation" : "`properties`.`lock_in_period`"
+  } ]
+}

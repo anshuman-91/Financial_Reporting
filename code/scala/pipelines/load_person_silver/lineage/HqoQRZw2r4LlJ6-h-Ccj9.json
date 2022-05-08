@@ -1,0 +1,8 @@
+{
+  "name" : "HqoQRZw2r4LlJ6-h-Ccj9",
+  "component" : "Filter",
+  "transformations" : [ {
+    "sources" : [ ],
+    "transformation" : "Filter((row_num#10274 = 1))"
+  } ]
+}
