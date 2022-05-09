@@ -10,7 +10,7 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "id",
-      "exprId" : 10821
+      "exprId" : 13919
     }
   }, {
     "sources" : [ {
@@ -21,7 +21,7 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "name",
-      "exprId" : 10822
+      "exprId" : 13920
     }
   }, {
     "sources" : [ {
@@ -32,7 +32,7 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "properties",
-      "exprId" : 10823
+      "exprId" : 13921
     }
   }, {
     "sources" : [ {
@@ -43,7 +43,7 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "slug",
-      "exprId" : 10824
+      "exprId" : 13922
     }
   }, {
     "sources" : [ {
@@ -54,7 +54,7 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "updated_at",
-      "exprId" : 10825
+      "exprId" : 13923
     }
   } ]
 }

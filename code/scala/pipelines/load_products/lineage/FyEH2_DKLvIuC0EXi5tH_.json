@@ -5,57 +5,57 @@
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "id",
-      "exprId" : 10821
+      "exprId" : 13919
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "id",
-      "exprId" : 10821
+      "exprId" : 13919
     }
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "name",
-      "exprId" : 10822
+      "exprId" : 13920
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "name",
-      "exprId" : 10822
+      "exprId" : 13920
     }
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "slug",
-      "exprId" : 10824
+      "exprId" : 13922
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "slug",
-      "exprId" : 10824
+      "exprId" : 13922
     }
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "properties",
-      "exprId" : 10823
+      "exprId" : 13921
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "bonus_rate",
-      "exprId" : 10904
+      "exprId" : 13945
     },
     "transformation" : "`properties`.`bonus_rate`"
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "properties",
-      "exprId" : 10823
+      "exprId" : 13921
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "lock_in_period",
-      "exprId" : 10905
+      "exprId" : 13946
     },
     "transformation" : "`properties`.`lock_in_period`"
   } ]
