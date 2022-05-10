@@ -4,25 +4,25 @@ schema:
   fields:
   - name: acc_id
     type: integer
-    nullable: false
+    nullable: true
     metadata: {}
   - name: tran_id
     type: string
-    nullable: false
+    nullable: true
     metadata: {}
   - name: business_date
     type: date
-    nullable: false
+    nullable: true
     metadata: {}
   - name: tran_amount
     type: double
-    nullable: false
+    nullable: true
     metadata: {}
   - name: tran_type
     type: string
-    nullable: false
+    nullable: true
     metadata: {}
   - name: tran_ts
     type: timestamp
-    nullable: false
+    nullable: true
     metadata: {}

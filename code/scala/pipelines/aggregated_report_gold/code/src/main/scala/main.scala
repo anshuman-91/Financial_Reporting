@@ -12,10 +12,11 @@ import graph.get_latest
 object Main {
 
   def apply(spark: SparkSession): Unit = {
-    val df_Source_1   = Source_1(spark)
     val df_acc_status = acc_status(spark)
     val df_get_latest = get_latest.apply(spark, df_acc_status)
     val df_Join_1     = Join_1(spark,           df_get_latest)
+    val df_Source_1   = Source_1(spark)
+    val df_Reformat_1 = Reformat_1(spark,       df_Source_1)
   }
 
   def main(args: Array[String]): Unit = {

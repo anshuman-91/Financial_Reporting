@@ -48,31 +48,14 @@
     "sourcePort" : "p1pdsq4rQbghZYq43f6qS",
     "target" : "wUGZPsaKmYyx9eJnnhZIf",
     "targetPort" : "FqyneV1sodlbTcpsjS2y9"
+  }, {
+    "id" : "Ht3_9ANXoU6ZScBgLkr25",
+    "source" : "lbrMLFEj_RynkdWL2VTHl",
+    "sourcePort" : "xsApV3RwDQhO--F4lhrPD",
+    "target" : "wAbCUjyh2jFJwKEf1KXMR",
+    "targetPort" : "KRqoL-27_XkQlNpaz4CWn"
   } ],
   "processes" : {
-    "lbrMLFEj_RynkdWL2VTHl" : {
-      "id" : "lbrMLFEj_RynkdWL2VTHl",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : -283,
-        "y" : 138,
-        "language" : "scala",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "xsApV3RwDQhO--F4lhrPD",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : { }
-    },
     "wUGZPsaKmYyx9eJnnhZIf" : {
       "id" : "wUGZPsaKmYyx9eJnnhZIf",
       "component" : "Join",
@@ -155,63 +138,33 @@
         "headAlias" : "in0"
       }
     },
-    "WGv_pBjGBT1_UhY3WVLfT" : {
-      "id" : "WGv_pBjGBT1_UhY3WVLfT",
-      "component" : "Source",
+    "wAbCUjyh2jFJwKEf1KXMR" : {
+      "id" : "wAbCUjyh2jFJwKEf1KXMR",
+      "component" : "Reformat",
       "metadata" : {
-        "label" : "acc_status",
-        "slug" : "acc_status",
-        "x" : -304,
-        "y" : -59,
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -78,
+        "y" : 118,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false
       },
       "ports" : {
-        "inputs" : [ ],
+        "inputs" : [ {
+          "id" : "KRqoL-27_XkQlNpaz4CWn",
+          "slug" : "in"
+        } ],
         "outputs" : [ {
-          "id" : "BvH5HOmvjAF82bSQlXA1x",
-          "slug" : "out",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "person_id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "product_id",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "balance",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "business_date",
-              "type" : "date",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "import_ts",
-              "type" : "timestamp",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "id" : "Zs6HvscRDt9UQ9UfVN6z_",
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "datasetId" : "4088/datasets/acc_status_silver"
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
       }
     },
     "LfhwLnuJkdXdjI9O8L3XA" : {
@@ -573,6 +526,129 @@
             "userSpecifiedStart" : null
           }
         }
+      }
+    },
+    "WGv_pBjGBT1_UhY3WVLfT" : {
+      "id" : "WGv_pBjGBT1_UhY3WVLfT",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "acc_status",
+        "slug" : "acc_status",
+        "x" : -304,
+        "y" : -59,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "BvH5HOmvjAF82bSQlXA1x",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "person_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "product_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_silver"
+      }
+    },
+    "lbrMLFEj_RynkdWL2VTHl" : {
+      "id" : "lbrMLFEj_RynkdWL2VTHl",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -283,
+        "y" : 138,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xsApV3RwDQhO--F4lhrPD",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/transactions_silver"
       }
     }
   },

@@ -18,12 +18,12 @@ object load {
           .schema(
             StructType(
               Array(
-                StructField("acc_id",        IntegerType,   false),
-                StructField("tran_id",       StringType,    false),
-                StructField("business_date", DateType,      false),
-                StructField("tran_amount",   DoubleType,    false),
-                StructField("tran_type",     StringType,    false),
-                StructField("tran_ts",       TimestampType, false)
+                StructField("acc_id",        IntegerType,   true),
+                StructField("tran_id",       StringType,    true),
+                StructField("business_date", DateType,      true),
+                StructField("tran_amount",   DoubleType,    true),
+                StructField("tran_type",     StringType,    true),
+                StructField("tran_ts",       TimestampType, true)
               )
             )
           )
