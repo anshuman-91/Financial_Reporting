@@ -19,6 +19,7 @@ object load {
             StructType(
               Array(
                 StructField("acc_id",        IntegerType,   false),
+                StructField("tran_id",       StringType,    false),
                 StructField("business_date", DateType,      false),
                 StructField("tran_amount",   DoubleType,    false),
                 StructField("tran_type",     StringType,    false),

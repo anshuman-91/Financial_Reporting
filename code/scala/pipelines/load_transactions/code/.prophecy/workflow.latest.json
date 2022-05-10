@@ -89,28 +89,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             } ]
           }
@@ -122,28 +127,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "import_ts",
@@ -197,28 +207,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "import_ts",
@@ -235,28 +250,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "import_ts",
@@ -295,28 +315,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             } ]
           }
@@ -328,28 +353,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             } ]
           }
@@ -383,28 +413,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "import_ts",
@@ -444,6 +479,11 @@
             "fields" : [ {
               "name" : "acc_id",
               "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
               "nullable" : false,
               "metadata" : { }
             }, {
@@ -496,28 +536,33 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "acc_id",
-              "type" : "integer",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tran_id",
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_amount",
-              "type" : "double",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_type",
               "type" : "string",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "tran_ts",
-              "type" : "timestamp",
-              "nullable" : false,
+              "type" : "string",
+              "nullable" : true,
               "metadata" : { }
             }, {
               "name" : "import_ts",
@@ -661,28 +706,33 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_id",
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_amount",
-                  "type" : "double",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_type",
                   "type" : "string",
-                  "nullable" : false,
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_ts",
-                  "type" : "timestamp",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "import_ts",
@@ -699,28 +749,33 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_id",
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_amount",
-                  "type" : "double",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_type",
                   "type" : "string",
-                  "nullable" : false,
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_ts",
-                  "type" : "timestamp",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "import_ts",
@@ -729,8 +784,8 @@
                   "metadata" : { }
                 }, {
                   "name" : "signed_tran_amount",
-                  "type" : "double",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 } ]
               }
@@ -889,13 +944,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "balance",
@@ -917,13 +972,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "balance",
@@ -967,28 +1022,33 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_id",
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_amount",
-                  "type" : "double",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_type",
                   "type" : "string",
-                  "nullable" : false,
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "tran_ts",
-                  "type" : "timestamp",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "import_ts",
@@ -997,8 +1057,8 @@
                   "metadata" : { }
                 }, {
                   "name" : "signed_tran_amount",
-                  "type" : "double",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 } ]
               }
@@ -1010,13 +1070,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "signed_tran_amount",
@@ -1214,13 +1274,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "signed_tran_amount",
@@ -1279,13 +1339,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "balance",
@@ -1371,13 +1431,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "balance",
@@ -1399,13 +1459,13 @@
                 "type" : "struct",
                 "fields" : [ {
                   "name" : "acc_id",
-                  "type" : "integer",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "business_date",
-                  "type" : "date",
-                  "nullable" : false,
+                  "type" : "string",
+                  "nullable" : true,
                   "metadata" : { }
                 }, {
                   "name" : "balance",

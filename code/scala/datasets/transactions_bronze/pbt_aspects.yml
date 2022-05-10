@@ -6,6 +6,10 @@ schema:
     type: integer
     nullable: false
     metadata: {}
+  - name: tran_id
+    type: string
+    nullable: false
+    metadata: {}
   - name: business_date
     type: date
     nullable: false
