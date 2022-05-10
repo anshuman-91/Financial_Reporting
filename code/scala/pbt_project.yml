@@ -1,6 +1,6 @@
 name: Financial_Reporting
 description: ''
-version: '0.3'
+version: 0.3-SNAPSHOT
 author: anshuman@simpledatalabs.com
 pipelines:
   pipelines/load_person_silver:
@@ -16,19 +16,6 @@ pipelines:
       outputs:
       - 4088/datasets/person_silver
     dependencies: {}
-  pipelines/load_acc_status_silver_scala:
-    name: load_acc_status_silver
-    description: ''
-    author: anshuman@simpledatalabs.com
-    mode: batch
-    language: scala
-    createdAt: '2022-05-07 11:06:37'
-    datasets:
-      inputs:
-      - 4088/datasets/acc_status_bronze
-      outputs:
-      - 4088/datasets/acc_status_silver
-    dependencies: {}
   pipelines/load_transactions:
     name: load_transactions_silver
     description: ''
@@ -43,6 +30,17 @@ pipelines:
       outputs:
       - 4088/datasets/transactions_silver
     dependencies: {}
+  pipelines/aggregated_report_gold:
+    name: aggregated_report_gold
+    description: null
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-10 11:50:19'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
   pipelines/load_products:
     name: load_products_silver
     description: ''
@@ -55,6 +53,19 @@ pipelines:
       - 4088/datasets/products_bronze
       outputs:
       - 4088/datasets/products_silver
+    dependencies: {}
+  pipelines/load_acc_status_silver_scala:
+    name: load_acc_status_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-07 11:06:37'
+    datasets:
+      inputs:
+      - 4088/datasets/acc_status_bronze
+      outputs:
+      - 4088/datasets/acc_status_silver
     dependencies: {}
 datasets:
   datasets/transactions_bronze:

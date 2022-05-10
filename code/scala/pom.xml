@@ -16,11 +16,13 @@
         
         <module>load_person_silver</module>
         
-        <module>load_acc_status_silver</module>
-        
         <module>load_transactions_silver</module>
         
+        <module>aggregated_report_gold</module>
+        
         <module>load_products_silver</module>
+        
+        <module>load_acc_status_silver</module>
         
     </modules>
 
