@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "811",
+    "fabricId" : "838",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "interimMode" : "Full",
@@ -36,8 +36,546 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ]
   },
-  "connections" : [ ],
-  "processes" : { },
+  "connections" : [ {
+    "id" : "JTDUNVBafVbdISuv1jKo-",
+    "source" : "WGv_pBjGBT1_UhY3WVLfT",
+    "sourcePort" : "BvH5HOmvjAF82bSQlXA1x",
+    "target" : "LfhwLnuJkdXdjI9O8L3XA",
+    "targetPort" : "d6xZap_BYr0kXeSmjOsHO"
+  }, {
+    "id" : "Qo5BpSaq4PFxj36nrHdaI",
+    "source" : "LfhwLnuJkdXdjI9O8L3XA",
+    "sourcePort" : "p1pdsq4rQbghZYq43f6qS",
+    "target" : "wUGZPsaKmYyx9eJnnhZIf",
+    "targetPort" : "FqyneV1sodlbTcpsjS2y9"
+  } ],
+  "processes" : {
+    "lbrMLFEj_RynkdWL2VTHl" : {
+      "id" : "lbrMLFEj_RynkdWL2VTHl",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -283,
+        "y" : 138,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "xsApV3RwDQhO--F4lhrPD",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { }
+    },
+    "wUGZPsaKmYyx9eJnnhZIf" : {
+      "id" : "wUGZPsaKmYyx9eJnnhZIf",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : 299,
+        "y" : -22,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FqyneV1sodlbTcpsjS2y9",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "person_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "product_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "row_num",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        }, {
+          "id" : "YOViC_kwH_7mAhHWY8weM",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "m3dszDV36HQ60T4g_9SWi",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : ""
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "WGv_pBjGBT1_UhY3WVLfT" : {
+      "id" : "WGv_pBjGBT1_UhY3WVLfT",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "acc_status",
+        "slug" : "acc_status",
+        "x" : -304,
+        "y" : -59,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "BvH5HOmvjAF82bSQlXA1x",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "person_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "product_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_silver"
+      }
+    },
+    "LfhwLnuJkdXdjI9O8L3XA" : {
+      "id" : "LfhwLnuJkdXdjI9O8L3XA",
+      "component" : "SubGraph",
+      "metadata" : {
+        "label" : "get_latest",
+        "slug" : "get_latest",
+        "x" : -104,
+        "y" : -57,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d6xZap_BYr0kXeSmjOsHO",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "person_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "product_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "outputs" : [ {
+          "id" : "p1pdsq4rQbghZYq43f6qS",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "person_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "product_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "balance",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "row_num",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { },
+      "connections" : [ {
+        "id" : "nkFAiK3DJq1zge1c5ZE_7",
+        "source" : "LfhwLnuJkdXdjI9O8L3XA",
+        "sourcePort" : "d6xZap_BYr0kXeSmjOsHO",
+        "target" : "naLu3T9o4T20Mn7YaLHPf",
+        "targetPort" : "Ji7c6LnTpBGuYQWDCDzT8"
+      }, {
+        "id" : "8TPJKlawqkxN_dx-OEi0s",
+        "source" : "naLu3T9o4T20Mn7YaLHPf",
+        "sourcePort" : "jxtNGuZFsMIwvwcy9zElm",
+        "target" : "uMYjeSyWjUBiNYrniAKTp",
+        "targetPort" : "kkBl6Afw0mOBYtJv0jBy4"
+      }, {
+        "id" : "CvZvCCOz9yo1W_VmCUpbo",
+        "source" : "uMYjeSyWjUBiNYrniAKTp",
+        "sourcePort" : "rpvQbtSJZpFVCAPG4IwdR",
+        "target" : "LfhwLnuJkdXdjI9O8L3XA",
+        "targetPort" : "p1pdsq4rQbghZYq43f6qS"
+      } ],
+      "processes" : {
+        "uMYjeSyWjUBiNYrniAKTp" : {
+          "id" : "uMYjeSyWjUBiNYrniAKTp",
+          "component" : "Filter",
+          "metadata" : {
+            "label" : "Filter_1",
+            "slug" : "Filter_1",
+            "x" : 434,
+            "y" : 279,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "kkBl6Afw0mOBYtJv0jBy4",
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
+            } ],
+            "outputs" : [ {
+              "id" : "rpvQbtSJZpFVCAPG4IwdR",
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ "kkBl6Afw0mOBYtJv0jBy4##row_num" ],
+            "condition" : {
+              "format" : "sql",
+              "expression" : "row_num = 1"
+            }
+          }
+        },
+        "naLu3T9o4T20Mn7YaLHPf" : {
+          "id" : "naLu3T9o4T20Mn7YaLHPf",
+          "component" : "WindowFunction",
+          "metadata" : {
+            "label" : "WindowFunction_1",
+            "slug" : "WindowFunction_1",
+            "x" : 195,
+            "y" : 304,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "Ji7c6LnTpBGuYQWDCDzT8",
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
+            } ],
+            "outputs" : [ {
+              "id" : "jxtNGuZFsMIwvwcy9zElm",
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "userSpecifiedEnd" : null,
+            "expressionColumns" : [ {
+              "_row_id" : null,
+              "target" : "row_num",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "row_number()"
+              },
+              "description" : ""
+            } ],
+            "frameType" : "row",
+            "partitionColumns" : [ {
+              "format" : "sql",
+              "expression" : "acc_id"
+            }, {
+              "format" : "sql",
+              "expression" : "business_date"
+            } ],
+            "activeTab" : "windowUse",
+            "columnsSelector" : [ "Ji7c6LnTpBGuYQWDCDzT8##acc_id", "Ji7c6LnTpBGuYQWDCDzT8##business_date", "Ji7c6LnTpBGuYQWDCDzT8##import_ts" ],
+            "specifyFrame" : false,
+            "frameStart" : null,
+            "orderColumns" : [ {
+              "expression" : {
+                "format" : "sql",
+                "expression" : "import_ts"
+              },
+              "sortType" : "desc"
+            } ],
+            "frameEnd" : null,
+            "userSpecifiedStart" : null
+          }
+        }
+      }
+    }
+  },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],

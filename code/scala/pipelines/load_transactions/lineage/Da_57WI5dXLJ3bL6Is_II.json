@@ -3,6 +3,6 @@
   "component" : "Filter",
   "transformations" : [ {
     "sources" : [ ],
-    "transformation" : "Filter(NOT (balance#10210 = signed_tran_amount#10211))"
+    "transformation" : "Filter(NOT (balance#523 = signed_tran_amount#524))"
   } ]
 }

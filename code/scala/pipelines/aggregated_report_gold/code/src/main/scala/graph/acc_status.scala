@@ -1,4 +1,4 @@
-package graph.reconcile
+package graph
 
 import io.prophecy.libs._
 import org.apache.spark._
@@ -7,7 +7,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import config.ConfigStore._
 
-object balances_1 {
+object acc_status {
 
   def apply(spark: SparkSession): DataFrame = {
     Config.fabricName match {

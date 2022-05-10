@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>load_transactions</groupId>
-    <artifactId>load_transactions_2.12</artifactId>
+    <groupId>load_transactions_silver</groupId>
+    <artifactId>load_transactions_silver_2.12</artifactId>
     <packaging>jar</packaging>
-    <description>load_transactions</description>
+    <description>load_transactions_silver</description>
     <version>1.0</version>
-    <name>load_transactions</name>
+    <name>load_transactions_silver</name>
     <organization>
-        <name>load_transactions</name>
+        <name>load_transactions_silver</name>
     </organization>
     <properties>
         <scalaBaseVersion>2.12</scalaBaseVersion>

@@ -84,11 +84,74 @@
       "ports" : {
         "inputs" : [ {
           "id" : "J1DGc1TRMEV7MeVPr34cc",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "iyfYf0pvxFSd1tlbB2Spw",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -129,11 +192,79 @@
       "ports" : {
         "inputs" : [ {
           "id" : "0HYwZ5V93-6uJ-SSneV97",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "AqGKPEZOeUkvFbuQDj0M6",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -159,11 +290,69 @@
       "ports" : {
         "inputs" : [ {
           "id" : "Ndo4xcKE0V1enrNC5aahS",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "eKnlxWwmeaJInGEyF3r3C",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -189,7 +378,41 @@
       "ports" : {
         "inputs" : [ {
           "id" : "Lvm8KY65WanGCVgb5GlOM",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
@@ -202,8 +425,8 @@
       "id" : "uGl0hJ6lO_M96tWrLK2r1",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_0",
-        "slug" : "Source_0",
+        "label" : "load",
+        "slug" : "load",
         "x" : -1662,
         "y" : -598,
         "language" : "scala",
@@ -215,7 +438,36 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "YlcjtViFWYJRWSyPXYXzY",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -239,7 +491,41 @@
       "ports" : {
         "inputs" : [ {
           "id" : "qwbUYI1gII2N826lx2Tuq",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "acc_id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_amount",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_type",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "tran_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
@@ -312,7 +598,41 @@
             "inputs" : [ ],
             "outputs" : [ {
               "id" : "qqbz6_q3XHQuO6f1DfpXC",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -336,11 +656,84 @@
           "ports" : {
             "inputs" : [ {
               "id" : "IPn2XUO-k-yjwvqi_DNuf",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_amount",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_type",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_ts",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "Dz0WcZT7Bz1oPjYYQdwGn",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_amount",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_type",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_ts",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -381,11 +774,89 @@
           "ports" : {
             "inputs" : [ {
               "id" : "G8pG2AR31Pi0IHMmBYT7k",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "wMsTxz_hUtCwtdMLKVcGP",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -413,11 +884,59 @@
           "ports" : {
             "inputs" : [ {
               "id" : "g80txc1DfEB26EDj1W1P1",
-              "slug" : "in0"
+              "slug" : "in0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "6rwlCzlV2sYOyrC8gPJDf",
-              "slug" : "out0"
+              "slug" : "out0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -443,11 +962,69 @@
           "ports" : {
             "inputs" : [ {
               "id" : "VgefXVwBLu17NelEcLqAs",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_amount",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_type",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "tran_ts",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "0uWG-4CWMUO6n8Iwo6EGb",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -501,11 +1078,84 @@
           "ports" : {
             "inputs" : [ {
               "id" : "WI6eJ9EssNgYP03SbFRoH",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "zOMdPEeHxncX00PDRj1Bu",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -559,14 +1209,96 @@
           "ports" : {
             "inputs" : [ {
               "id" : "A1Xx3wIDfhVQmafFb01oQ",
-              "slug" : "in0"
+              "slug" : "in0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             }, {
               "id" : "ESLw5UflZbtTPVAKDX81z",
-              "slug" : "in1"
+              "slug" : "in1",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "person_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "product_id",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "import_ts",
+                  "type" : "timestamp",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "3vB7JuJCwfJOjL4Nk-k0J",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -634,11 +1366,59 @@
           "ports" : {
             "inputs" : [ {
               "id" : "U_bd_E7wyVoHWTGvBxGkg",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "cyxt5nu_a8Mv5UaMx7Frh",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "acc_id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "business_date",
+                  "type" : "date",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "balance",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "signed_tran_amount",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
