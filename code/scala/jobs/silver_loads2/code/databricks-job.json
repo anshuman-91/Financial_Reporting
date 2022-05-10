@@ -1,0 +1,172 @@
+{
+  "fabricId" : "838",
+  "components" : [ {
+    "PipelineComponent" : {
+      "id" : "4088/pipelines/load_products",
+      "nodeName" : "load_products",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_products/pipeline-latest.jar",
+      "language" : "scala"
+    }
+  }, {
+    "PipelineComponent" : {
+      "id" : "4088/pipelines/load_person_silver",
+      "nodeName" : "load_person_silver",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_person_silver/pipeline-latest.jar",
+      "language" : "scala"
+    }
+  }, {
+    "PipelineComponent" : {
+      "id" : "4088/pipelines/load_acc_status_silver_scala",
+      "nodeName" : "load_acc_status",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_acc_status_silver_scala/pipeline-latest.jar",
+      "language" : "scala"
+    }
+  }, {
+    "PipelineComponent" : {
+      "id" : "4088/pipelines/load_transactions",
+      "nodeName" : "load_trans",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_transactions/pipeline-latest.jar",
+      "language" : "scala"
+    }
+  } ],
+  "request" : {
+    "CreateNewJobRequest" : {
+      "format" : "MULTI_TASK",
+      "name" : "silver_loads2",
+      "jobClusters" : [ {
+        "job_cluster_key" : "small",
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        }
+      } ],
+      "emailNotifications" : {
+        "on_start" : [ "anshuman@simpledatalabs.com" ],
+        "on_success" : [ "anshuman@simpledatalabs.com" ],
+        "on_failure" : [ "anshuman@simpledatalabs.com" ]
+      },
+      "maxConcurrentRuns" : 1,
+      "tasks" : [ {
+        "task_key" : "load_products",
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        },
+        "spark_jar_task" : {
+          "main_class_name" : "Main",
+          "parameters" : [ "-C", "fabricName=anshuman2" ]
+        },
+        "libraries" : [ {
+          "maven" : {
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.5.1-3.2.0",
+            "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
+          }
+        }, {
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_products/pipeline-latest.jar"
+        } ],
+        "email_notifications" : {
+          "on_start" : [ "anshuman@simpledatalabs.com" ],
+          "on_success" : [ "anshuman@simpledatalabs.com" ],
+          "on_failure" : [ "anshuman@simpledatalabs.com" ]
+        }
+      }, {
+        "task_key" : "load_person_silver",
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        },
+        "spark_jar_task" : {
+          "main_class_name" : "Main",
+          "parameters" : [ "-C", "fabricName=anshuman2" ]
+        },
+        "libraries" : [ {
+          "maven" : {
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.5.1-3.2.0",
+            "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
+          }
+        }, {
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_person_silver/pipeline-latest.jar"
+        } ],
+        "email_notifications" : {
+          "on_start" : [ "anshuman@simpledatalabs.com" ],
+          "on_success" : [ "anshuman@simpledatalabs.com" ],
+          "on_failure" : [ "anshuman@simpledatalabs.com" ]
+        }
+      }, {
+        "task_key" : "load_acc_status",
+        "depends_on" : [ {
+          "task_key" : "load_products"
+        }, {
+          "task_key" : "load_person_silver"
+        } ],
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        },
+        "spark_jar_task" : {
+          "main_class_name" : "Main",
+          "parameters" : [ "-C", "fabricName=anshuman2" ]
+        },
+        "libraries" : [ {
+          "maven" : {
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.5.1-3.2.0",
+            "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
+          }
+        }, {
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_acc_status_silver_scala/pipeline-latest.jar"
+        } ],
+        "email_notifications" : {
+          "on_start" : [ "anshuman@simpledatalabs.com" ],
+          "on_success" : [ "anshuman@simpledatalabs.com" ],
+          "on_failure" : [ "anshuman@simpledatalabs.com" ]
+        }
+      }, {
+        "task_key" : "load_trans",
+        "depends_on" : [ {
+          "task_key" : "load_acc_status"
+        } ],
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        },
+        "spark_jar_task" : {
+          "main_class_name" : "Main",
+          "parameters" : [ "-C", "fabricName=anshuman2" ]
+        },
+        "libraries" : [ {
+          "maven" : {
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.5.1-3.2.0",
+            "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
+          }
+        }, {
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/4088-Financial_Reporting/4088/pipelines/load_transactions/pipeline-latest.jar"
+        } ],
+        "email_notifications" : {
+          "on_start" : [ "anshuman@simpledatalabs.com" ],
+          "on_success" : [ "anshuman@simpledatalabs.com" ],
+          "on_failure" : [ "anshuman@simpledatalabs.com" ]
+        }
+      } ],
+      "schedule" : {
+        "quartz_cron_expression" : "0 0 0 1/1 * ? *",
+        "timezone_id" : "GMT",
+        "pause_status" : "UNPAUSED"
+      }
+    }
+  }
+}

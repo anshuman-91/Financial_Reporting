@@ -184,57 +184,27 @@ datasets:
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 10:38:45'
 jobs:
-  jobs/silver_loads:
-    name: silver_loads
+  jobs/silver_loads2:
+    name: silver_loads2
     description: ''
-    fabricUID: null
-    scheduler: null
-    jobSize: null
-    scheduleCron: null
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    enabled: null
-    createdAt: '2022-05-10 05:16:39'
-    author: anshuman@simpledatalabs.com
-  jobs/ttt:
-    name: ttt
-    description: ''
-    fabricUID: null
-    scheduler: null
-    jobSize: null
-    scheduleCron: null
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    enabled: null
-    createdAt: '2022-05-10 05:35:56'
-    author: anshuman@simpledatalabs.com
-  jobs/test:
-    name: test
-    description: ''
-    fabricUID: null
-    scheduler: null
-    jobSize: Small
+    fabricUID: 838
+    scheduler:
+      Databricks: {}
+    jobSize: small
     scheduleCron: 0 0 0 1/1 * ? *
     timeout: null
     alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
+      emails: anshuman@simpledatalabs.com
+      onStart: true
+      onSuccess: true
+      onFailure: true
     pipelines:
+    - 4088/pipelines/load_products
     - 4088/pipelines/load_person_silver
+    - 4088/pipelines/load_acc_status_silver_scala
+    - 4088/pipelines/load_transactions
     enabled: true
-    createdAt: '2022-05-10 06:23:01'
+    createdAt: '2022-05-10 06:37:27'
     author: anshuman@simpledatalabs.com
   jobs/import_products:
     name: import_products
@@ -257,6 +227,61 @@ jobs:
     - 4088/pipelines/load_products
     enabled: true
     createdAt: '2022-05-08 15:33:04'
+    author: anshuman@simpledatalabs.com
+  jobs/ttt:
+    name: ttt
+    description: ''
+    fabricUID: null
+    scheduler:
+      Airflow: {}
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    enabled: null
+    createdAt: '2022-05-10 05:35:56'
+    author: anshuman@simpledatalabs.com
+  jobs/test:
+    name: test
+    description: ''
+    fabricUID: null
+    scheduler:
+      Airflow: {}
+    jobSize: Small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - 4088/pipelines/load_person_silver
+    enabled: true
+    createdAt: '2022-05-10 06:23:01'
+    author: anshuman@simpledatalabs.com
+  jobs/silver_loads:
+    name: silver_loads
+    description: ''
+    fabricUID: null
+    scheduler:
+      Airflow: {}
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    enabled: null
+    createdAt: '2022-05-10 05:16:39'
     author: anshuman@simpledatalabs.com
 libraries: []
 subgraphs: {}
