@@ -149,8 +149,8 @@
       "metadata" : {
         "label" : "null_check",
         "slug" : "null_check",
-        "x" : -813,
-        "y" : -481,
+        "x" : -859,
+        "y" : -482,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,

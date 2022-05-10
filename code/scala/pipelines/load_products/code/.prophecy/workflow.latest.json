@@ -84,11 +84,69 @@
       "ports" : {
         "inputs" : [ {
           "id" : "grXCEm7CNvdbi9lmb9uz4",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "bonus_rate",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "lock_in_period",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "nT2E_fbgc6Z3C0U6i7pCV",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "bonus_rate",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "lock_in_period",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -114,11 +172,100 @@
       "ports" : {
         "inputs" : [ {
           "id" : "4_QY--noX_wPPb1MJMTS5",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "properties",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "bonus_rate",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "lock_in_period",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              },
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "updated_at",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "ig8t98xFs6NG3HdjFkRtp",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "properties",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "bonus_rate",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "lock_in_period",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              },
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "updated_at",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "row_num",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -159,11 +306,105 @@
           "ports" : {
             "inputs" : [ {
               "id" : "D1wIu2xsG9FSL3uiNnwES",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "properties",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "bonus_rate",
+                      "type" : "double",
+                      "nullable" : false,
+                      "metadata" : { }
+                    }, {
+                      "name" : "lock_in_period",
+                      "type" : "integer",
+                      "nullable" : true,
+                      "metadata" : { }
+                    } ]
+                  },
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "slug",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "updated_at",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "rukEfio2rT9sVbcffzCVl",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "properties",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "bonus_rate",
+                      "type" : "double",
+                      "nullable" : false,
+                      "metadata" : { }
+                    }, {
+                      "name" : "lock_in_period",
+                      "type" : "integer",
+                      "nullable" : true,
+                      "metadata" : { }
+                    } ]
+                  },
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "slug",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "updated_at",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -191,11 +432,100 @@
           "ports" : {
             "inputs" : [ {
               "id" : "za_ArjxfR_1ZoazWLNsbD",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "properties",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "bonus_rate",
+                      "type" : "double",
+                      "nullable" : false,
+                      "metadata" : { }
+                    }, {
+                      "name" : "lock_in_period",
+                      "type" : "integer",
+                      "nullable" : true,
+                      "metadata" : { }
+                    } ]
+                  },
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "slug",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "updated_at",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "ulvyu7iEnlQpiqYURq3Ib",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "id",
+                  "type" : "integer",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "properties",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "bonus_rate",
+                      "type" : "double",
+                      "nullable" : false,
+                      "metadata" : { }
+                    }, {
+                      "name" : "lock_in_period",
+                      "type" : "integer",
+                      "nullable" : true,
+                      "metadata" : { }
+                    } ]
+                  },
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "slug",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "updated_at",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "row_num",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
@@ -248,11 +578,79 @@
       "ports" : {
         "inputs" : [ {
           "id" : "StJp90MhyXH5aCwE4mkxE",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "bonus_rate",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "lock_in_period",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "M3TNhNLYXL1ADCNnwI8Ih",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "bonus_rate",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "lock_in_period",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -309,7 +707,46 @@
       "ports" : {
         "inputs" : [ {
           "id" : "Xm3EChhFaMRI5oB7IsHy6",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "bonus_rate",
+              "type" : "double",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "lock_in_period",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "import_ts",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "business_date",
+              "type" : "date",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
@@ -399,7 +836,49 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "xIfWZ5LVPF0LSKgW-LeEL",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "properties",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "bonus_rate",
+                  "type" : "double",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "lock_in_period",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              },
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "slug",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "updated_at",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },

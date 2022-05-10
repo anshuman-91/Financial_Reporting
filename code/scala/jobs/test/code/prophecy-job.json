@@ -1,0 +1,61 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "811",
+    "name" : "test",
+    "schedule" : "0 0 0 1/1 * ? *",
+    "enabled" : true,
+    "defaultClusterSize" : "Small",
+    "availableClusterSizes" : [ "Small", "small" ],
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 1,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    }
+  },
+  "processes" : {
+    "IpYejyD3K3s3bD2upD4m7" : {
+      "id" : "IpYejyD3K3s3bD2upD4m7",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline",
+        "x" : 487,
+        "y" : 245
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7IuE0dOLTfdMNyIvj9jpJ"
+        } ],
+        "outputs" : [ {
+          "id" : "wmHM58-0Noeh9v9s5-niH"
+        } ]
+      },
+      "settings" : {
+        "type" : "UserDefined",
+        "alerting" : {
+          "emails" : "anshuman@simpledatalabs.com",
+          "onStart" : true,
+          "onSuccess" : true,
+          "onFailure" : true
+        }
+      },
+      "properties" : {
+        "pipelineId" : "4088/pipelines/load_person_silver",
+        "configurations" : [ ]
+      }
+    }
+  },
+  "connections" : [ ]
+}

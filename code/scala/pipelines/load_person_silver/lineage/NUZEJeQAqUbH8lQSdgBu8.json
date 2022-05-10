@@ -3,9 +3,9 @@
   "component" : "RowDistributor",
   "transformations" : [ {
     "sources" : [ ],
-    "transformation" : "Filter((type#10295 = PRIMARY))"
+    "transformation" : "Filter((type#14321 = PRIMARY))"
   }, {
     "sources" : [ ],
-    "transformation" : "Filter((type#10295 = ALTERNATE))"
+    "transformation" : "Filter((type#14321 = ALTERNATE))"
   } ]
 }

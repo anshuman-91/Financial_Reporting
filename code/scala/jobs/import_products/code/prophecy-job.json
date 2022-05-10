@@ -4,7 +4,7 @@
     "fabricId" : "811",
     "name" : "import_products",
     "schedule" : "0 0 0 1/1 * ? *",
-    "enabled" : true,
+    "enabled" : false,
     "defaultClusterSize" : "Small",
     "availableClusterSizes" : [ "Small", "small" ],
     "alerting" : {

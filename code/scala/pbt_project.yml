@@ -1,6 +1,6 @@
 name: Financial_Reporting
 description: ''
-version: 0.1-SNAPSHOT
+version: '0.2'
 author: anshuman@simpledatalabs.com
 pipelines:
   pipelines/load_person_silver:
@@ -203,8 +203,60 @@ jobs:
     - 4088/pipelines/load_acc_status_silver_scala
     - 4088/pipelines/load_person_silver
     - 4088/pipelines/load_products
-    enabled: true
+    enabled: false
     createdAt: '2022-05-08 15:33:04'
+    author: anshuman@simpledatalabs.com
+  jobs/silver_loads:
+    name: silver_loads
+    description: ''
+    fabricUID: null
+    scheduler: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    enabled: null
+    createdAt: '2022-05-10 05:16:39'
+    author: anshuman@simpledatalabs.com
+  jobs/ttt:
+    name: ttt
+    description: ''
+    fabricUID: null
+    scheduler: null
+    jobSize: null
+    scheduleCron: null
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    enabled: null
+    createdAt: '2022-05-10 05:35:56'
+    author: anshuman@simpledatalabs.com
+  jobs/test:
+    name: test
+    description: ''
+    fabricUID: null
+    scheduler: null
+    jobSize: Small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - 4088/pipelines/load_person_silver
+    enabled: true
+    createdAt: '2022-05-10 06:23:01'
     author: anshuman@simpledatalabs.com
 libraries: []
 subgraphs: {}
