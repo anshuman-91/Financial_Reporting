@@ -1,6 +1,6 @@
 name: Financial_Reporting
 description: ''
-version: '0.2'
+version: 0.2-SNAPSHOT
 author: anshuman@simpledatalabs.com
 pipelines:
   pipelines/load_person_silver:
@@ -16,8 +16,21 @@ pipelines:
       outputs:
       - 4088/datasets/person_silver
     dependencies: {}
+  pipelines/load_acc_status_silver_scala:
+    name: load_acc_status_silver
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-07 11:06:37'
+    datasets:
+      inputs:
+      - 4088/datasets/acc_status_bronze
+      outputs:
+      - 4088/datasets/acc_status_silver
+    dependencies: {}
   pipelines/load_transactions:
-    name: load_transactions
+    name: load_transactions_silver
     description: ''
     author: anshuman@simpledatalabs.com
     mode: batch
@@ -31,7 +44,7 @@ pipelines:
       - 4088/datasets/transactions_silver
     dependencies: {}
   pipelines/load_products:
-    name: load_products
+    name: load_products_silver
     description: ''
     author: anshuman@simpledatalabs.com
     mode: batch
@@ -42,19 +55,6 @@ pipelines:
       - 4088/datasets/products_bronze
       outputs:
       - 4088/datasets/products_silver
-    dependencies: {}
-  pipelines/load_acc_status_silver_scala:
-    name: load_acc_status_silver
-    description: ''
-    author: anshuman@simpledatalabs.com
-    mode: batch
-    language: scala
-    createdAt: '2022-05-07 11:06:37'
-    datasets:
-      inputs:
-      - 4088/datasets/acc_status_bronze
-      outputs:
-      - 4088/datasets/acc_status_silver
     dependencies: {}
 datasets:
   datasets/transactions_bronze:
@@ -184,28 +184,6 @@ datasets:
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 10:38:45'
 jobs:
-  jobs/import_products:
-    name: import_products
-    description: ''
-    fabricUID: null
-    scheduler:
-      Airflow: {}
-    jobSize: Small
-    scheduleCron: 0 0 0 1/1 * ? *
-    timeout: null
-    alerting:
-      emails: anshuman@simpledatalabs.com
-      onStart: true
-      onSuccess: true
-      onFailure: true
-    pipelines:
-    - 4088/pipelines/load_transactions
-    - 4088/pipelines/load_acc_status_silver_scala
-    - 4088/pipelines/load_person_silver
-    - 4088/pipelines/load_products
-    enabled: false
-    createdAt: '2022-05-08 15:33:04'
-    author: anshuman@simpledatalabs.com
   jobs/silver_loads:
     name: silver_loads
     description: ''
@@ -257,6 +235,28 @@ jobs:
     - 4088/pipelines/load_person_silver
     enabled: true
     createdAt: '2022-05-10 06:23:01'
+    author: anshuman@simpledatalabs.com
+  jobs/import_products:
+    name: import_products
+    description: ''
+    fabricUID: null
+    scheduler:
+      Airflow: {}
+    jobSize: Small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: anshuman@simpledatalabs.com
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - 4088/pipelines/load_transactions
+    - 4088/pipelines/load_acc_status_silver_scala
+    - 4088/pipelines/load_person_silver
+    - 4088/pipelines/load_products
+    enabled: true
+    createdAt: '2022-05-08 15:33:04'
     author: anshuman@simpledatalabs.com
 libraries: []
 subgraphs: {}
