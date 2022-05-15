@@ -1,38 +1,17 @@
 {
+  "id" : "bSkyCMTvQWbNGE2W6Id8z",
   "name" : "bSkyCMTvQWbNGE2W6Id8z",
   "component" : "Source",
   "transformations" : [ {
     "sources" : [ {
       "port" : "",
-      "name" : "id",
-      "exprId" : -1
-    } ],
-    "destination" : {
-      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
-      "name" : "id",
-      "exprId" : 13919
-    }
-  }, {
-    "sources" : [ {
-      "port" : "",
       "name" : "name",
       "exprId" : -1
     } ],
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "name",
-      "exprId" : 13920
-    }
-  }, {
-    "sources" : [ {
-      "port" : "",
-      "name" : "properties",
-      "exprId" : -1
-    } ],
-    "destination" : {
-      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
-      "name" : "properties",
-      "exprId" : 13921
+      "exprId" : 2
     }
   }, {
     "sources" : [ {
@@ -43,7 +22,29 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 4
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "id",
+      "exprId" : 1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "properties",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xIfWZ5LVPF0LSKgW-LeEL",
+      "name" : "properties",
+      "exprId" : 3
     }
   }, {
     "sources" : [ {
@@ -54,7 +55,28 @@
     "destination" : {
       "port" : "xIfWZ5LVPF0LSKgW-LeEL",
       "name" : "updated_at",
-      "exprId" : 13923
+      "exprId" : 5
     }
-  } ]
+  } ],
+  "inputs" : { },
+  "outputs" : {
+    "xIfWZ5LVPF0LSKgW-LeEL" : {
+      "columns" : [ {
+        "name" : "name",
+        "exprId" : 2
+      }, {
+        "name" : "slug",
+        "exprId" : 4
+      }, {
+        "name" : "id",
+        "exprId" : 1
+      }, {
+        "name" : "properties",
+        "exprId" : 3
+      }, {
+        "name" : "updated_at",
+        "exprId" : 5
+      } ]
+    }
+  }
 }

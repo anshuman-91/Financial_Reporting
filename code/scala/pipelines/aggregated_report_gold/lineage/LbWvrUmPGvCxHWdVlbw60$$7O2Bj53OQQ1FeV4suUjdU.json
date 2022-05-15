@@ -1,0 +1,122 @@
+{
+  "id" : "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU",
+  "name" : "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU",
+  "component" : "Aggregate",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "business_date",
+      "exprId" : 6069
+    } ],
+    "destination" : {
+      "port" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
+      "name" : "business_date",
+      "exprId" : 6069
+    }
+  }, {
+    "sources" : [ {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "acc_id",
+      "exprId" : 6064
+    } ],
+    "destination" : {
+      "port" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
+      "name" : "acc_id",
+      "exprId" : 6064
+    }
+  }, {
+    "sources" : [ {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "tran_type",
+      "exprId" : 6067
+    }, {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "tran_amount",
+      "exprId" : 6066
+    } ],
+    "destination" : {
+      "port" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
+      "name" : "total_inflows",
+      "exprId" : 6086
+    },
+    "transformation" : "sum(CASE WHEN (`tran_type` = 'CREDIT') THEN `tran_amount` ELSE CAST(0 AS DOUBLE) END)"
+  }, {
+    "sources" : [ {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "tran_type",
+      "exprId" : 6067
+    }, {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "tran_amount",
+      "exprId" : 6066
+    } ],
+    "destination" : {
+      "port" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
+      "name" : "total_outflows",
+      "exprId" : 6088
+    },
+    "transformation" : "sum(CASE WHEN (`tran_type` = 'DEBIT') THEN `tran_amount` ELSE CAST(0 AS DOUBLE) END)"
+  }, {
+    "sources" : [ {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "tran_type",
+      "exprId" : 6067
+    }, {
+      "port" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u",
+      "name" : "tran_amount",
+      "exprId" : 6066
+    } ],
+    "destination" : {
+      "port" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
+      "name" : "interest_inflow",
+      "exprId" : 6090
+    },
+    "transformation" : "sum(CASE WHEN (`tran_type` = 'INTEREST') THEN `tran_amount` ELSE CAST(0 AS DOUBLE) END)"
+  } ],
+  "inputs" : {
+    "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6064
+      }, {
+        "name" : "tran_id",
+        "exprId" : 6065
+      }, {
+        "name" : "tran_amount",
+        "exprId" : 6066
+      }, {
+        "name" : "tran_type",
+        "exprId" : 6067
+      }, {
+        "name" : "tran_ts",
+        "exprId" : 6068
+      }, {
+        "name" : "business_date",
+        "exprId" : 6069
+      }, {
+        "name" : "import_ts",
+        "exprId" : 6070
+      } ]
+    }
+  },
+  "outputs" : {
+    "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv" : {
+      "columns" : [ {
+        "name" : "business_date",
+        "exprId" : 6069
+      }, {
+        "name" : "acc_id",
+        "exprId" : 6064
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6086
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6088
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6090
+      } ]
+    }
+  }
+}

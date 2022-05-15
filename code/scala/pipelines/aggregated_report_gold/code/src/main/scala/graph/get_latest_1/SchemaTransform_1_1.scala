@@ -1,4 +1,4 @@
-package graph
+package graph.get_latest_1
 
 import io.prophecy.libs._
 import org.apache.spark._
@@ -9,10 +9,6 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object import_ts {
-
-  def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.withColumn("import_ts",     current_timestamp())
-      .withColumn("business_date", to_date(lit("2022-05-05")))
-
+object SchemaTransform_1_1 {
+  def apply(spark: SparkSession, in: DataFrame): DataFrame = in.drop("row_num")
 }

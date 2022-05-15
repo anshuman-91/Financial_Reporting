@@ -1,0 +1,164 @@
+{
+  "id" : "y-LiT_AtAwW4wV6j1V9Ka$$Ne1ePILs06_UmwhxXiiW9",
+  "name" : "y-LiT_AtAwW4wV6j1V9Ka$$Ne1ePILs06_UmwhxXiiW9",
+  "component" : "Join",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw",
+      "name" : "acc_id",
+      "exprId" : 6212
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "acc_id",
+      "exprId" : 6272
+    }
+  }, {
+    "sources" : [ {
+      "port" : "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw",
+      "name" : "business_date",
+      "exprId" : 6216
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "business_date",
+      "exprId" : 6273
+    }
+  }, {
+    "sources" : [ {
+      "port" : "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw",
+      "name" : "person_id",
+      "exprId" : 6213
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "person_id",
+      "exprId" : 6274
+    }
+  }, {
+    "sources" : [ {
+      "port" : "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw",
+      "name" : "product_id",
+      "exprId" : 6214
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "product_id",
+      "exprId" : 6275
+    }
+  }, {
+    "sources" : [ {
+      "port" : "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw",
+      "name" : "balance",
+      "exprId" : 6215
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "balance",
+      "exprId" : 6276
+    }
+  }, {
+    "sources" : [ {
+      "port" : "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D",
+      "name" : "total_inflows",
+      "exprId" : 6231
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "total_inflows",
+      "exprId" : 6277
+    }
+  }, {
+    "sources" : [ {
+      "port" : "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D",
+      "name" : "total_outflows",
+      "exprId" : 6232
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "total_outflows",
+      "exprId" : 6278
+    }
+  }, {
+    "sources" : [ {
+      "port" : "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D",
+      "name" : "interest_inflow",
+      "exprId" : 6233
+    } ],
+    "destination" : {
+      "port" : "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8",
+      "name" : "interest_inflow",
+      "exprId" : 6279
+    }
+  } ],
+  "inputs" : {
+    "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6212
+      }, {
+        "name" : "person_id",
+        "exprId" : 6213
+      }, {
+        "name" : "product_id",
+        "exprId" : 6214
+      }, {
+        "name" : "balance",
+        "exprId" : 6215
+      }, {
+        "name" : "business_date",
+        "exprId" : 6216
+      }, {
+        "name" : "import_ts",
+        "exprId" : 6217
+      } ]
+    },
+    "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D" : {
+      "columns" : [ {
+        "name" : "business_date",
+        "exprId" : 6229
+      }, {
+        "name" : "acc_id",
+        "exprId" : 6230
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6231
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6232
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6233
+      } ]
+    }
+  },
+  "outputs" : {
+    "S4J4ahsYlyQQG_kgeAEtx$$ZxB5i-gLTVr2DITFgL4o8" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6272
+      }, {
+        "name" : "business_date",
+        "exprId" : 6273
+      }, {
+        "name" : "person_id",
+        "exprId" : 6274
+      }, {
+        "name" : "product_id",
+        "exprId" : 6275
+      }, {
+        "name" : "balance",
+        "exprId" : 6276
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6277
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6278
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6279
+      } ]
+    }
+  }
+}

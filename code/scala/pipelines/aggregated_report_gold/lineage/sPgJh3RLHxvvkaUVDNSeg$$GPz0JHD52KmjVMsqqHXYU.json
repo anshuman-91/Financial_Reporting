@@ -1,0 +1,94 @@
+{
+  "id" : "sPgJh3RLHxvvkaUVDNSeg$$GPz0JHD52KmjVMsqqHXYU",
+  "name" : "sPgJh3RLHxvvkaUVDNSeg$$GPz0JHD52KmjVMsqqHXYU",
+  "component" : "Reformat",
+  "transformations" : [ ],
+  "inputs" : {
+    "fXeQFhppRhNdK5f86UF8X$$6EHF0NK9lKUcaQzGSi01h" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6522
+      }, {
+        "name" : "business_date",
+        "exprId" : 6523
+      }, {
+        "name" : "person_id",
+        "exprId" : 6524
+      }, {
+        "name" : "product_id",
+        "exprId" : 6525
+      }, {
+        "name" : "balance",
+        "exprId" : 6526
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6527
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6528
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6529
+      }, {
+        "name" : "id",
+        "exprId" : 6530
+      }, {
+        "name" : "name",
+        "exprId" : 6531
+      }, {
+        "name" : "slug",
+        "exprId" : 6532
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 6533
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 6534
+      } ]
+    }
+  },
+  "outputs" : {
+    "NAdYMXlLWVBgjJHWQ7Sou$$rQAEtmte4iXj7M_37wMmR" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6522
+      }, {
+        "name" : "business_date",
+        "exprId" : 6523
+      }, {
+        "name" : "person_id",
+        "exprId" : 6524
+      }, {
+        "name" : "product_id",
+        "exprId" : 6525
+      }, {
+        "name" : "balance",
+        "exprId" : 6526
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6527
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6528
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6529
+      }, {
+        "name" : "id",
+        "exprId" : 6530
+      }, {
+        "name" : "name",
+        "exprId" : 6531
+      }, {
+        "name" : "slug",
+        "exprId" : 6532
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 6533
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 6534
+      } ]
+    }
+  }
+}

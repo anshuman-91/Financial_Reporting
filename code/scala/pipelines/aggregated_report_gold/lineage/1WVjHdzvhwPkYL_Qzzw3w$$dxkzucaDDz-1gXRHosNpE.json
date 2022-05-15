@@ -1,0 +1,246 @@
+{
+  "id" : "1WVjHdzvhwPkYL_Qzzw3w$$dxkzucaDDz-1gXRHosNpE",
+  "name" : "1WVjHdzvhwPkYL_Qzzw3w$$dxkzucaDDz-1gXRHosNpE",
+  "component" : "Join",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "acc_id",
+      "exprId" : 6401
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "acc_id",
+      "exprId" : 6483
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "business_date",
+      "exprId" : 6402
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "business_date",
+      "exprId" : 6484
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "person_id",
+      "exprId" : 6403
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "person_id",
+      "exprId" : 6485
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "product_id",
+      "exprId" : 6404
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "product_id",
+      "exprId" : 6486
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "balance",
+      "exprId" : 6405
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "balance",
+      "exprId" : 6487
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "total_inflows",
+      "exprId" : 6406
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "total_inflows",
+      "exprId" : 6488
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "total_outflows",
+      "exprId" : 6407
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "total_outflows",
+      "exprId" : 6489
+    }
+  }, {
+    "sources" : [ {
+      "port" : "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy",
+      "name" : "interest_inflow",
+      "exprId" : 6408
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "interest_inflow",
+      "exprId" : 6490
+    }
+  }, {
+    "sources" : [ {
+      "port" : "M9nH8uVU_KXeYtROVUGlt$$S1qSel0Fpnb-Y2qbkHgYG",
+      "name" : "id",
+      "exprId" : 6424
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "id",
+      "exprId" : 6491
+    }
+  }, {
+    "sources" : [ {
+      "port" : "M9nH8uVU_KXeYtROVUGlt$$S1qSel0Fpnb-Y2qbkHgYG",
+      "name" : "name",
+      "exprId" : 6425
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "name",
+      "exprId" : 6492
+    }
+  }, {
+    "sources" : [ {
+      "port" : "M9nH8uVU_KXeYtROVUGlt$$S1qSel0Fpnb-Y2qbkHgYG",
+      "name" : "slug",
+      "exprId" : 6426
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "slug",
+      "exprId" : 6493
+    }
+  }, {
+    "sources" : [ {
+      "port" : "M9nH8uVU_KXeYtROVUGlt$$S1qSel0Fpnb-Y2qbkHgYG",
+      "name" : "bonus_rate",
+      "exprId" : 6427
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "bonus_rate",
+      "exprId" : 6494
+    }
+  }, {
+    "sources" : [ {
+      "port" : "M9nH8uVU_KXeYtROVUGlt$$S1qSel0Fpnb-Y2qbkHgYG",
+      "name" : "lock_in_period",
+      "exprId" : 6428
+    } ],
+    "destination" : {
+      "port" : "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8",
+      "name" : "lock_in_period",
+      "exprId" : 6495
+    }
+  } ],
+  "inputs" : {
+    "oDB31D1Qae5Af-m6IUm1n$$Q6AOMsYD-BKsQTYn2jOMy" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6401
+      }, {
+        "name" : "business_date",
+        "exprId" : 6402
+      }, {
+        "name" : "person_id",
+        "exprId" : 6403
+      }, {
+        "name" : "product_id",
+        "exprId" : 6404
+      }, {
+        "name" : "balance",
+        "exprId" : 6405
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6406
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6407
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6408
+      } ]
+    },
+    "M9nH8uVU_KXeYtROVUGlt$$S1qSel0Fpnb-Y2qbkHgYG" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 6424
+      }, {
+        "name" : "name",
+        "exprId" : 6425
+      }, {
+        "name" : "slug",
+        "exprId" : 6426
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 6427
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 6428
+      }, {
+        "name" : "import_ts",
+        "exprId" : 6429
+      }, {
+        "name" : "business_date",
+        "exprId" : 6430
+      } ]
+    }
+  },
+  "outputs" : {
+    "VeFbIduXZfPTgcG2kzHO_$$QLLJL4cpm1uTF3RcnMtB8" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 6483
+      }, {
+        "name" : "business_date",
+        "exprId" : 6484
+      }, {
+        "name" : "person_id",
+        "exprId" : 6485
+      }, {
+        "name" : "product_id",
+        "exprId" : 6486
+      }, {
+        "name" : "balance",
+        "exprId" : 6487
+      }, {
+        "name" : "total_inflows",
+        "exprId" : 6488
+      }, {
+        "name" : "total_outflows",
+        "exprId" : 6489
+      }, {
+        "name" : "interest_inflow",
+        "exprId" : 6490
+      }, {
+        "name" : "id",
+        "exprId" : 6491
+      }, {
+        "name" : "name",
+        "exprId" : 6492
+      }, {
+        "name" : "slug",
+        "exprId" : 6493
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 6494
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 6495
+      } ]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "id" : "WGv_pBjGBT1_UhY3WVLfT",
   "name" : "WGv_pBjGBT1_UhY3WVLfT",
   "component" : "Source",
   "transformations" : [ {
@@ -10,7 +11,7 @@
     "destination" : {
       "port" : "BvH5HOmvjAF82bSQlXA1x",
       "name" : "acc_id",
-      "exprId" : 288
+      "exprId" : 1
     }
   }, {
     "sources" : [ {
@@ -21,40 +22,7 @@
     "destination" : {
       "port" : "BvH5HOmvjAF82bSQlXA1x",
       "name" : "person_id",
-      "exprId" : 289
-    }
-  }, {
-    "sources" : [ {
-      "port" : "",
-      "name" : "product_id",
-      "exprId" : -1
-    } ],
-    "destination" : {
-      "port" : "BvH5HOmvjAF82bSQlXA1x",
-      "name" : "product_id",
-      "exprId" : 290
-    }
-  }, {
-    "sources" : [ {
-      "port" : "",
-      "name" : "balance",
-      "exprId" : -1
-    } ],
-    "destination" : {
-      "port" : "BvH5HOmvjAF82bSQlXA1x",
-      "name" : "balance",
-      "exprId" : 291
-    }
-  }, {
-    "sources" : [ {
-      "port" : "",
-      "name" : "business_date",
-      "exprId" : -1
-    } ],
-    "destination" : {
-      "port" : "BvH5HOmvjAF82bSQlXA1x",
-      "name" : "business_date",
-      "exprId" : 292
+      "exprId" : 2
     }
   }, {
     "sources" : [ {
@@ -65,7 +33,64 @@
     "destination" : {
       "port" : "BvH5HOmvjAF82bSQlXA1x",
       "name" : "import_ts",
-      "exprId" : 293
+      "exprId" : 6
     }
-  } ]
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "balance",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "BvH5HOmvjAF82bSQlXA1x",
+      "name" : "balance",
+      "exprId" : 4
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "business_date",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "BvH5HOmvjAF82bSQlXA1x",
+      "name" : "business_date",
+      "exprId" : 5
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "product_id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "BvH5HOmvjAF82bSQlXA1x",
+      "name" : "product_id",
+      "exprId" : 3
+    }
+  } ],
+  "inputs" : { },
+  "outputs" : {
+    "BvH5HOmvjAF82bSQlXA1x" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1
+      }, {
+        "name" : "person_id",
+        "exprId" : 2
+      }, {
+        "name" : "import_ts",
+        "exprId" : 6
+      }, {
+        "name" : "balance",
+        "exprId" : 4
+      }, {
+        "name" : "business_date",
+        "exprId" : 5
+      }, {
+        "name" : "product_id",
+        "exprId" : 3
+      } ]
+    }
+  }
 }

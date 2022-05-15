@@ -1,62 +1,106 @@
 {
+  "id" : "FyEH2_DKLvIuC0EXi5tH_",
   "name" : "FyEH2_DKLvIuC0EXi5tH_",
   "component" : "Reformat",
   "transformations" : [ {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "id",
-      "exprId" : 13919
+      "exprId" : 5704
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "id",
-      "exprId" : 13919
+      "exprId" : 5704
     }
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "name",
-      "exprId" : 13920
+      "exprId" : 5705
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "name",
-      "exprId" : 13920
+      "exprId" : 5705
     }
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 5707
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 5707
     }
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "properties",
-      "exprId" : 13921
+      "exprId" : 5706
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "bonus_rate",
-      "exprId" : 13945
+      "exprId" : 5716
     },
     "transformation" : "`properties`.`bonus_rate`"
   }, {
     "sources" : [ {
       "port" : "OPC5pGk6rix6WSlmQOg-H",
       "name" : "properties",
-      "exprId" : 13921
+      "exprId" : 5706
     } ],
     "destination" : {
       "port" : "_VNDdbuwri3i_CZzmz-le",
       "name" : "lock_in_period",
-      "exprId" : 13946
+      "exprId" : 5717
     },
     "transformation" : "`properties`.`lock_in_period`"
-  } ]
+  } ],
+  "inputs" : {
+    "OPC5pGk6rix6WSlmQOg-H" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 5704
+      }, {
+        "name" : "name",
+        "exprId" : 5705
+      }, {
+        "name" : "properties",
+        "exprId" : 5706
+      }, {
+        "name" : "slug",
+        "exprId" : 5707
+      }, {
+        "name" : "updated_at",
+        "exprId" : 5708
+      }, {
+        "name" : "row_num",
+        "exprId" : 5709
+      } ]
+    }
+  },
+  "outputs" : {
+    "_VNDdbuwri3i_CZzmz-le" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 5704
+      }, {
+        "name" : "name",
+        "exprId" : 5705
+      }, {
+        "name" : "slug",
+        "exprId" : 5707
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 5716
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 5717
+      } ]
+    }
+  }
 }

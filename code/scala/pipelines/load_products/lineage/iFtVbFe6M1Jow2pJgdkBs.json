@@ -1,142 +1,189 @@
 {
+  "id" : "iFtVbFe6M1Jow2pJgdkBs",
   "name" : "iFtVbFe6M1Jow2pJgdkBs",
   "component" : "SchemaTransform",
   "transformations" : [ {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "id",
-      "exprId" : 13919
+      "exprId" : 5938
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "id",
-      "exprId" : 13919
+      "exprId" : 5938
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "name",
-      "exprId" : 13920
+      "exprId" : 5939
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "name",
-      "exprId" : 13920
+      "exprId" : 5939
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 5940
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 5940
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "bonus_rate",
-      "exprId" : 13945
+      "exprId" : 5941
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "bonus_rate",
-      "exprId" : 13945
+      "exprId" : 5941
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "lock_in_period",
-      "exprId" : 13946
+      "exprId" : 5942
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "lock_in_period",
-      "exprId" : 13946
+      "exprId" : 5942
     }
   }, {
     "sources" : [ {
       "port" : "",
       "name" : "import_ts",
-      "exprId" : 13968
+      "exprId" : 5948
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "import_ts",
-      "exprId" : 13968
+      "exprId" : 5948
     }
   }, {
     "sources" : [ ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "business_date",
-      "exprId" : 13975
+      "exprId" : 5955
     },
-    "transformation" : "current_date()"
+    "transformation" : "to_date('2022-05-05')"
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "id",
-      "exprId" : 13919
+      "exprId" : 5938
     } ],
     "destination" : {
       "port" : "",
       "name" : "id",
-      "exprId" : 13919
+      "exprId" : 5938
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "name",
-      "exprId" : 13920
+      "exprId" : 5939
     } ],
     "destination" : {
       "port" : "",
       "name" : "name",
-      "exprId" : 13920
+      "exprId" : 5939
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 5940
     } ],
     "destination" : {
       "port" : "",
       "name" : "slug",
-      "exprId" : 13922
+      "exprId" : 5940
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "bonus_rate",
-      "exprId" : 13945
+      "exprId" : 5941
     } ],
     "destination" : {
       "port" : "",
       "name" : "bonus_rate",
-      "exprId" : 13945
+      "exprId" : 5941
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "lock_in_period",
-      "exprId" : 13946
+      "exprId" : 5942
     } ],
     "destination" : {
       "port" : "",
       "name" : "lock_in_period",
-      "exprId" : 13946
+      "exprId" : 5942
     }
   }, {
     "sources" : [ ],
     "destination" : {
       "port" : "",
       "name" : "import_ts",
-      "exprId" : 13968
+      "exprId" : 5948
     },
     "transformation" : "current_timestamp()"
-  } ]
+  } ],
+  "inputs" : {
+    "StJp90MhyXH5aCwE4mkxE" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 5938
+      }, {
+        "name" : "name",
+        "exprId" : 5939
+      }, {
+        "name" : "slug",
+        "exprId" : 5940
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 5941
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 5942
+      } ]
+    }
+  },
+  "outputs" : {
+    "M3TNhNLYXL1ADCNnwI8Ih" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 5938
+      }, {
+        "name" : "name",
+        "exprId" : 5939
+      }, {
+        "name" : "slug",
+        "exprId" : 5940
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 5941
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 5942
+      }, {
+        "name" : "import_ts",
+        "exprId" : 5948
+      }, {
+        "name" : "business_date",
+        "exprId" : 5955
+      } ]
+    }
+  }
 }
