@@ -13,7 +13,7 @@ object Target_1 {
     Config.fabricName match {
       case "anshuman2" =>
         in.write
-          .format("hive")
+          .format("delta")
           .option("fileFormat", "parquet")
           .mode("overwrite")
           .option(
