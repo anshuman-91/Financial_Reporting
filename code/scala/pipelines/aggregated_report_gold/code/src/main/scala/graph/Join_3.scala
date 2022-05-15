@@ -34,7 +34,7 @@ object Join_3 {
         col("in0.product_lock_in_period").as("product_lock_in_period"),
         col("in1.email").as("person_email"),
         col("in1.name").as("person_name"),
-        col("in1.updated_at").as("person_updated_at"),
+        col("in1.updated_at").cast(StringType).as("person_updated_at"),
         col("in1.primary_address_line1").as("person_primary_address_line1"),
         col("in1.primary_address_line2").as("person_primary_address_line2"),
         col("in1.primary_postal_code").as("person_primary_postal_code"),

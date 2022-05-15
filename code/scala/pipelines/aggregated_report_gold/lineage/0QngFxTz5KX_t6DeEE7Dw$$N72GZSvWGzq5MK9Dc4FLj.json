@@ -1,0 +1,110 @@
+{
+  "id" : "0QngFxTz5KX_t6DeEE7Dw$$N72GZSvWGzq5MK9Dc4FLj",
+  "name" : "0QngFxTz5KX_t6DeEE7Dw$$N72GZSvWGzq5MK9Dc4FLj",
+  "component" : "Source",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "",
+      "name" : "name",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "name",
+      "exprId" : 2
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "lock_in_period",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "lock_in_period",
+      "exprId" : 5
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "import_ts",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "import_ts",
+      "exprId" : 6
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "slug",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "slug",
+      "exprId" : 3
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "bonus_rate",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "bonus_rate",
+      "exprId" : 4
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "id",
+      "exprId" : 1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "business_date",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy",
+      "name" : "business_date",
+      "exprId" : 7
+    }
+  } ],
+  "inputs" : { },
+  "outputs" : {
+    "H3G9Nsbp55FqpSTFSTwGb$$HJPEBtWtIiDB4JdKbbAJy" : {
+      "columns" : [ {
+        "name" : "name",
+        "exprId" : 2
+      }, {
+        "name" : "lock_in_period",
+        "exprId" : 5
+      }, {
+        "name" : "import_ts",
+        "exprId" : 6
+      }, {
+        "name" : "slug",
+        "exprId" : 3
+      }, {
+        "name" : "bonus_rate",
+        "exprId" : 4
+      }, {
+        "name" : "id",
+        "exprId" : 1
+      }, {
+        "name" : "business_date",
+        "exprId" : 7
+      } ]
+    }
+  }
+}

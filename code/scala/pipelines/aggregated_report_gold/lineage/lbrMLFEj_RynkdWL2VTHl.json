@@ -1,0 +1,110 @@
+{
+  "id" : "lbrMLFEj_RynkdWL2VTHl",
+  "name" : "lbrMLFEj_RynkdWL2VTHl",
+  "component" : "Source",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "",
+      "name" : "acc_id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "acc_id",
+      "exprId" : 1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "import_ts",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "import_ts",
+      "exprId" : 7
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_type",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "tran_type",
+      "exprId" : 4
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "business_date",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "business_date",
+      "exprId" : 6
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_id",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "tran_id",
+      "exprId" : 2
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_ts",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "tran_ts",
+      "exprId" : 5
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "tran_amount",
+      "exprId" : -1
+    } ],
+    "destination" : {
+      "port" : "xsApV3RwDQhO--F4lhrPD",
+      "name" : "tran_amount",
+      "exprId" : 3
+    }
+  } ],
+  "inputs" : { },
+  "outputs" : {
+    "xsApV3RwDQhO--F4lhrPD" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1
+      }, {
+        "name" : "import_ts",
+        "exprId" : 7
+      }, {
+        "name" : "tran_type",
+        "exprId" : 4
+      }, {
+        "name" : "business_date",
+        "exprId" : 6
+      }, {
+        "name" : "tran_id",
+        "exprId" : 2
+      }, {
+        "name" : "tran_ts",
+        "exprId" : 5
+      }, {
+        "name" : "tran_amount",
+        "exprId" : 3
+      } ]
+    }
+  }
+}

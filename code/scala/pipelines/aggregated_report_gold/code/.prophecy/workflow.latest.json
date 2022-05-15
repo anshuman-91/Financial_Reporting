@@ -860,7 +860,7 @@
           "target" : "person_updated_at",
           "expression" : {
             "format" : "python",
-            "expression" : "col(\"in1.updated_at\")"
+            "expression" : "col(\"in1.updated_at\").cast( StringType())"
           },
           "description" : ""
         }, {
