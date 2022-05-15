@@ -24,6 +24,10 @@
           "type" : "record",
           "fields" : [ ]
         },
+        "gamedayfabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
         "anshuman2" : {
           "type" : "record",
           "fields" : [ ]
@@ -120,78 +124,11 @@
       "ports" : {
         "inputs" : [ {
           "id" : "e0OFsSA23cpxQdDYcWTYN",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "address_string",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in"
         } ],
         "outputs" : [ {
           "id" : "voA-ZoHsz1k5TVzBo80UY",
-          "slug" : "out",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_string",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -269,107 +206,11 @@
       "ports" : {
         "inputs" : [ {
           "id" : "1KLE3t0ey5JQxj536IZGO",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "WRjkED5iNL6NxXLw7HvRk",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out0"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -395,117 +236,11 @@
       "ports" : {
         "inputs" : [ {
           "id" : "JDmkGzywydL7lhNultHyy",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in"
         } ],
         "outputs" : [ {
           "id" : "FUP35hPiKV_HkkTARQloo",
-          "slug" : "out",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "import_ts",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -562,146 +297,14 @@
       "ports" : {
         "inputs" : [ {
           "id" : "lRMG_RzqZId4la1tbHIDi",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "type",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in"
         } ],
         "outputs" : [ {
           "id" : "out0",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "type",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out0"
         }, {
           "id" : "out1",
-          "slug" : "out1",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "type",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out1"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -740,63 +343,7 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "6Iy3SLcX4PLtOyHGfclnn",
-          "slug" : "out",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : {
-                  "type" : "struct",
-                  "fields" : [ {
-                    "name" : "address_line1",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "address_line2",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  }, {
-                    "name" : "postal_code",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "type",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  } ]
-                },
-                "containsNull" : true
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -820,128 +367,11 @@
       "ports" : {
         "inputs" : [ {
           "id" : "p8JcWmRRYKZGUo5x23NIN",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : {
-                  "type" : "struct",
-                  "fields" : [ {
-                    "name" : "address_line1",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "address_line2",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  }, {
-                    "name" : "postal_code",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "type",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  } ]
-                },
-                "containsNull" : true
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "gwQ3VW-hpaItHbvaDa_YP",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : {
-                  "type" : "struct",
-                  "fields" : [ {
-                    "name" : "address_line1",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "address_line2",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  }, {
-                    "name" : "postal_code",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "type",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  } ]
-                },
-                "containsNull" : true
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "row_num",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out0"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -982,128 +412,11 @@
           "ports" : {
             "inputs" : [ {
               "id" : "XaHwNiEcONNAW31Eloxar",
-              "slug" : "in",
-              "schema" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "id",
-                  "type" : "integer",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "email",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "name",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "addresses",
-                  "type" : {
-                    "type" : "array",
-                    "elementType" : {
-                      "type" : "struct",
-                      "fields" : [ {
-                        "name" : "address_line1",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "address_line2",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      }, {
-                        "name" : "postal_code",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "type",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      } ]
-                    },
-                    "containsNull" : true
-                  },
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "updated_at",
-                  "type" : "timestamp",
-                  "nullable" : false,
-                  "metadata" : { }
-                } ]
-              }
+              "slug" : "in"
             } ],
             "outputs" : [ {
               "id" : "g51pAIKA0oa_iJWIHUqB-",
-              "slug" : "out",
-              "schema" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "id",
-                  "type" : "integer",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "email",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "name",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "addresses",
-                  "type" : {
-                    "type" : "array",
-                    "elementType" : {
-                      "type" : "struct",
-                      "fields" : [ {
-                        "name" : "address_line1",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "address_line2",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      }, {
-                        "name" : "postal_code",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "type",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      } ]
-                    },
-                    "containsNull" : true
-                  },
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "updated_at",
-                  "type" : "timestamp",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "row_num",
-                  "type" : "integer",
-                  "nullable" : true,
-                  "metadata" : { }
-                } ]
-              }
+              "slug" : "out"
             } ],
             "selectedInputFields" : [ ]
           },
@@ -1154,133 +467,11 @@
           "ports" : {
             "inputs" : [ {
               "id" : "e646SCQ9QBHtrrFlu7Hez",
-              "slug" : "in",
-              "schema" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "id",
-                  "type" : "integer",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "email",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "name",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "addresses",
-                  "type" : {
-                    "type" : "array",
-                    "elementType" : {
-                      "type" : "struct",
-                      "fields" : [ {
-                        "name" : "address_line1",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "address_line2",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      }, {
-                        "name" : "postal_code",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "type",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      } ]
-                    },
-                    "containsNull" : true
-                  },
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "updated_at",
-                  "type" : "timestamp",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "row_num",
-                  "type" : "integer",
-                  "nullable" : true,
-                  "metadata" : { }
-                } ]
-              }
+              "slug" : "in"
             } ],
             "outputs" : [ {
               "id" : "LvSIz-Z168Z25E6CMgJh7",
-              "slug" : "out",
-              "schema" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "id",
-                  "type" : "integer",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "email",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "name",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "addresses",
-                  "type" : {
-                    "type" : "array",
-                    "elementType" : {
-                      "type" : "struct",
-                      "fields" : [ {
-                        "name" : "address_line1",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "address_line2",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      }, {
-                        "name" : "postal_code",
-                        "type" : "string",
-                        "nullable" : false,
-                        "metadata" : { }
-                      }, {
-                        "name" : "type",
-                        "type" : "string",
-                        "nullable" : true,
-                        "metadata" : { }
-                      } ]
-                    },
-                    "containsNull" : true
-                  },
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "updated_at",
-                  "type" : "timestamp",
-                  "nullable" : false,
-                  "metadata" : { }
-                }, {
-                  "name" : "row_num",
-                  "type" : "integer",
-                  "nullable" : true,
-                  "metadata" : { }
-                } ]
-              }
+              "slug" : "out"
             } ],
             "selectedInputFields" : [ ]
           },
@@ -1310,144 +501,14 @@
       "ports" : {
         "inputs" : [ {
           "id" : "lZN_3wGH8ZdgSix282Q-D",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "type",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in0"
         }, {
           "id" : "Z6k94wMliU_h33LNGOEwn",
-          "slug" : "in1",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_string",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in1"
         } ],
         "outputs" : [ {
           "id" : "bBsbenOmRoJWAhBs8jI5r",
-          "slug" : "out",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -1547,116 +608,11 @@
       "ports" : {
         "inputs" : [ {
           "id" : "Xohzv1oLioUZOcxcEu8qT",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : {
-                  "type" : "struct",
-                  "fields" : [ {
-                    "name" : "address_line1",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "address_line2",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  }, {
-                    "name" : "postal_code",
-                    "type" : "string",
-                    "nullable" : false,
-                    "metadata" : { }
-                  }, {
-                    "name" : "type",
-                    "type" : "string",
-                    "nullable" : true,
-                    "metadata" : { }
-                  } ]
-                },
-                "containsNull" : true
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "row_num",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in"
         } ],
         "outputs" : [ {
           "id" : "yTcNahNeXlqcj6GXYiFcM",
-          "slug" : "out",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "type",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -1824,65 +780,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "-OJD6G_iLOO_QuyXBhiKE",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "import_ts",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in"
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
@@ -1907,127 +805,11 @@
       "ports" : {
         "inputs" : [ {
           "id" : "-NAdgAUUGGuexOFf99OcO",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "import_ts",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "ohyJXZ53Sk1kpCumdHv68",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "id",
-              "type" : "integer",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "updated_at",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line1",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_address_line2",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "primary_postal_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "alternate_addresses",
-              "type" : {
-                "type" : "array",
-                "elementType" : "string",
-                "containsNull" : false
-              },
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "import_ts",
-              "type" : "timestamp",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "business_date",
-              "type" : "date",
-              "nullable" : false,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out0"
         } ],
         "selectedInputFields" : [ ]
       },

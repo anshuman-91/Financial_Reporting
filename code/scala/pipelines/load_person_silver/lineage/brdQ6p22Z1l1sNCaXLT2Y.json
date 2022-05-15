@@ -1,93 +1,173 @@
 {
+  "id" : "brdQ6p22Z1l1sNCaXLT2Y",
   "name" : "brdQ6p22Z1l1sNCaXLT2Y",
   "component" : "Join",
   "transformations" : [ {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "id",
-      "exprId" : 14288
+      "exprId" : 8524
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "id",
-      "exprId" : 14464
+      "exprId" : 8600
     }
   }, {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "email",
-      "exprId" : 14289
+      "exprId" : 8525
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "email",
-      "exprId" : 14465
+      "exprId" : 8601
     }
   }, {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "name",
-      "exprId" : 14290
+      "exprId" : 8526
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "name",
-      "exprId" : 14466
+      "exprId" : 8602
     }
   }, {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "updated_at",
-      "exprId" : 14292
+      "exprId" : 8527
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "updated_at",
-      "exprId" : 14467
+      "exprId" : 8603
     }
   }, {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "address_line1",
-      "exprId" : 14318
+      "exprId" : 8528
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "primary_address_line1",
-      "exprId" : 14468
+      "exprId" : 8604
     }
   }, {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "address_line2",
-      "exprId" : 14319
+      "exprId" : 8529
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "primary_address_line2",
-      "exprId" : 14469
+      "exprId" : 8605
     }
   }, {
     "sources" : [ {
       "port" : "lZN_3wGH8ZdgSix282Q-D",
       "name" : "postal_code",
-      "exprId" : 14320
+      "exprId" : 8530
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "primary_postal_code",
-      "exprId" : 14470
+      "exprId" : 8606
     }
   }, {
     "sources" : [ {
-      "port" : "",
+      "port" : "Z6k94wMliU_h33LNGOEwn",
       "name" : "address_string",
-      "exprId" : 14374
+      "exprId" : 8551
     } ],
     "destination" : {
       "port" : "bBsbenOmRoJWAhBs8jI5r",
       "name" : "alternate_addresses",
-      "exprId" : 14471
+      "exprId" : 8607
     }
-  } ]
+  } ],
+  "inputs" : {
+    "lZN_3wGH8ZdgSix282Q-D" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8524
+      }, {
+        "name" : "email",
+        "exprId" : 8525
+      }, {
+        "name" : "name",
+        "exprId" : 8526
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8527
+      }, {
+        "name" : "address_line1",
+        "exprId" : 8528
+      }, {
+        "name" : "address_line2",
+        "exprId" : 8529
+      }, {
+        "name" : "postal_code",
+        "exprId" : 8530
+      }, {
+        "name" : "type",
+        "exprId" : 8531
+      } ]
+    },
+    "Z6k94wMliU_h33LNGOEwn" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8546
+      }, {
+        "name" : "id",
+        "exprId" : 8547
+      }, {
+        "name" : "email",
+        "exprId" : 8548
+      }, {
+        "name" : "name",
+        "exprId" : 8549
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8550
+      }, {
+        "name" : "address_string",
+        "exprId" : 8551
+      } ]
+    }
+  },
+  "outputs" : {
+    "bBsbenOmRoJWAhBs8jI5r" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8600
+      }, {
+        "name" : "email",
+        "exprId" : 8601
+      }, {
+        "name" : "name",
+        "exprId" : 8602
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8603
+      }, {
+        "name" : "primary_address_line1",
+        "exprId" : 8604
+      }, {
+        "name" : "primary_address_line2",
+        "exprId" : 8605
+      }, {
+        "name" : "primary_postal_code",
+        "exprId" : 8606
+      }, {
+        "name" : "alternate_addresses",
+        "exprId" : 8607
+      } ]
+    }
+  }
 }

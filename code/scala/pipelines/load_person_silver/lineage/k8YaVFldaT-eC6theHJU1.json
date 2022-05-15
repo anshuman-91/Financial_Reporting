@@ -1,142 +1,186 @@
 {
+  "id" : "k8YaVFldaT-eC6theHJU1",
   "name" : "k8YaVFldaT-eC6theHJU1",
   "component" : "WindowFunction",
   "transformations" : [ {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "id",
-      "exprId" : 14288
+      "exprId" : 8313
     } ],
     "destination" : {
       "port" : "g51pAIKA0oa_iJWIHUqB-",
       "name" : "id",
-      "exprId" : 14288
+      "exprId" : 8313
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "email",
-      "exprId" : 14289
+      "exprId" : 8314
     } ],
     "destination" : {
       "port" : "g51pAIKA0oa_iJWIHUqB-",
       "name" : "email",
-      "exprId" : 14289
+      "exprId" : 8314
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "name",
-      "exprId" : 14290
+      "exprId" : 8315
     } ],
     "destination" : {
       "port" : "g51pAIKA0oa_iJWIHUqB-",
       "name" : "name",
-      "exprId" : 14290
+      "exprId" : 8315
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "addresses",
-      "exprId" : 14291
+      "exprId" : 8316
     } ],
     "destination" : {
       "port" : "g51pAIKA0oa_iJWIHUqB-",
       "name" : "addresses",
-      "exprId" : 14291
+      "exprId" : 8316
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "updated_at",
-      "exprId" : 14292
+      "exprId" : 8317
     } ],
     "destination" : {
       "port" : "g51pAIKA0oa_iJWIHUqB-",
       "name" : "updated_at",
-      "exprId" : 14292
+      "exprId" : 8317
     }
   }, {
     "sources" : [ {
       "port" : "",
       "name" : "row_num",
-      "exprId" : 14300
+      "exprId" : 8324
     } ],
     "destination" : {
       "port" : "g51pAIKA0oa_iJWIHUqB-",
       "name" : "row_num",
-      "exprId" : 14300
+      "exprId" : 8324
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "id",
-      "exprId" : 14288
+      "exprId" : 8313
     } ],
     "destination" : {
       "port" : "",
       "name" : "id",
-      "exprId" : 14288
+      "exprId" : 8313
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "email",
-      "exprId" : 14289
+      "exprId" : 8314
     } ],
     "destination" : {
       "port" : "",
       "name" : "email",
-      "exprId" : 14289
+      "exprId" : 8314
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "name",
-      "exprId" : 14290
+      "exprId" : 8315
     } ],
     "destination" : {
       "port" : "",
       "name" : "name",
-      "exprId" : 14290
+      "exprId" : 8315
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "addresses",
-      "exprId" : 14291
+      "exprId" : 8316
     } ],
     "destination" : {
       "port" : "",
       "name" : "addresses",
-      "exprId" : 14291
+      "exprId" : 8316
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "updated_at",
-      "exprId" : 14292
+      "exprId" : 8317
     } ],
     "destination" : {
       "port" : "",
       "name" : "updated_at",
-      "exprId" : 14292
+      "exprId" : 8317
     }
   }, {
     "sources" : [ {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "id",
-      "exprId" : 14288
+      "exprId" : 8313
     }, {
       "port" : "XaHwNiEcONNAW31Eloxar",
       "name" : "updated_at",
-      "exprId" : 14292
+      "exprId" : 8317
     } ],
     "destination" : {
       "port" : "",
       "name" : "row_num",
-      "exprId" : 14300
+      "exprId" : 8324
     },
     "transformation" : "row_number() OVER (PARTITION BY `id` ORDER BY `updated_at` DESC NULLS LAST ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)"
-  } ]
+  } ],
+  "inputs" : {
+    "XaHwNiEcONNAW31Eloxar" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8313
+      }, {
+        "name" : "email",
+        "exprId" : 8314
+      }, {
+        "name" : "name",
+        "exprId" : 8315
+      }, {
+        "name" : "addresses",
+        "exprId" : 8316
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8317
+      } ]
+    }
+  },
+  "outputs" : {
+    "g51pAIKA0oa_iJWIHUqB-" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8313
+      }, {
+        "name" : "email",
+        "exprId" : 8314
+      }, {
+        "name" : "name",
+        "exprId" : 8315
+      }, {
+        "name" : "addresses",
+        "exprId" : 8316
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8317
+      }, {
+        "name" : "row_num",
+        "exprId" : 8324
+      } ]
+    }
+  }
 }

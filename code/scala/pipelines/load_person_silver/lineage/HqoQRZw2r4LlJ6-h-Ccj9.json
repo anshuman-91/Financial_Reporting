@@ -1,8 +1,55 @@
 {
+  "id" : "HqoQRZw2r4LlJ6-h-Ccj9",
   "name" : "HqoQRZw2r4LlJ6-h-Ccj9",
   "component" : "Filter",
   "transformations" : [ {
     "sources" : [ ],
-    "transformation" : "Filter((row_num#14300 = 1))"
-  } ]
+    "transformation" : "Filter((row_num#8345 = 1))"
+  } ],
+  "inputs" : {
+    "e646SCQ9QBHtrrFlu7Hez" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8340
+      }, {
+        "name" : "email",
+        "exprId" : 8341
+      }, {
+        "name" : "name",
+        "exprId" : 8342
+      }, {
+        "name" : "addresses",
+        "exprId" : 8343
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8344
+      }, {
+        "name" : "row_num",
+        "exprId" : 8345
+      } ]
+    }
+  },
+  "outputs" : {
+    "LvSIz-Z168Z25E6CMgJh7" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 8340
+      }, {
+        "name" : "email",
+        "exprId" : 8341
+      }, {
+        "name" : "name",
+        "exprId" : 8342
+      }, {
+        "name" : "addresses",
+        "exprId" : 8343
+      }, {
+        "name" : "updated_at",
+        "exprId" : 8344
+      }, {
+        "name" : "row_num",
+        "exprId" : 8345
+      } ]
+    }
+  }
 }
