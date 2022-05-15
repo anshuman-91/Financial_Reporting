@@ -25,45 +25,14 @@
     }
   },
   "processes" : {
-    "tDStoHkoP8G9OZDZW3g_z" : {
-      "id" : "tDStoHkoP8G9OZDZW3g_z",
-      "component" : "Pipeline",
-      "metadata" : {
-        "label" : "load_products",
-        "slug" : "load_products",
-        "x" : -334,
-        "y" : 130.5
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "iH_0PBpxYDvUFO7BUnBGv"
-        } ],
-        "outputs" : [ {
-          "id" : "2ZJOSNXUeLGxQbW_6-hJD"
-        } ]
-      },
-      "settings" : {
-        "type" : "UserDefined",
-        "alerting" : {
-          "emails" : "anshuman@simpledatalabs.com",
-          "onStart" : true,
-          "onSuccess" : true,
-          "onFailure" : true
-        }
-      },
-      "properties" : {
-        "pipelineId" : "4088/pipelines/load_products",
-        "configurations" : [ ]
-      }
-    },
     "GldJZ5KPkOX5HDu9uCkYC" : {
       "id" : "GldJZ5KPkOX5HDu9uCkYC",
       "component" : "Pipeline",
       "metadata" : {
         "label" : "load_person_silver",
         "slug" : "load_person_silver",
-        "x" : -348,
-        "y" : -58
+        "x" : -924,
+        "y" : -258
       },
       "ports" : {
         "inputs" : [ {
@@ -87,21 +56,21 @@
         "configurations" : [ ]
       }
     },
-    "qatbdIUXlbYIGW63xm7oM" : {
-      "id" : "qatbdIUXlbYIGW63xm7oM",
+    "tDStoHkoP8G9OZDZW3g_z" : {
+      "id" : "tDStoHkoP8G9OZDZW3g_z",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "load_acc_status",
-        "slug" : "load_acc_status",
-        "x" : -61,
-        "y" : -30.5
+        "label" : "load_products",
+        "slug" : "load_products",
+        "x" : -977,
+        "y" : -128.5
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "qKhyK44072CPpCCk7ZFMR"
+          "id" : "iH_0PBpxYDvUFO7BUnBGv"
         } ],
         "outputs" : [ {
-          "id" : "NsNgPDBykHVBRp1L9NgDA"
+          "id" : "2ZJOSNXUeLGxQbW_6-hJD"
         } ]
       },
       "settings" : {
@@ -114,7 +83,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "4088/pipelines/load_acc_status_silver_scala",
+        "pipelineId" : "4088/pipelines/load_products",
         "configurations" : [ ]
       }
     },
@@ -124,8 +93,8 @@
       "metadata" : {
         "label" : "load_trans",
         "slug" : "load_trans",
-        "x" : 153,
-        "y" : -46.5
+        "x" : -274,
+        "y" : -241.5
       },
       "ports" : {
         "inputs" : [ {
@@ -148,6 +117,68 @@
         "pipelineId" : "4088/pipelines/load_transactions",
         "configurations" : [ ]
       }
+    },
+    "261T72tIEo6-suQhFific" : {
+      "id" : "261T72tIEo6-suQhFific",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline",
+        "x" : -114.25,
+        "y" : -294.125
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xbCUzhCIaHR2kPqa9gznH"
+        } ],
+        "outputs" : [ {
+          "id" : "EZAfeLxGsD_sFme1A0T2l"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "4088/pipelines/aggregated_report_gold",
+        "configurations" : [ ]
+      }
+    },
+    "qatbdIUXlbYIGW63xm7oM" : {
+      "id" : "qatbdIUXlbYIGW63xm7oM",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "load_acc_status",
+        "slug" : "load_acc_status",
+        "x" : -504,
+        "y" : -79.5
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qKhyK44072CPpCCk7ZFMR"
+        } ],
+        "outputs" : [ {
+          "id" : "NsNgPDBykHVBRp1L9NgDA"
+        } ]
+      },
+      "settings" : {
+        "type" : "UserDefined",
+        "alerting" : {
+          "emails" : "anshuman@simpledatalabs.com",
+          "onStart" : true,
+          "onSuccess" : true,
+          "onFailure" : true
+        }
+      },
+      "properties" : {
+        "pipelineId" : "4088/pipelines/load_acc_status_silver_scala",
+        "configurations" : [ ]
+      }
     }
   },
   "connections" : [ {
@@ -168,5 +199,11 @@
     "target" : "Ue_ZYni_tJFaCHUOvnGst",
     "sourcePort" : "NsNgPDBykHVBRp1L9NgDA",
     "targetPort" : "y1cfzVgU3A-zzIF2JtK3B"
+  }, {
+    "id" : "F_rcfQulRYXQ66GbqqR5g",
+    "source" : "Ue_ZYni_tJFaCHUOvnGst",
+    "target" : "261T72tIEo6-suQhFific",
+    "sourcePort" : "w8LuuaS8zaQyBrMr8Y2Bu",
+    "targetPort" : "xbCUzhCIaHR2kPqa9gznH"
   } ]
 }

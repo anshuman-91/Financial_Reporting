@@ -222,10 +222,11 @@ jobs:
       onSuccess: true
       onFailure: true
     pipelines:
-    - 4088/pipelines/load_products
     - 4088/pipelines/load_person_silver
-    - 4088/pipelines/load_acc_status_silver_scala
     - 4088/pipelines/load_transactions
+    - 4088/pipelines/load_acc_status_silver_scala
+    - 4088/pipelines/load_products
+    - 4088/pipelines/aggregated_report_gold
     enabled: true
     createdAt: '2022-05-10 06:37:27'
     author: anshuman@simpledatalabs.com
