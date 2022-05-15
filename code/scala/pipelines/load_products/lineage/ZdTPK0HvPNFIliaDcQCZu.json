@@ -6,137 +6,137 @@
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "id",
-      "exprId" : 5657
+      "exprId" : 8093
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "id",
-      "exprId" : 5657
+      "exprId" : 8093
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "name",
-      "exprId" : 5658
+      "exprId" : 8094
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "name",
-      "exprId" : 5658
+      "exprId" : 8094
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "properties",
-      "exprId" : 5659
+      "exprId" : 8095
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "properties",
-      "exprId" : 5659
+      "exprId" : 8095
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "slug",
-      "exprId" : 5660
+      "exprId" : 8096
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "slug",
-      "exprId" : 5660
+      "exprId" : 8096
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "updated_at",
-      "exprId" : 5661
+      "exprId" : 8097
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "updated_at",
-      "exprId" : 5661
+      "exprId" : 8097
     }
   }, {
     "sources" : [ {
       "port" : "",
       "name" : "row_num",
-      "exprId" : 5668
+      "exprId" : 8104
     } ],
     "destination" : {
       "port" : "ulvyu7iEnlQpiqYURq3Ib",
       "name" : "row_num",
-      "exprId" : 5668
+      "exprId" : 8104
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "id",
-      "exprId" : 5657
+      "exprId" : 8093
     } ],
     "destination" : {
       "port" : "",
       "name" : "id",
-      "exprId" : 5657
+      "exprId" : 8093
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "name",
-      "exprId" : 5658
+      "exprId" : 8094
     } ],
     "destination" : {
       "port" : "",
       "name" : "name",
-      "exprId" : 5658
+      "exprId" : 8094
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "properties",
-      "exprId" : 5659
+      "exprId" : 8095
     } ],
     "destination" : {
       "port" : "",
       "name" : "properties",
-      "exprId" : 5659
+      "exprId" : 8095
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "slug",
-      "exprId" : 5660
+      "exprId" : 8096
     } ],
     "destination" : {
       "port" : "",
       "name" : "slug",
-      "exprId" : 5660
+      "exprId" : 8096
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "updated_at",
-      "exprId" : 5661
+      "exprId" : 8097
     } ],
     "destination" : {
       "port" : "",
       "name" : "updated_at",
-      "exprId" : 5661
+      "exprId" : 8097
     }
   }, {
     "sources" : [ {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "id",
-      "exprId" : 5657
+      "exprId" : 8093
     }, {
       "port" : "za_ArjxfR_1ZoazWLNsbD",
       "name" : "updated_at",
-      "exprId" : 5661
+      "exprId" : 8097
     } ],
     "destination" : {
       "port" : "",
       "name" : "row_num",
-      "exprId" : 5668
+      "exprId" : 8104
     },
     "transformation" : "row_number() OVER (PARTITION BY `id` ORDER BY `updated_at` DESC NULLS LAST ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)"
   } ],
@@ -144,19 +144,19 @@
     "za_ArjxfR_1ZoazWLNsbD" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 5657
+        "exprId" : 8093
       }, {
         "name" : "name",
-        "exprId" : 5658
+        "exprId" : 8094
       }, {
         "name" : "properties",
-        "exprId" : 5659
+        "exprId" : 8095
       }, {
         "name" : "slug",
-        "exprId" : 5660
+        "exprId" : 8096
       }, {
         "name" : "updated_at",
-        "exprId" : 5661
+        "exprId" : 8097
       } ]
     }
   },
@@ -164,22 +164,22 @@
     "ulvyu7iEnlQpiqYURq3Ib" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 5657
+        "exprId" : 8093
       }, {
         "name" : "name",
-        "exprId" : 5658
+        "exprId" : 8094
       }, {
         "name" : "properties",
-        "exprId" : 5659
+        "exprId" : 8095
       }, {
         "name" : "slug",
-        "exprId" : 5660
+        "exprId" : 8096
       }, {
         "name" : "updated_at",
-        "exprId" : 5661
+        "exprId" : 8097
       }, {
         "name" : "row_num",
-        "exprId" : 5668
+        "exprId" : 8104
       } ]
     }
   }

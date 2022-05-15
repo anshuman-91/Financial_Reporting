@@ -116,6 +116,18 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 14:59:54'
+  datasets/gold_fin_reporting:
+    name: gold_fin_reporting
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-15 17:55:29'
+    physicalDatasets:
+      anshuman2:
+        fabricId: 838
+        datasetType: Database
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-15 17:55:29'
   datasets/acc_status_bronze:
     name: acc_status_bronze
     description: ''

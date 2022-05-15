@@ -6,137 +6,137 @@
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "id",
-      "exprId" : 5938
+      "exprId" : 8251
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "id",
-      "exprId" : 5938
+      "exprId" : 8251
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "name",
-      "exprId" : 5939
+      "exprId" : 8252
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "name",
-      "exprId" : 5939
+      "exprId" : 8252
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "slug",
-      "exprId" : 5940
+      "exprId" : 8253
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "slug",
-      "exprId" : 5940
+      "exprId" : 8253
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "bonus_rate",
-      "exprId" : 5941
+      "exprId" : 8254
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "bonus_rate",
-      "exprId" : 5941
+      "exprId" : 8254
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "lock_in_period",
-      "exprId" : 5942
+      "exprId" : 8255
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "lock_in_period",
-      "exprId" : 5942
+      "exprId" : 8255
     }
   }, {
     "sources" : [ {
       "port" : "",
       "name" : "import_ts",
-      "exprId" : 5948
+      "exprId" : 8261
     } ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "import_ts",
-      "exprId" : 5948
+      "exprId" : 8261
     }
   }, {
     "sources" : [ ],
     "destination" : {
       "port" : "M3TNhNLYXL1ADCNnwI8Ih",
       "name" : "business_date",
-      "exprId" : 5955
+      "exprId" : 8268
     },
-    "transformation" : "to_date('2022-05-05')"
+    "transformation" : "current_date()"
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "id",
-      "exprId" : 5938
+      "exprId" : 8251
     } ],
     "destination" : {
       "port" : "",
       "name" : "id",
-      "exprId" : 5938
+      "exprId" : 8251
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "name",
-      "exprId" : 5939
+      "exprId" : 8252
     } ],
     "destination" : {
       "port" : "",
       "name" : "name",
-      "exprId" : 5939
+      "exprId" : 8252
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "slug",
-      "exprId" : 5940
+      "exprId" : 8253
     } ],
     "destination" : {
       "port" : "",
       "name" : "slug",
-      "exprId" : 5940
+      "exprId" : 8253
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "bonus_rate",
-      "exprId" : 5941
+      "exprId" : 8254
     } ],
     "destination" : {
       "port" : "",
       "name" : "bonus_rate",
-      "exprId" : 5941
+      "exprId" : 8254
     }
   }, {
     "sources" : [ {
       "port" : "StJp90MhyXH5aCwE4mkxE",
       "name" : "lock_in_period",
-      "exprId" : 5942
+      "exprId" : 8255
     } ],
     "destination" : {
       "port" : "",
       "name" : "lock_in_period",
-      "exprId" : 5942
+      "exprId" : 8255
     }
   }, {
     "sources" : [ ],
     "destination" : {
       "port" : "",
       "name" : "import_ts",
-      "exprId" : 5948
+      "exprId" : 8261
     },
     "transformation" : "current_timestamp()"
   } ],
@@ -144,19 +144,19 @@
     "StJp90MhyXH5aCwE4mkxE" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 5938
+        "exprId" : 8251
       }, {
         "name" : "name",
-        "exprId" : 5939
+        "exprId" : 8252
       }, {
         "name" : "slug",
-        "exprId" : 5940
+        "exprId" : 8253
       }, {
         "name" : "bonus_rate",
-        "exprId" : 5941
+        "exprId" : 8254
       }, {
         "name" : "lock_in_period",
-        "exprId" : 5942
+        "exprId" : 8255
       } ]
     }
   },
@@ -164,25 +164,25 @@
     "M3TNhNLYXL1ADCNnwI8Ih" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 5938
+        "exprId" : 8251
       }, {
         "name" : "name",
-        "exprId" : 5939
+        "exprId" : 8252
       }, {
         "name" : "slug",
-        "exprId" : 5940
+        "exprId" : 8253
       }, {
         "name" : "bonus_rate",
-        "exprId" : 5941
+        "exprId" : 8254
       }, {
         "name" : "lock_in_period",
-        "exprId" : 5942
+        "exprId" : 8255
       }, {
         "name" : "import_ts",
-        "exprId" : 5948
+        "exprId" : 8261
       }, {
         "name" : "business_date",
-        "exprId" : 5955
+        "exprId" : 8268
       } ]
     }
   }
