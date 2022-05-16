@@ -24,6 +24,10 @@
           "type" : "record",
           "fields" : [ ]
         },
+        "gamedayfabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
         "anshuman2" : {
           "type" : "record",
           "fields" : [ ]

@@ -1,68 +1,112 @@
 {
+  "id" : "ssBJOJyHiF5-MiVgXPK13",
   "name" : "ssBJOJyHiF5-MiVgXPK13",
   "component" : "SchemaTransform",
   "transformations" : [ {
     "sources" : [ {
       "port" : "ABCKoXhrNF75vfVC20HS_",
       "name" : "acc_id",
-      "exprId" : 14101
+      "exprId" : 4234
     } ],
     "destination" : {
       "port" : "D20X9yS0WHbvVFo0sW7ZP",
       "name" : "acc_id",
-      "exprId" : 14101
+      "exprId" : 4234
     }
   }, {
     "sources" : [ {
       "port" : "ABCKoXhrNF75vfVC20HS_",
       "name" : "person_id",
-      "exprId" : 14102
+      "exprId" : 4235
     } ],
     "destination" : {
       "port" : "D20X9yS0WHbvVFo0sW7ZP",
       "name" : "person_id",
-      "exprId" : 14102
+      "exprId" : 4235
     }
   }, {
     "sources" : [ {
       "port" : "ABCKoXhrNF75vfVC20HS_",
       "name" : "product_id",
-      "exprId" : 14103
+      "exprId" : 4236
     } ],
     "destination" : {
       "port" : "D20X9yS0WHbvVFo0sW7ZP",
       "name" : "product_id",
-      "exprId" : 14103
+      "exprId" : 4236
     }
   }, {
     "sources" : [ {
       "port" : "ABCKoXhrNF75vfVC20HS_",
       "name" : "business_date",
-      "exprId" : 14104
+      "exprId" : 4237
     } ],
     "destination" : {
       "port" : "D20X9yS0WHbvVFo0sW7ZP",
       "name" : "business_date",
-      "exprId" : 14104
+      "exprId" : 4237
     }
   }, {
     "sources" : [ {
       "port" : "ABCKoXhrNF75vfVC20HS_",
       "name" : "balance",
-      "exprId" : 14105
+      "exprId" : 4238
     } ],
     "destination" : {
       "port" : "D20X9yS0WHbvVFo0sW7ZP",
       "name" : "balance",
-      "exprId" : 14105
+      "exprId" : 4238
     }
   }, {
     "sources" : [ ],
     "destination" : {
       "port" : "D20X9yS0WHbvVFo0sW7ZP",
       "name" : "import_ts",
-      "exprId" : 14122
+      "exprId" : 4244
     },
     "transformation" : "current_timestamp()"
-  } ]
+  } ],
+  "inputs" : {
+    "ABCKoXhrNF75vfVC20HS_" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 4234
+      }, {
+        "name" : "person_id",
+        "exprId" : 4235
+      }, {
+        "name" : "product_id",
+        "exprId" : 4236
+      }, {
+        "name" : "business_date",
+        "exprId" : 4237
+      }, {
+        "name" : "balance",
+        "exprId" : 4238
+      } ]
+    }
+  },
+  "outputs" : {
+    "D20X9yS0WHbvVFo0sW7ZP" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 4234
+      }, {
+        "name" : "person_id",
+        "exprId" : 4235
+      }, {
+        "name" : "product_id",
+        "exprId" : 4236
+      }, {
+        "name" : "business_date",
+        "exprId" : 4237
+      }, {
+        "name" : "balance",
+        "exprId" : 4238
+      }, {
+        "name" : "import_ts",
+        "exprId" : 4244
+      } ]
+    }
+  }
 }

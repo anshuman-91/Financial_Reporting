@@ -1,5 +1,52 @@
 {
+  "id" : "yt0Kyk0Fw2vfDwWvgwPol",
   "name" : "yt0Kyk0Fw2vfDwWvgwPol",
   "component" : "Script",
-  "transformations" : [ ]
+  "transformations" : [ ],
+  "inputs" : {
+    "88XYV88FP7RG5RPgePOdN" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 4275
+      }, {
+        "name" : "person_id",
+        "exprId" : 4276
+      }, {
+        "name" : "product_id",
+        "exprId" : 4277
+      }, {
+        "name" : "business_date",
+        "exprId" : 4278
+      }, {
+        "name" : "balance",
+        "exprId" : 4279
+      }, {
+        "name" : "import_ts",
+        "exprId" : 4280
+      } ]
+    }
+  },
+  "outputs" : {
+    "YZhRpQLMMeWnnAYbiu1ay" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 4275
+      }, {
+        "name" : "person_id",
+        "exprId" : 4276
+      }, {
+        "name" : "product_id",
+        "exprId" : 4277
+      }, {
+        "name" : "business_date",
+        "exprId" : 4278
+      }, {
+        "name" : "balance",
+        "exprId" : 4279
+      }, {
+        "name" : "import_ts",
+        "exprId" : 4280
+      } ]
+    }
+  }
 }
