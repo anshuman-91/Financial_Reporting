@@ -1,8 +1,43 @@
 {
+  "id" : "Da_57WI5dXLJ3bL6Is_II",
   "name" : "Da_57WI5dXLJ3bL6Is_II",
   "component" : "Filter",
   "transformations" : [ {
     "sources" : [ ],
-    "transformation" : "Filter(NOT (balance#523 = signed_tran_amount#524))"
-  } ]
+    "transformation" : "Filter(NOT (balance#1468 = signed_tran_amount#1469))"
+  } ],
+  "inputs" : {
+    "U_bd_E7wyVoHWTGvBxGkg" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1466
+      }, {
+        "name" : "business_date",
+        "exprId" : 1467
+      }, {
+        "name" : "balance",
+        "exprId" : 1468
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1469
+      } ]
+    }
+  },
+  "outputs" : {
+    "cyxt5nu_a8Mv5UaMx7Frh" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1466
+      }, {
+        "name" : "business_date",
+        "exprId" : 1467
+      }, {
+        "name" : "balance",
+        "exprId" : 1468
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1469
+      } ]
+    }
+  }
 }

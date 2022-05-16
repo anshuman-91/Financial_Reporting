@@ -1,5 +1,40 @@
 {
+  "id" : "JDaForlkwnE2Qlm5JZ38V",
   "name" : "JDaForlkwnE2Qlm5JZ38V",
   "component" : "Script",
-  "transformations" : [ ]
+  "transformations" : [ ],
+  "inputs" : {
+    "g80txc1DfEB26EDj1W1P1" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1478
+      }, {
+        "name" : "business_date",
+        "exprId" : 1479
+      }, {
+        "name" : "balance",
+        "exprId" : 1480
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1481
+      } ]
+    }
+  },
+  "outputs" : {
+    "6rwlCzlV2sYOyrC8gPJDf" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1478
+      }, {
+        "name" : "business_date",
+        "exprId" : 1479
+      }, {
+        "name" : "balance",
+        "exprId" : 1480
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1481
+      } ]
+    }
+  }
 }

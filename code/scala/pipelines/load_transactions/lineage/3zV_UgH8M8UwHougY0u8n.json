@@ -1,39 +1,83 @@
 {
+  "id" : "3zV_UgH8M8UwHougY0u8n",
   "name" : "3zV_UgH8M8UwHougY0u8n",
   "component" : "Aggregate",
   "transformations" : [ {
     "sources" : [ {
       "port" : "VgefXVwBLu17NelEcLqAs",
       "name" : "acc_id",
-      "exprId" : 373
+      "exprId" : 1358
     } ],
     "destination" : {
       "port" : "0uWG-4CWMUO6n8Iwo6EGb",
       "name" : "acc_id",
-      "exprId" : 373
+      "exprId" : 1358
     }
   }, {
     "sources" : [ {
       "port" : "VgefXVwBLu17NelEcLqAs",
       "name" : "business_date",
-      "exprId" : 374
+      "exprId" : 1360
     } ],
     "destination" : {
       "port" : "0uWG-4CWMUO6n8Iwo6EGb",
       "name" : "business_date",
-      "exprId" : 374
+      "exprId" : 1360
     }
   }, {
     "sources" : [ {
       "port" : "VgefXVwBLu17NelEcLqAs",
       "name" : "signed_tran_amount",
-      "exprId" : 442
+      "exprId" : 1365
     } ],
     "destination" : {
       "port" : "0uWG-4CWMUO6n8Iwo6EGb",
       "name" : "signed_tran_amount",
-      "exprId" : 476
+      "exprId" : 1383
     },
     "transformation" : "sum(`signed_tran_amount`)"
-  } ]
+  } ],
+  "inputs" : {
+    "VgefXVwBLu17NelEcLqAs" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1358
+      }, {
+        "name" : "tran_id",
+        "exprId" : 1359
+      }, {
+        "name" : "business_date",
+        "exprId" : 1360
+      }, {
+        "name" : "tran_amount",
+        "exprId" : 1361
+      }, {
+        "name" : "tran_type",
+        "exprId" : 1362
+      }, {
+        "name" : "tran_ts",
+        "exprId" : 1363
+      }, {
+        "name" : "import_ts",
+        "exprId" : 1364
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1365
+      } ]
+    }
+  },
+  "outputs" : {
+    "0uWG-4CWMUO6n8Iwo6EGb" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1358
+      }, {
+        "name" : "business_date",
+        "exprId" : 1360
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1383
+      } ]
+    }
+  }
 }

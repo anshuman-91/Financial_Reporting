@@ -1,49 +1,105 @@
 {
+  "id" : "CXEX2MKtzZ5qTy34BI9by",
   "name" : "CXEX2MKtzZ5qTy34BI9by",
   "component" : "Join",
   "transformations" : [ {
     "sources" : [ {
       "port" : "A1Xx3wIDfhVQmafFb01oQ",
       "name" : "acc_id",
-      "exprId" : 373
+      "exprId" : 1396
     } ],
     "destination" : {
       "port" : "3vB7JuJCwfJOjL4Nk-k0J",
       "name" : "acc_id",
-      "exprId" : 521
+      "exprId" : 1453
     }
   }, {
     "sources" : [ {
       "port" : "A1Xx3wIDfhVQmafFb01oQ",
       "name" : "business_date",
-      "exprId" : 374
+      "exprId" : 1397
     } ],
     "destination" : {
       "port" : "3vB7JuJCwfJOjL4Nk-k0J",
       "name" : "business_date",
-      "exprId" : 522
+      "exprId" : 1454
     }
   }, {
     "sources" : [ {
       "port" : "ESLw5UflZbtTPVAKDX81z",
       "name" : "balance",
-      "exprId" : 432
+      "exprId" : 1412
     } ],
     "destination" : {
       "port" : "3vB7JuJCwfJOjL4Nk-k0J",
       "name" : "balance",
-      "exprId" : 523
+      "exprId" : 1455
     }
   }, {
     "sources" : [ {
       "port" : "A1Xx3wIDfhVQmafFb01oQ",
       "name" : "signed_tran_amount",
-      "exprId" : 476
+      "exprId" : 1398
     } ],
     "destination" : {
       "port" : "3vB7JuJCwfJOjL4Nk-k0J",
       "name" : "signed_tran_amount",
-      "exprId" : 524
+      "exprId" : 1456
     }
-  } ]
+  } ],
+  "inputs" : {
+    "A1Xx3wIDfhVQmafFb01oQ" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1396
+      }, {
+        "name" : "business_date",
+        "exprId" : 1397
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1398
+      } ]
+    },
+    "ESLw5UflZbtTPVAKDX81z" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1409
+      }, {
+        "name" : "person_id",
+        "exprId" : 1410
+      }, {
+        "name" : "product_id",
+        "exprId" : 1411
+      }, {
+        "name" : "balance",
+        "exprId" : 1412
+      }, {
+        "name" : "business_date",
+        "exprId" : 1413
+      }, {
+        "name" : "import_ts",
+        "exprId" : 1414
+      }, {
+        "name" : "row_num",
+        "exprId" : 1415
+      } ]
+    }
+  },
+  "outputs" : {
+    "3vB7JuJCwfJOjL4Nk-k0J" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 1453
+      }, {
+        "name" : "business_date",
+        "exprId" : 1454
+      }, {
+        "name" : "balance",
+        "exprId" : 1455
+      }, {
+        "name" : "signed_tran_amount",
+        "exprId" : 1456
+      } ]
+    }
+  }
 }

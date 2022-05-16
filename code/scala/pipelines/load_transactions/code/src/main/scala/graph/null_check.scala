@@ -15,6 +15,7 @@ object null_check {
         col("acc_id").isNull
         or col("tran_amount").isNull
         or col("tran_type").isNull or col("tran_type") === ""
+        or col("tran_id").isNull or col("tran_id") === ""
         or col("business_date").isNull
         or col("tran_ts").isNull
         ).count()> 0){
