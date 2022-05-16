@@ -1,6 +1,6 @@
 name: Financial_Reporting
 description: ''
-version: 0.4-SNAPSHOT
+version: '0.5'
 author: anshuman@simpledatalabs.com
 pipelines:
   pipelines/load_person_silver:
