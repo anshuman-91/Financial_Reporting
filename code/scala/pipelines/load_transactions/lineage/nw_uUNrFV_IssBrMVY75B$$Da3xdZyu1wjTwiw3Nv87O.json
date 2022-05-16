@@ -6,104 +6,104 @@
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "acc_id",
-      "exprId" : 650
+      "exprId" : 1069
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "acc_id",
-      "exprId" : 650
+      "exprId" : 1069
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "person_id",
-      "exprId" : 651
+      "exprId" : 1070
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "person_id",
-      "exprId" : 651
+      "exprId" : 1070
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "product_id",
-      "exprId" : 652
+      "exprId" : 1071
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "product_id",
-      "exprId" : 652
+      "exprId" : 1071
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "balance",
-      "exprId" : 653
+      "exprId" : 1072
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "balance",
-      "exprId" : 653
+      "exprId" : 1072
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "business_date",
-      "exprId" : 654
+      "exprId" : 1073
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "business_date",
-      "exprId" : 654
+      "exprId" : 1073
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "import_ts",
-      "exprId" : 655
+      "exprId" : 1074
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "import_ts",
-      "exprId" : 655
+      "exprId" : 1074
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "row_num",
-      "exprId" : 656
+      "exprId" : 1075
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "row_num",
-      "exprId" : 656
+      "exprId" : 1075
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "prev_balance",
-      "exprId" : 657
+      "exprId" : 1076
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "prev_balance",
-      "exprId" : 657
+      "exprId" : 1076
     }
   }, {
     "sources" : [ {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "prev_balance",
-      "exprId" : 657
+      "exprId" : 1076
     }, {
       "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
       "name" : "balance",
-      "exprId" : 653
+      "exprId" : 1072
     } ],
     "destination" : {
       "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
       "name" : "bal_change",
-      "exprId" : 666
+      "exprId" : 1085
     },
     "transformation" : "CASE WHEN (`prev_balance` IS NOT NULL) THEN (`balance` - `prev_balance`) ELSE `balance` END"
   } ],
@@ -111,28 +111,28 @@
     "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 650
+        "exprId" : 1069
       }, {
         "name" : "person_id",
-        "exprId" : 651
+        "exprId" : 1070
       }, {
         "name" : "product_id",
-        "exprId" : 652
+        "exprId" : 1071
       }, {
         "name" : "balance",
-        "exprId" : 653
+        "exprId" : 1072
       }, {
         "name" : "business_date",
-        "exprId" : 654
+        "exprId" : 1073
       }, {
         "name" : "import_ts",
-        "exprId" : 655
+        "exprId" : 1074
       }, {
         "name" : "row_num",
-        "exprId" : 656
+        "exprId" : 1075
       }, {
         "name" : "prev_balance",
-        "exprId" : 657
+        "exprId" : 1076
       } ]
     }
   },
@@ -140,31 +140,31 @@
     "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 650
+        "exprId" : 1069
       }, {
         "name" : "person_id",
-        "exprId" : 651
+        "exprId" : 1070
       }, {
         "name" : "product_id",
-        "exprId" : 652
+        "exprId" : 1071
       }, {
         "name" : "balance",
-        "exprId" : 653
+        "exprId" : 1072
       }, {
         "name" : "business_date",
-        "exprId" : 654
+        "exprId" : 1073
       }, {
         "name" : "import_ts",
-        "exprId" : 655
+        "exprId" : 1074
       }, {
         "name" : "row_num",
-        "exprId" : 656
+        "exprId" : 1075
       }, {
         "name" : "prev_balance",
-        "exprId" : 657
+        "exprId" : 1076
       }, {
         "name" : "bal_change",
-        "exprId" : 666
+        "exprId" : 1085
       } ]
     }
   }

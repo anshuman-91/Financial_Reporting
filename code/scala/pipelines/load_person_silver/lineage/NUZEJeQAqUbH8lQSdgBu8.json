@@ -4,37 +4,37 @@
   "component" : "RowDistributor",
   "transformations" : [ {
     "sources" : [ ],
-    "transformation" : "Filter((type#8416 = PRIMARY))"
+    "transformation" : "Filter((type#1366 = PRIMARY))"
   }, {
     "sources" : [ ],
-    "transformation" : "Filter((type#8416 = ALTERNATE))"
+    "transformation" : "Filter((type#1366 = ALTERNATE))"
   } ],
   "inputs" : {
     "lRMG_RzqZId4la1tbHIDi" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 8409
+        "exprId" : 1359
       }, {
         "name" : "email",
-        "exprId" : 8410
+        "exprId" : 1360
       }, {
         "name" : "name",
-        "exprId" : 8411
+        "exprId" : 1361
       }, {
         "name" : "updated_at",
-        "exprId" : 8412
+        "exprId" : 1362
       }, {
         "name" : "address_line1",
-        "exprId" : 8413
+        "exprId" : 1363
       }, {
         "name" : "address_line2",
-        "exprId" : 8414
+        "exprId" : 1364
       }, {
         "name" : "postal_code",
-        "exprId" : 8415
+        "exprId" : 1365
       }, {
         "name" : "type",
-        "exprId" : 8416
+        "exprId" : 1366
       } ]
     }
   },
@@ -42,55 +42,55 @@
     "out0" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 8409
+        "exprId" : 1359
       }, {
         "name" : "email",
-        "exprId" : 8410
+        "exprId" : 1360
       }, {
         "name" : "name",
-        "exprId" : 8411
+        "exprId" : 1361
       }, {
         "name" : "updated_at",
-        "exprId" : 8412
+        "exprId" : 1362
       }, {
         "name" : "address_line1",
-        "exprId" : 8413
+        "exprId" : 1363
       }, {
         "name" : "address_line2",
-        "exprId" : 8414
+        "exprId" : 1364
       }, {
         "name" : "postal_code",
-        "exprId" : 8415
+        "exprId" : 1365
       }, {
         "name" : "type",
-        "exprId" : 8416
+        "exprId" : 1366
       } ]
     },
     "out1" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 8409
+        "exprId" : 1359
       }, {
         "name" : "email",
-        "exprId" : 8410
+        "exprId" : 1360
       }, {
         "name" : "name",
-        "exprId" : 8411
+        "exprId" : 1361
       }, {
         "name" : "updated_at",
-        "exprId" : 8412
+        "exprId" : 1362
       }, {
         "name" : "address_line1",
-        "exprId" : 8413
+        "exprId" : 1363
       }, {
         "name" : "address_line2",
-        "exprId" : 8414
+        "exprId" : 1364
       }, {
         "name" : "postal_code",
-        "exprId" : 8415
+        "exprId" : 1365
       }, {
         "name" : "type",
-        "exprId" : 8416
+        "exprId" : 1366
       } ]
     }
   }
