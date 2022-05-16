@@ -7,16 +7,16 @@
     "g80txc1DfEB26EDj1W1P1" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 4186
+        "exprId" : 821
       }, {
         "name" : "business_date",
-        "exprId" : 4187
+        "exprId" : 822
       }, {
         "name" : "signed_tran_amount",
-        "exprId" : 4188
+        "exprId" : 823
       }, {
         "name" : "bal_change",
-        "exprId" : 4189
+        "exprId" : 824
       } ]
     }
   },
@@ -24,16 +24,16 @@
     "6rwlCzlV2sYOyrC8gPJDf" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 4186
+        "exprId" : 821
       }, {
         "name" : "business_date",
-        "exprId" : 4187
+        "exprId" : 822
       }, {
         "name" : "signed_tran_amount",
-        "exprId" : 4188
+        "exprId" : 823
       }, {
         "name" : "bal_change",
-        "exprId" : 4189
+        "exprId" : 824
       } ]
     }
   }
