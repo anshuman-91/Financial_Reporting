@@ -1,0 +1,246 @@
+{
+  "id" : "HPh5AFHEv6C47LCpBHvPE$$1WVcsUKM-pMJufi5tIjTZ",
+  "name" : "HPh5AFHEv6C47LCpBHvPE$$1WVcsUKM-pMJufi5tIjTZ",
+  "component" : "WindowFunction",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "acc_id",
+      "exprId" : 3980
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "acc_id",
+      "exprId" : 3980
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "person_id",
+      "exprId" : 3981
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "person_id",
+      "exprId" : 3981
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "product_id",
+      "exprId" : 3982
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "product_id",
+      "exprId" : 3982
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "balance",
+      "exprId" : 3983
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "balance",
+      "exprId" : 3983
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "business_date",
+      "exprId" : 3984
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "business_date",
+      "exprId" : 3984
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "import_ts",
+      "exprId" : 3985
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "import_ts",
+      "exprId" : 3985
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "row_num",
+      "exprId" : 3986
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "row_num",
+      "exprId" : 3986
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "prev_balance",
+      "exprId" : 3994
+    } ],
+    "destination" : {
+      "port" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+      "name" : "prev_balance",
+      "exprId" : 3994
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "acc_id",
+      "exprId" : 3980
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "acc_id",
+      "exprId" : 3980
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "person_id",
+      "exprId" : 3981
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "person_id",
+      "exprId" : 3981
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "product_id",
+      "exprId" : 3982
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "product_id",
+      "exprId" : 3982
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "balance",
+      "exprId" : 3983
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "balance",
+      "exprId" : 3983
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "business_date",
+      "exprId" : 3984
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "business_date",
+      "exprId" : 3984
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "import_ts",
+      "exprId" : 3985
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "import_ts",
+      "exprId" : 3985
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "row_num",
+      "exprId" : 3986
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "row_num",
+      "exprId" : 3986
+    }
+  }, {
+    "sources" : [ {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "balance",
+      "exprId" : 3983
+    }, {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "acc_id",
+      "exprId" : 3980
+    }, {
+      "port" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+      "name" : "business_date",
+      "exprId" : 3984
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "prev_balance",
+      "exprId" : 3994
+    },
+    "transformation" : "lag(`balance`, 1, NULL) OVER (PARTITION BY `acc_id` ORDER BY `business_date` ASC NULLS FIRST ROWS BETWEEN -1 FOLLOWING AND -1 FOLLOWING)"
+  } ],
+  "inputs" : {
+    "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 3980
+      }, {
+        "name" : "person_id",
+        "exprId" : 3981
+      }, {
+        "name" : "product_id",
+        "exprId" : 3982
+      }, {
+        "name" : "balance",
+        "exprId" : 3983
+      }, {
+        "name" : "business_date",
+        "exprId" : 3984
+      }, {
+        "name" : "import_ts",
+        "exprId" : 3985
+      }, {
+        "name" : "row_num",
+        "exprId" : 3986
+      } ]
+    }
+  },
+  "outputs" : {
+    "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 3980
+      }, {
+        "name" : "person_id",
+        "exprId" : 3981
+      }, {
+        "name" : "product_id",
+        "exprId" : 3982
+      }, {
+        "name" : "balance",
+        "exprId" : 3983
+      }, {
+        "name" : "business_date",
+        "exprId" : 3984
+      }, {
+        "name" : "import_ts",
+        "exprId" : 3985
+      }, {
+        "name" : "row_num",
+        "exprId" : 3986
+      }, {
+        "name" : "prev_balance",
+        "exprId" : 3994
+      } ]
+    }
+  }
+}

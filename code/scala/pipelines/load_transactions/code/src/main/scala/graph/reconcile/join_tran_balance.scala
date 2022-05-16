@@ -22,8 +22,8 @@ object join_tran_balance {
       .select(
         col("in0.acc_id").as("acc_id"),
         col("in0.business_date").as("business_date"),
-        col("in1.balance").as("balance"),
-        col("in0.signed_tran_amount").as("signed_tran_amount")
+        col("in0.signed_tran_amount").as("signed_tran_amount"),
+        col("in1.bal_change").as("bal_change")
       )
 
 }

@@ -3,7 +3,7 @@
     "id" : "1",
     "language" : "scala",
     "fabricId" : "838",
-    "frontEndLanguage" : "sql",
+    "frontEndLanguage" : "python",
     "mode" : "batch",
     "interimMode" : "Full",
     "udfs" : {
@@ -103,7 +103,7 @@
           "AddReplaceColumn" : {
             "sourceColumn" : "import_ts",
             "expression" : {
-              "format" : "sql",
+              "format" : "python",
               "expression" : "current_timestamp()"
             }
           },
@@ -233,8 +233,8 @@
       "metadata" : {
         "label" : "reconcile",
         "slug" : "reconcile",
-        "x" : -1069.5,
-        "y" : -797.5,
+        "x" : -1052.5,
+        "y" : -795.5,
         "language" : "scala",
         "phase" : -1,
         "cache" : false,
@@ -292,9 +292,21 @@
         "target" : "bf7DyaxpQjK0c3Mo_aCRx",
         "targetPort" : "G8pG2AR31Pi0IHMmBYT7k"
       }, {
-        "id" : "bvpYOGudpeprDrqTYuQTR",
+        "id" : "l78ZlIFn7CM5Qt6J5QdI5",
         "source" : "bf7DyaxpQjK0c3Mo_aCRx",
         "sourcePort" : "wMsTxz_hUtCwtdMLKVcGP",
+        "target" : "HPh5AFHEv6C47LCpBHvPE$$1WVcsUKM-pMJufi5tIjTZ",
+        "targetPort" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT"
+      }, {
+        "id" : "GpHEJ-otCRDRY9IZ6ZVxR",
+        "source" : "HPh5AFHEv6C47LCpBHvPE$$1WVcsUKM-pMJufi5tIjTZ",
+        "sourcePort" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+        "target" : "nw_uUNrFV_IssBrMVY75B$$Da3xdZyu1wjTwiw3Nv87O",
+        "targetPort" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2"
+      }, {
+        "id" : "1KJkdtRPO3_aYDX7GO23o",
+        "source" : "nw_uUNrFV_IssBrMVY75B$$Da3xdZyu1wjTwiw3Nv87O",
+        "sourcePort" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
         "target" : "CXEX2MKtzZ5qTy34BI9by",
         "targetPort" : "ESLw5UflZbtTPVAKDX81z"
       } ],
@@ -305,8 +317,8 @@
           "metadata" : {
             "label" : "balances_1",
             "slug" : "balances_1",
-            "x" : -841.5,
-            "y" : -220.5,
+            "x" : -919.5,
+            "y" : -216.5,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -355,8 +367,8 @@
               "AddReplaceColumn" : {
                 "sourceColumn" : "signed_tran_amount",
                 "expression" : {
-                  "format" : "sql",
-                  "expression" : "case when tran_type == 'DEBIT' then -tran_amount else tran_amount end"
+                  "format" : "python",
+                  "expression" : "when((col(\"tran_type\") == lit(\"DEBIT\")), - col(\"tran_amount\")).otherwise(col(\"tran_amount\"))"
                 }
               },
               "DropColumn" : {
@@ -375,8 +387,8 @@
           "metadata" : {
             "label" : "Filter_1",
             "slug" : "Filter_1",
-            "x" : -559.5,
-            "y" : -213.5,
+            "x" : -637.5,
+            "y" : -209.5,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -396,9 +408,54 @@
           "properties" : {
             "columnsSelector" : [ "G8pG2AR31Pi0IHMmBYT7k##row_num" ],
             "condition" : {
-              "format" : "sql",
-              "expression" : "row_num = 1"
+              "format" : "python",
+              "expression" : "(col(\"row_num\") == lit(1))"
             }
+          }
+        },
+        "nw_uUNrFV_IssBrMVY75B$$Da3xdZyu1wjTwiw3Nv87O" : {
+          "id" : "nw_uUNrFV_IssBrMVY75B$$Da3xdZyu1wjTwiw3Nv87O",
+          "component" : "SchemaTransform",
+          "metadata" : {
+            "label" : "SchemaTransform_1",
+            "slug" : "SchemaTransform_1",
+            "x" : -303.5,
+            "y" : -151.25,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2##prev_balance", "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2##balance" ],
+            "transformations" : [ {
+              "kind" : "AddReplaceColumn",
+              "AddReplaceColumn" : {
+                "sourceColumn" : "bal_change",
+                "expression" : {
+                  "format" : "python",
+                  "expression" : "when(col(\"prev_balance\").isNotNull(),col(\"balance\") - col(\"prev_balance\")).otherwise(col(\"balance\") )"
+                }
+              },
+              "DropColumn" : {
+                "sourceColumn" : ""
+              },
+              "RenameColumn" : {
+                "sourceColumn" : "",
+                "targetColumn" : ""
+              }
+            } ]
           }
         },
         "JDaForlkwnE2Qlm5JZ38V" : {
@@ -407,8 +464,8 @@
           "metadata" : {
             "label" : "check_unmatches",
             "slug" : "check_unmatches",
-            "x" : -135.5,
-            "y" : -312.5,
+            "x" : 159.5,
+            "y" : -324.5,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -461,8 +518,8 @@
               "_row_id" : null,
               "target" : "signed_tran_amount",
               "expression" : {
-                "format" : "sql",
-                "expression" : "sum(signed_tran_amount)"
+                "format" : "python",
+                "expression" : "sum(col(\"signed_tran_amount\"))"
               },
               "description" : ""
             } ],
@@ -474,19 +531,74 @@
               "_row_id" : null,
               "target" : "acc_id",
               "expression" : {
-                "format" : "sql",
-                "expression" : "acc_id"
+                "format" : "python",
+                "expression" : "col(\"acc_id\")"
               },
               "description" : ""
             }, {
               "_row_id" : null,
               "target" : "business_date",
               "expression" : {
-                "format" : "sql",
-                "expression" : "business_date"
+                "format" : "python",
+                "expression" : "col(\"business_date\")"
               },
               "description" : ""
             } ]
+          }
+        },
+        "HPh5AFHEv6C47LCpBHvPE$$1WVcsUKM-pMJufi5tIjTZ" : {
+          "id" : "HPh5AFHEv6C47LCpBHvPE$$1WVcsUKM-pMJufi5tIjTZ",
+          "component" : "WindowFunction",
+          "metadata" : {
+            "label" : "WindowFunction_2",
+            "slug" : "WindowFunction_2",
+            "x" : -479.5,
+            "y" : -173,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "5GSIWcQ-dHndjzmOiALzu$$bomiDwlK7nsoFbE85ULEg",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "userSpecifiedEnd" : null,
+            "expressionColumns" : [ {
+              "_row_id" : "",
+              "target" : "prev_balance",
+              "expression" : {
+                "format" : "python",
+                "expression" : "lag(col(\"balance\"),1)"
+              },
+              "description" : ""
+            } ],
+            "frameType" : "row",
+            "partitionColumns" : [ {
+              "format" : "python",
+              "expression" : "col(\"acc_id\")"
+            } ],
+            "activeTab" : "windowPartition",
+            "columnsSelector" : [ "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT##acc_id", "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT##business_date", "TXkmx6n9CCT60Dka1wrfD$$bIkPirZytHTi0L7gE2-JT##balance" ],
+            "specifyFrame" : false,
+            "frameStart" : null,
+            "orderColumns" : [ {
+              "expression" : {
+                "format" : "python",
+                "expression" : "col(\"business_date\")"
+              },
+              "sortType" : "asc"
+            } ],
+            "frameEnd" : null,
+            "userSpecifiedStart" : null
           }
         },
         "-FFdT7ViDGIbO9OUDFvxe" : {
@@ -495,8 +607,8 @@
           "metadata" : {
             "label" : "WindowFunction_1",
             "slug" : "WindowFunction_1",
-            "x" : -700,
-            "y" : -211.5,
+            "x" : -778,
+            "y" : -207.5,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -519,18 +631,18 @@
               "_row_id" : "c_8",
               "target" : "row_num",
               "expression" : {
-                "format" : "sql",
+                "format" : "python",
                 "expression" : "row_number()"
               },
               "description" : ""
             } ],
             "frameType" : "row",
             "partitionColumns" : [ {
-              "format" : "sql",
-              "expression" : "acc_id"
+              "format" : "python",
+              "expression" : "col(\"acc_id\")"
             }, {
-              "format" : "sql",
-              "expression" : "business_date"
+              "format" : "python",
+              "expression" : "col(\"business_date\")"
             } ],
             "activeTab" : "windowUse",
             "columnsSelector" : [ "WI6eJ9EssNgYP03SbFRoH##acc_id", "WI6eJ9EssNgYP03SbFRoH##business_date", "WI6eJ9EssNgYP03SbFRoH##import_ts" ],
@@ -538,8 +650,8 @@
             "frameStart" : null,
             "orderColumns" : [ {
               "expression" : {
-                "format" : "sql",
-                "expression" : "import_ts"
+                "format" : "python",
+                "expression" : "col(\"import_ts\")"
               },
               "sortType" : "desc"
             } ],
@@ -553,8 +665,8 @@
           "metadata" : {
             "label" : "join_tran_balance",
             "slug" : "join_tran_balance",
-            "x" : -439.5,
-            "y" : -315.5,
+            "x" : -134.5,
+            "y" : -324.5,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -578,8 +690,8 @@
             "conditions" : [ {
               "alias" : "in1",
               "expression" : {
-                "format" : "sql",
-                "expression" : "in0.acc_id == in1.acc_id and in0.business_date = in1.business_date"
+                "format" : "python",
+                "expression" : "((col(\"in0.acc_id\") == col(\"in1.acc_id\")) & (col(\"in0.business_date\") == col(\"in1.business_date\")))"
               },
               "joinType" : "inner"
             } ],
@@ -587,37 +699,37 @@
               "_row_id" : null,
               "target" : "acc_id",
               "expression" : {
-                "format" : "sql",
-                "expression" : "in0.acc_id"
+                "format" : "python",
+                "expression" : "col(\"in0.acc_id\")"
               },
               "description" : ""
             }, {
               "_row_id" : null,
               "target" : "business_date",
               "expression" : {
-                "format" : "sql",
-                "expression" : "in0.business_date"
-              },
-              "description" : ""
-            }, {
-              "_row_id" : null,
-              "target" : "balance",
-              "expression" : {
-                "format" : "sql",
-                "expression" : "in1.balance"
+                "format" : "python",
+                "expression" : "col(\"in0.business_date\")"
               },
               "description" : ""
             }, {
               "_row_id" : null,
               "target" : "signed_tran_amount",
               "expression" : {
-                "format" : "sql",
-                "expression" : "in0.signed_tran_amount"
+                "format" : "python",
+                "expression" : "col(\"in0.signed_tran_amount\")"
+              },
+              "description" : ""
+            }, {
+              "_row_id" : null,
+              "target" : "bal_change",
+              "expression" : {
+                "format" : "python",
+                "expression" : "col(\"in1.bal_change\")"
               },
               "description" : ""
             } ],
             "activeTab" : "expressions",
-            "columnsSelector" : [ "A1Xx3wIDfhVQmafFb01oQ##acc_id", "ESLw5UflZbtTPVAKDX81z##acc_id", "A1Xx3wIDfhVQmafFb01oQ##business_date", "ESLw5UflZbtTPVAKDX81z##business_date", "A1Xx3wIDfhVQmafFb01oQ##acc_id", "A1Xx3wIDfhVQmafFb01oQ##business_date", "ESLw5UflZbtTPVAKDX81z##balance", "A1Xx3wIDfhVQmafFb01oQ##signed_tran_amount" ],
+            "columnsSelector" : [ "A1Xx3wIDfhVQmafFb01oQ##acc_id", "ESLw5UflZbtTPVAKDX81z##acc_id", "A1Xx3wIDfhVQmafFb01oQ##business_date", "ESLw5UflZbtTPVAKDX81z##business_date", "A1Xx3wIDfhVQmafFb01oQ##acc_id", "A1Xx3wIDfhVQmafFb01oQ##business_date", "A1Xx3wIDfhVQmafFb01oQ##signed_tran_amount", "ESLw5UflZbtTPVAKDX81z##bal_change" ],
             "whereClause" : null,
             "headAlias" : "in0"
           }
@@ -628,8 +740,8 @@
           "metadata" : {
             "label" : "unmatched",
             "slug" : "unmatched",
-            "x" : -310.5,
-            "y" : -313.5,
+            "x" : 10.5,
+            "y" : -323.5,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -647,10 +759,10 @@
             "selectedInputFields" : [ ]
           },
           "properties" : {
-            "columnsSelector" : [ "U_bd_E7wyVoHWTGvBxGkg##balance", "U_bd_E7wyVoHWTGvBxGkg##signed_tran_amount" ],
+            "columnsSelector" : [ "U_bd_E7wyVoHWTGvBxGkg##bal_change", "U_bd_E7wyVoHWTGvBxGkg##signed_tran_amount" ],
             "condition" : {
-              "format" : "sql",
-              "expression" : "balance != signed_tran_amount"
+              "format" : "python",
+              "expression" : "col(\"bal_change\")!= col(\"signed_tran_amount\")"
             }
           }
         }

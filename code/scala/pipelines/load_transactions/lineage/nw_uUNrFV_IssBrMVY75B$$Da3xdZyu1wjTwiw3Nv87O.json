@@ -1,0 +1,171 @@
+{
+  "id" : "nw_uUNrFV_IssBrMVY75B$$Da3xdZyu1wjTwiw3Nv87O",
+  "name" : "nw_uUNrFV_IssBrMVY75B$$Da3xdZyu1wjTwiw3Nv87O",
+  "component" : "SchemaTransform",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "acc_id",
+      "exprId" : 4015
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "acc_id",
+      "exprId" : 4015
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "person_id",
+      "exprId" : 4016
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "person_id",
+      "exprId" : 4016
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "product_id",
+      "exprId" : 4017
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "product_id",
+      "exprId" : 4017
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "balance",
+      "exprId" : 4018
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "balance",
+      "exprId" : 4018
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "business_date",
+      "exprId" : 4019
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "business_date",
+      "exprId" : 4019
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "import_ts",
+      "exprId" : 4020
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "import_ts",
+      "exprId" : 4020
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "row_num",
+      "exprId" : 4021
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "row_num",
+      "exprId" : 4021
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "prev_balance",
+      "exprId" : 4022
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "prev_balance",
+      "exprId" : 4022
+    }
+  }, {
+    "sources" : [ {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "prev_balance",
+      "exprId" : 4022
+    }, {
+      "port" : "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2",
+      "name" : "balance",
+      "exprId" : 4018
+    } ],
+    "destination" : {
+      "port" : "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el",
+      "name" : "bal_change",
+      "exprId" : 4031
+    },
+    "transformation" : "CASE WHEN (`prev_balance` IS NOT NULL) THEN (`balance` - `prev_balance`) ELSE `balance` END"
+  } ],
+  "inputs" : {
+    "mLhlm53FNuJXUzvMlAdS6$$oTo1SL1lZ903NjzVtrAy2" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 4015
+      }, {
+        "name" : "person_id",
+        "exprId" : 4016
+      }, {
+        "name" : "product_id",
+        "exprId" : 4017
+      }, {
+        "name" : "balance",
+        "exprId" : 4018
+      }, {
+        "name" : "business_date",
+        "exprId" : 4019
+      }, {
+        "name" : "import_ts",
+        "exprId" : 4020
+      }, {
+        "name" : "row_num",
+        "exprId" : 4021
+      }, {
+        "name" : "prev_balance",
+        "exprId" : 4022
+      } ]
+    }
+  },
+  "outputs" : {
+    "9ljnbWGWzTY_B9xd26-YA$$hm_V3w7o6GIpEJjP1f3el" : {
+      "columns" : [ {
+        "name" : "acc_id",
+        "exprId" : 4015
+      }, {
+        "name" : "person_id",
+        "exprId" : 4016
+      }, {
+        "name" : "product_id",
+        "exprId" : 4017
+      }, {
+        "name" : "balance",
+        "exprId" : 4018
+      }, {
+        "name" : "business_date",
+        "exprId" : 4019
+      }, {
+        "name" : "import_ts",
+        "exprId" : 4020
+      }, {
+        "name" : "row_num",
+        "exprId" : 4021
+      }, {
+        "name" : "prev_balance",
+        "exprId" : 4022
+      }, {
+        "name" : "bal_change",
+        "exprId" : 4031
+      } ]
+    }
+  }
+}

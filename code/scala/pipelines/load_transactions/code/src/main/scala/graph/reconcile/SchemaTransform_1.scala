@@ -9,9 +9,13 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object unmatched {
+object SchemaTransform_1 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(col("bal_change") =!= col("signed_tran_amount"))
+    in.withColumn("bal_change",
+                  when(col("prev_balance").isNotNull,
+                       col("balance") - col("prev_balance")
+                  ).otherwise(col("balance"))
+    )
 
 }
