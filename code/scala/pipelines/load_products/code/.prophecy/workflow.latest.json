@@ -20,6 +20,10 @@
         "fields" : [ ]
       },
       "fabrics" : {
+        "recipes_fabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
         "anshuman" : {
           "type" : "record",
           "fields" : [ ]

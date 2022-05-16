@@ -11,6 +11,14 @@ object Source_0 {
 
   def apply(spark: SparkSession): DataFrame = {
     Config.fabricName match {
+      case "recipes_fabric" =>
+        spark.read
+          .format("csv")
+          .option("header", true)
+          .option("sep",    ",")
+          .load(
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/person/bronze"
+          )
       case "anshuman2" =>
         spark.read
           .format("json")

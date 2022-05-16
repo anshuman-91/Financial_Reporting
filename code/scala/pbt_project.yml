@@ -104,6 +104,18 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-06 12:51:36'
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-16 07:40:25'
+      anshuman:
+        fabricId: 811
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-16 07:43:49'
   datasets/products_bronze:
     name: products_bronze
     description: ''
@@ -206,6 +218,12 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 10:38:45'
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-16 07:40:25'
 jobs:
   jobs/silver_loads2:
     name: silver_loads2
