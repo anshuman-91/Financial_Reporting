@@ -7,3 +7,7 @@ schedule for gold table
 *** Release notes for version: 0.6 ***
 
 main
+
+*** Release notes for version: 0.7 ***
+
+tset
