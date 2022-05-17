@@ -56,6 +56,36 @@
         "configurations" : [ ]
       }
     },
+    "JDMykxtGnm1MVksizR6fS" : {
+      "id" : "JDMykxtGnm1MVksizR6fS",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script",
+        "x" : 50.375,
+        "y" : -442.3125
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "42PLktsK01d1qJkf_v7L-"
+        } ],
+        "outputs" : [ {
+          "id" : "Iuy9jDZkNnxs0RcIRnZMu"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"$$$$$$$$$$$$$$$$$$$anshu$$$$$$$$$\")"
+      }
+    },
     "tDStoHkoP8G9OZDZW3g_z" : {
       "id" : "tDStoHkoP8G9OZDZW3g_z",
       "component" : "Pipeline",
@@ -205,5 +235,11 @@
     "target" : "261T72tIEo6-suQhFific",
     "sourcePort" : "w8LuuaS8zaQyBrMr8Y2Bu",
     "targetPort" : "xbCUzhCIaHR2kPqa9gznH"
+  }, {
+    "id" : "QTBEUHKcTVO4TzwvA4dmO",
+    "source" : "261T72tIEo6-suQhFific",
+    "target" : "JDMykxtGnm1MVksizR6fS",
+    "sourcePort" : "EZAfeLxGsD_sFme1A0T2l",
+    "targetPort" : "42PLktsK01d1qJkf_v7L-"
   } ]
 }

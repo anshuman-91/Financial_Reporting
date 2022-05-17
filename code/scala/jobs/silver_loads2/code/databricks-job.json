@@ -4,36 +4,44 @@
     "PipelineComponent" : {
       "id" : "4088/pipelines/load_person_silver",
       "nodeName" : "load_person_silver",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_person_silver.jar",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_person_silver.jar",
       "language" : "scala"
     }
   }, {
     "PipelineComponent" : {
       "id" : "4088/pipelines/load_products",
       "nodeName" : "load_products",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_products_silver.jar",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_products_silver.jar",
       "language" : "scala"
     }
   }, {
     "PipelineComponent" : {
       "id" : "4088/pipelines/load_acc_status_silver_scala",
       "nodeName" : "load_acc_status",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_acc_status_silver.jar",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_acc_status_silver.jar",
       "language" : "scala"
     }
   }, {
     "PipelineComponent" : {
       "id" : "4088/pipelines/load_transactions",
       "nodeName" : "load_trans",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_transactions_silver.jar",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_transactions_silver.jar",
       "language" : "scala"
     }
   }, {
     "PipelineComponent" : {
       "id" : "4088/pipelines/aggregated_report_gold",
       "nodeName" : "Pipeline_1",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/aggregated_report_gold.jar",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/aggregated_report_gold.jar",
       "language" : "scala"
+    }
+  }, {
+    "ScriptComponent" : {
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/scripts/Financial_Reporting/0.7/4088/silver_loads2/Script_1--342935075.py",
+      "nodeName" : "Script_1",
+      "id" : "JDMykxtGnm1MVksizR6fS",
+      "language" : "python",
+      "content" : "print(\"$$$$$$$$$$$$$$$$$$$anshu$$$$$$$$$\")"
     }
   } ],
   "request" : {
@@ -71,11 +79,11 @@
         },
         "libraries" : [ {
           "maven" : {
-            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.7.2-3.2.0",
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.8.rish-3.2.0",
             "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
           }
         }, {
-          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_person_silver.jar"
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_person_silver.jar"
         } ],
         "email_notifications" : {
           "on_start" : [ "anshuman@simpledatalabs.com" ],
@@ -97,11 +105,11 @@
         },
         "libraries" : [ {
           "maven" : {
-            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.7.2-3.2.0",
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.8.rish-3.2.0",
             "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
           }
         }, {
-          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_products_silver.jar"
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_products_silver.jar"
         } ],
         "email_notifications" : {
           "on_start" : [ "anshuman@simpledatalabs.com" ],
@@ -128,11 +136,11 @@
         },
         "libraries" : [ {
           "maven" : {
-            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.7.2-3.2.0",
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.8.rish-3.2.0",
             "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
           }
         }, {
-          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_acc_status_silver.jar"
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_acc_status_silver.jar"
         } ],
         "email_notifications" : {
           "on_start" : [ "anshuman@simpledatalabs.com" ],
@@ -157,11 +165,11 @@
         },
         "libraries" : [ {
           "maven" : {
-            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.7.2-3.2.0",
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.8.rish-3.2.0",
             "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
           }
         }, {
-          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/load_transactions_silver.jar"
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/load_transactions_silver.jar"
         } ],
         "email_notifications" : {
           "on_start" : [ "anshuman@simpledatalabs.com" ],
@@ -186,12 +194,29 @@
         },
         "libraries" : [ {
           "maven" : {
-            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.7.2-3.2.0",
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.8.rish-3.2.0",
             "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
           }
         }, {
-          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.3/4088/aggregated_report_gold.jar"
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.7/4088/aggregated_report_gold.jar"
         } ],
+        "email_notifications" : { },
+        "max_retries" : 1
+      }, {
+        "task_key" : "Script_1",
+        "depends_on" : [ {
+          "task_key" : "Pipeline_1"
+        } ],
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        },
+        "spark_python_task" : {
+          "python_file" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/scripts/Financial_Reporting/0.7/4088/silver_loads2/Script_1--342935075.py"
+        },
         "email_notifications" : { },
         "max_retries" : 1
       } ],
