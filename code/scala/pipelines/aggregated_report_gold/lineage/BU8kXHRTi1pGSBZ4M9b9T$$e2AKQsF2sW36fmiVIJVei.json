@@ -4,34 +4,34 @@
   "component" : "Filter",
   "transformations" : [ {
     "sources" : [ ],
-    "transformation" : "Filter(((row_num#355 = 1) AND isnotnull(tran_id#349)))"
+    "transformation" : "Filter(((row_num#1265 = 1) AND isnotnull(tran_id#1259)))"
   } ],
   "inputs" : {
     "WDIErQy67dD3M5H7SHZ6Z$$Latro__ggg0kpKV0c6Tp6" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 348
+        "exprId" : 1258
       }, {
         "name" : "tran_id",
-        "exprId" : 349
+        "exprId" : 1259
       }, {
         "name" : "tran_amount",
-        "exprId" : 350
+        "exprId" : 1260
       }, {
         "name" : "tran_type",
-        "exprId" : 351
+        "exprId" : 1261
       }, {
         "name" : "tran_ts",
-        "exprId" : 352
+        "exprId" : 1262
       }, {
         "name" : "business_date",
-        "exprId" : 353
+        "exprId" : 1263
       }, {
         "name" : "import_ts",
-        "exprId" : 354
+        "exprId" : 1264
       }, {
         "name" : "row_num",
-        "exprId" : 355
+        "exprId" : 1265
       } ]
     }
   },
@@ -39,28 +39,28 @@
     "6Puv-e7U9FuZdqoQ5J1Mm$$vVE9ryJlScFn7Q39GA1iE" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 348
+        "exprId" : 1258
       }, {
         "name" : "tran_id",
-        "exprId" : 349
+        "exprId" : 1259
       }, {
         "name" : "tran_amount",
-        "exprId" : 350
+        "exprId" : 1260
       }, {
         "name" : "tran_type",
-        "exprId" : 351
+        "exprId" : 1261
       }, {
         "name" : "tran_ts",
-        "exprId" : 352
+        "exprId" : 1262
       }, {
         "name" : "business_date",
-        "exprId" : 353
+        "exprId" : 1263
       }, {
         "name" : "import_ts",
-        "exprId" : 354
+        "exprId" : 1264
       }, {
         "name" : "row_num",
-        "exprId" : 355
+        "exprId" : 1265
       } ]
     }
   }

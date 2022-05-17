@@ -7,19 +7,19 @@
     "grXCEm7CNvdbi9lmb9uz4" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 4545
+        "exprId" : 1433
       }, {
         "name" : "name",
-        "exprId" : 4546
+        "exprId" : 1434
       }, {
         "name" : "slug",
-        "exprId" : 4547
+        "exprId" : 1435
       }, {
         "name" : "bonus_rate",
-        "exprId" : 4548
+        "exprId" : 1436
       }, {
         "name" : "lock_in_period",
-        "exprId" : 4549
+        "exprId" : 1437
       } ]
     }
   },
@@ -27,19 +27,19 @@
     "nT2E_fbgc6Z3C0U6i7pCV" : {
       "columns" : [ {
         "name" : "id",
-        "exprId" : 4545
+        "exprId" : 1433
       }, {
         "name" : "name",
-        "exprId" : 4546
+        "exprId" : 1434
       }, {
         "name" : "slug",
-        "exprId" : 4547
+        "exprId" : 1435
       }, {
         "name" : "bonus_rate",
-        "exprId" : 4548
+        "exprId" : 1436
       }, {
         "name" : "lock_in_period",
-        "exprId" : 4549
+        "exprId" : 1437
       } ]
     }
   }
