@@ -3,3 +3,7 @@
 *** Release notes for version: 0.5 ***
 
 schedule for gold table
+
+*** Release notes for version: 0.6 ***
+
+main
