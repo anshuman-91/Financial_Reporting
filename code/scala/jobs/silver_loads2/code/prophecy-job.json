@@ -117,6 +117,36 @@
         "configurations" : [ ]
       }
     },
+    "VUBGw_Pe7hrZGx7W9qwlD" : {
+      "id" : "VUBGw_Pe7hrZGx7W9qwlD",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_2",
+        "slug" : "Script",
+        "x" : -1041.3125,
+        "y" : -481.40625
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "p1tUcH58TpQqOGCMnPdUW"
+        } ],
+        "outputs" : [ {
+          "id" : "g_SYjJ1QK1Iav73yHvhEN"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : ""
+      }
+    },
     "Ue_ZYni_tJFaCHUOvnGst" : {
       "id" : "Ue_ZYni_tJFaCHUOvnGst",
       "component" : "Pipeline",

@@ -17,7 +17,14 @@
     "configuration" : {
       "common" : {
         "type" : "record",
-        "fields" : [ ]
+        "fields" : [ {
+          "name" : "run_date",
+          "kind" : {
+            "type" : "string",
+            "value" : "2022-07-22"
+          },
+          "optional" : false
+        } ]
       },
       "fabrics" : {
         "recipes_fabric" : {
