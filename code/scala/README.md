@@ -11,3 +11,7 @@ main
 *** Release notes for version: 0.7 ***
 
 tset
+
+*** Release notes for version: 0.8 ***
+
+added print
