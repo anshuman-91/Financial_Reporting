@@ -9,7 +9,7 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Aggregate_1 {
+object totals {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
     in.groupBy(col("business_date"), col("acc_id"))

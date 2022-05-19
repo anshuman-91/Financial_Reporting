@@ -59,7 +59,7 @@ schema:
     nullable: true
     metadata: {}
   - name: person_updated_at
-    type: string
+    type: timestamp
     nullable: false
     metadata: {}
   - name: person_primary_address_line1

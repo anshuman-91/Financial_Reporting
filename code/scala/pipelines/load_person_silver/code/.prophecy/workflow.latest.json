@@ -357,7 +357,7 @@
     },
     "s6CDvhs-NnSgw0GZn2ZHk" : {
       "id" : "s6CDvhs-NnSgw0GZn2ZHk",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "dedup",
         "slug" : "dedup",

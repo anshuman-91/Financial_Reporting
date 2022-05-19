@@ -63,18 +63,6 @@
     "target" : "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU",
     "targetPort" : "l1QpTv2j8cNdb79Bc2ajj$$3xlk1A033rlCHpVtzi3_u"
   }, {
-    "id" : "v5B8m6H9SOZRPk9wDB86z",
-    "source" : "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU",
-    "sourcePort" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
-    "target" : "aUxghu3KA2pUhQABRvaKb$$_S6xWgiuGYBLB-TPN_1na",
-    "targetPort" : "sXxE6lGLQ69xfkQuS2L1P$$cHt-joa_4wMOI-XVDVt-I"
-  }, {
-    "id" : "osHOWBG5MbtY7f1qh5-Gc",
-    "source" : "aUxghu3KA2pUhQABRvaKb$$_S6xWgiuGYBLB-TPN_1na",
-    "sourcePort" : "p2DBtvva2RAnCq85iTBgQ$$FqvA02X7DP45aPmvFaPSO",
-    "target" : "y-LiT_AtAwW4wV6j1V9Ka$$Ne1ePILs06_UmwhxXiiW9",
-    "targetPort" : "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D"
-  }, {
     "id" : "hMj0CpbAJFY4H_ycl_2BW",
     "source" : "LfhwLnuJkdXdjI9O8L3XA",
     "sourcePort" : "p1pdsq4rQbghZYq43f6qS",
@@ -122,16 +110,22 @@
     "sourcePort" : "PN2YQkE3YHGmFX9YC6nIr$$99owy4lVnC3hXqrxhiUcP",
     "target" : "0Y4HFgaz2aIamlTwb65h-$$pjhWdDO33hFLIe5rpLfD1",
     "targetPort" : "xguR3YggmM9_D52jLityN$$xv1K6ed2u6gB9effIljlz"
+  }, {
+    "id" : "AJIMu2D_AaDnMI4zSZ8Bw",
+    "source" : "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU",
+    "sourcePort" : "z0fyBwCjFSWA7WFPifOLC$$4imwsq-jSTpxY3WMyYUKv",
+    "target" : "y-LiT_AtAwW4wV6j1V9Ka$$Ne1ePILs06_UmwhxXiiW9",
+    "targetPort" : "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D"
   } ],
   "processes" : {
     "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU" : {
       "id" : "LbWvrUmPGvCxHWdVlbw60$$7O2Bj53OQQ1FeV4suUjdU",
       "component" : "Aggregate",
       "metadata" : {
-        "label" : "Aggregate_1",
-        "slug" : "Aggregate_1",
-        "x" : -758.5,
-        "y" : -91.5,
+        "label" : "totals",
+        "slug" : "totals",
+        "x" : -793.5,
+        "y" : -86.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -198,43 +192,14 @@
         } ]
       }
     },
-    "aUxghu3KA2pUhQABRvaKb$$_S6xWgiuGYBLB-TPN_1na" : {
-      "id" : "aUxghu3KA2pUhQABRvaKb$$_S6xWgiuGYBLB-TPN_1na",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "Reformat_1",
-        "x" : -567.75,
-        "y" : -89,
-        "language" : "scala",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "sXxE6lGLQ69xfkQuS2L1P$$cHt-joa_4wMOI-XVDVt-I",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "p2DBtvva2RAnCq85iTBgQ$$FqvA02X7DP45aPmvFaPSO",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
-      }
-    },
     "0Y4HFgaz2aIamlTwb65h-$$pjhWdDO33hFLIe5rpLfD1" : {
       "id" : "0Y4HFgaz2aIamlTwb65h-$$pjhWdDO33hFLIe5rpLfD1",
       "component" : "Target",
       "metadata" : {
         "label" : "Target_1",
         "slug" : "Target_1",
-        "x" : -31.6875,
-        "y" : -163.25,
+        "x" : 71.3125,
+        "y" : 194.75,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -256,10 +221,10 @@
       "id" : "0QngFxTz5KX_t6DeEE7Dw$$N72GZSvWGzq5MK9Dc4FLj",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_2",
-        "slug" : "Source_2",
-        "x" : -1180.75,
-        "y" : 60,
+        "label" : "Products",
+        "slug" : "Products",
+        "x" : -1186.75,
+        "y" : 59,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -281,9 +246,9 @@
       "id" : "1WVjHdzvhwPkYL_Qzzw3w$$dxkzucaDDz-1gXRHosNpE",
       "component" : "Join",
       "metadata" : {
-        "label" : "Join_2",
-        "slug" : "Join_2",
-        "x" : -278.75,
+        "label" : "Join_products",
+        "slug" : "Join_products",
+        "x" : -267.75,
         "y" : 44,
         "language" : "scala",
         "phase" : 0,
@@ -420,8 +385,8 @@
       "id" : "y-LiT_AtAwW4wV6j1V9Ka$$Ne1ePILs06_UmwhxXiiW9",
       "component" : "Join",
       "metadata" : {
-        "label" : "Join_1",
-        "slug" : "Join_1",
+        "label" : "join_transactions",
+        "slug" : "join_transactions",
         "x" : -379.75,
         "y" : -187,
         "language" : "scala",
@@ -525,7 +490,7 @@
     },
     "LfhwLnuJkdXdjI9O8L3XA" : {
       "id" : "LfhwLnuJkdXdjI9O8L3XA",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "get_latest",
         "slug" : "get_latest",
@@ -715,10 +680,10 @@
       "id" : "NnCtz-z_hpQd6nz3dv3U1$$FNnheoBctwWV6RX-COTiX",
       "component" : "Join",
       "metadata" : {
-        "label" : "Join_3",
-        "slug" : "Join_3",
-        "x" : -125.6875,
-        "y" : 177.75,
+        "label" : "Join_people",
+        "slug" : "Join_people",
+        "x" : -130.6875,
+        "y" : 197.75,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -935,8 +900,8 @@
       "id" : "lbrMLFEj_RynkdWL2VTHl",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
+        "label" : "Transactions",
+        "slug" : "Transactions",
         "x" : -1185,
         "y" : -88,
         "language" : "scala",
@@ -958,7 +923,7 @@
     },
     "iWcTqlGxtBqg8udywW6TJ$$zGsOC80i5rlJoFxYiciwE" : {
       "id" : "iWcTqlGxtBqg8udywW6TJ$$zGsOC80i5rlJoFxYiciwE",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "get_latest_1",
         "slug" : "get_latest_1",
@@ -1146,12 +1111,12 @@
     },
     "olD7ndfIWBueeNUyi3q_j$$6UYOxj1nFoTGDIrqDcR3F" : {
       "id" : "olD7ndfIWBueeNUyi3q_j$$6UYOxj1nFoTGDIrqDcR3F",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "SubGraph_1",
         "slug" : "SubGraph_1",
-        "x" : -926.375,
-        "y" : 62,
+        "x" : -640.375,
+        "y" : 61,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -1336,9 +1301,9 @@
       "id" : "No-C64doiSU7K660l6-3-$$Id51SX5WLECbnQYrQUAhL",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_3",
-        "slug" : "Source_3",
-        "x" : -1183.6875,
+        "label" : "People",
+        "slug" : "People",
+        "x" : -1187.6875,
         "y" : 216.5,
         "language" : "scala",
         "phase" : 0,
@@ -1359,12 +1324,12 @@
     },
     "5LstTl-x-VT2cuoWzdHFF$$-HDAo1h7_ij2PnQOGdkIr" : {
       "id" : "5LstTl-x-VT2cuoWzdHFF$$-HDAo1h7_ij2PnQOGdkIr",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "SubGraph_1_1",
         "slug" : "SubGraph_1_1",
-        "x" : -944.375,
-        "y" : 211,
+        "x" : -640.375,
+        "y" : 218,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,

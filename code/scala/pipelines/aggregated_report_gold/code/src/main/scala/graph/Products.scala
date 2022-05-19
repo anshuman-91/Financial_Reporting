@@ -7,7 +7,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import config.ConfigStore._
 
-object Source_3 {
+object Products {
 
   def apply(spark: SparkSession): DataFrame = {
     Config.fabricName match {
@@ -15,7 +15,7 @@ object Source_3 {
         spark.read
           .format("parquet")
           .load(
-            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/person/silver"
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/products/silver"
           )
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
