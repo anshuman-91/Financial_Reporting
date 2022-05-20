@@ -1,6 +1,6 @@
 name: Financial_Reporting
 description: ''
-version: 0.7-SNAPSHOT
+version: 0.8-SNAPSHOT
 author: anshuman@simpledatalabs.com
 language: scala
 pipelines:

@@ -7,22 +7,22 @@
     "Ndo4xcKE0V1enrNC5aahS" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 1137
+        "exprId" : 10060
       }, {
         "name" : "tran_id",
-        "exprId" : 1138
+        "exprId" : 10061
       }, {
         "name" : "business_date",
-        "exprId" : 1139
+        "exprId" : 10062
       }, {
         "name" : "tran_amount",
-        "exprId" : 1140
+        "exprId" : 10063
       }, {
         "name" : "tran_type",
-        "exprId" : 1141
+        "exprId" : 10064
       }, {
         "name" : "tran_ts",
-        "exprId" : 1142
+        "exprId" : 10065
       } ]
     }
   },
@@ -30,22 +30,22 @@
     "eKnlxWwmeaJInGEyF3r3C" : {
       "columns" : [ {
         "name" : "acc_id",
-        "exprId" : 1137
+        "exprId" : 10060
       }, {
         "name" : "tran_id",
-        "exprId" : 1138
+        "exprId" : 10061
       }, {
         "name" : "business_date",
-        "exprId" : 1139
+        "exprId" : 10062
       }, {
         "name" : "tran_amount",
-        "exprId" : 1140
+        "exprId" : 10063
       }, {
         "name" : "tran_type",
-        "exprId" : 1141
+        "exprId" : 10064
       }, {
         "name" : "tran_ts",
-        "exprId" : 1142
+        "exprId" : 10065
       } ]
     }
   }

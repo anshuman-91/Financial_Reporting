@@ -1,0 +1,97 @@
+{
+  "id" : "NUZEJeQAqUbH8lQSdgBu8",
+  "name" : "NUZEJeQAqUbH8lQSdgBu8",
+  "component" : "RowDistributor",
+  "transformations" : [ {
+    "sources" : [ ],
+    "transformation" : "Filter((type#11658 = PRIMARY))"
+  }, {
+    "sources" : [ ],
+    "transformation" : "Filter((type#11658 = ALTERNATE))"
+  } ],
+  "inputs" : {
+    "lRMG_RzqZId4la1tbHIDi" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11651
+      }, {
+        "name" : "email",
+        "exprId" : 11652
+      }, {
+        "name" : "name",
+        "exprId" : 11653
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11654
+      }, {
+        "name" : "address_line1",
+        "exprId" : 11655
+      }, {
+        "name" : "address_line2",
+        "exprId" : 11656
+      }, {
+        "name" : "postal_code",
+        "exprId" : 11657
+      }, {
+        "name" : "type",
+        "exprId" : 11658
+      } ]
+    }
+  },
+  "outputs" : {
+    "out0" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11651
+      }, {
+        "name" : "email",
+        "exprId" : 11652
+      }, {
+        "name" : "name",
+        "exprId" : 11653
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11654
+      }, {
+        "name" : "address_line1",
+        "exprId" : 11655
+      }, {
+        "name" : "address_line2",
+        "exprId" : 11656
+      }, {
+        "name" : "postal_code",
+        "exprId" : 11657
+      }, {
+        "name" : "type",
+        "exprId" : 11658
+      } ]
+    },
+    "out1" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11651
+      }, {
+        "name" : "email",
+        "exprId" : 11652
+      }, {
+        "name" : "name",
+        "exprId" : 11653
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11654
+      }, {
+        "name" : "address_line1",
+        "exprId" : 11655
+      }, {
+        "name" : "address_line2",
+        "exprId" : 11656
+      }, {
+        "name" : "postal_code",
+        "exprId" : 11657
+      }, {
+        "name" : "type",
+        "exprId" : 11658
+      } ]
+    }
+  }
+}
