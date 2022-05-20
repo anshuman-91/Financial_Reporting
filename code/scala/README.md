@@ -15,3 +15,7 @@ tset
 *** Release notes for version: 0.8 ***
 
 added print
+
+*** Release notes for version: 0.9 ***
+
+renames
