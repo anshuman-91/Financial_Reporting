@@ -1,0 +1,76 @@
+{
+  "id" : "BI6AtLg783dbsB3TRHCYv",
+  "name" : "BI6AtLg783dbsB3TRHCYv",
+  "component" : "Script",
+  "transformations" : [ ],
+  "inputs" : {
+    "-NAdgAUUGGuexOFf99OcO" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11952
+      }, {
+        "name" : "email",
+        "exprId" : 11953
+      }, {
+        "name" : "name",
+        "exprId" : 11954
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11955
+      }, {
+        "name" : "primary_address_line1",
+        "exprId" : 11956
+      }, {
+        "name" : "primary_address_line2",
+        "exprId" : 11957
+      }, {
+        "name" : "primary_postal_code",
+        "exprId" : 11958
+      }, {
+        "name" : "alternate_addresses",
+        "exprId" : 11959
+      }, {
+        "name" : "import_ts",
+        "exprId" : 11960
+      }, {
+        "name" : "business_date",
+        "exprId" : 11961
+      } ]
+    }
+  },
+  "outputs" : {
+    "ohyJXZ53Sk1kpCumdHv68" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11952
+      }, {
+        "name" : "email",
+        "exprId" : 11953
+      }, {
+        "name" : "name",
+        "exprId" : 11954
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11955
+      }, {
+        "name" : "primary_address_line1",
+        "exprId" : 11956
+      }, {
+        "name" : "primary_address_line2",
+        "exprId" : 11957
+      }, {
+        "name" : "primary_postal_code",
+        "exprId" : 11958
+      }, {
+        "name" : "alternate_addresses",
+        "exprId" : 11959
+      }, {
+        "name" : "import_ts",
+        "exprId" : 11960
+      }, {
+        "name" : "business_date",
+        "exprId" : 11961
+      } ]
+    }
+  }
+}

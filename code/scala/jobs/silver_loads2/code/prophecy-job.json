@@ -62,8 +62,8 @@
       "metadata" : {
         "label" : "Script_1",
         "slug" : "Script",
-        "x" : 50.375,
-        "y" : -442.3125
+        "x" : 3.375,
+        "y" : -482.3125
       },
       "ports" : {
         "inputs" : [ {
@@ -117,21 +117,21 @@
         "configurations" : [ ]
       }
     },
-    "VUBGw_Pe7hrZGx7W9qwlD" : {
-      "id" : "VUBGw_Pe7hrZGx7W9qwlD",
-      "component" : "Script",
+    "WUN0ZDEurwto95E2P7wHk" : {
+      "id" : "WUN0ZDEurwto95E2P7wHk",
+      "component" : "Pipeline",
       "metadata" : {
-        "label" : "Script_2",
-        "slug" : "Script",
-        "x" : -1041.3125,
-        "y" : -481.40625
+        "label" : "Pipeline_2",
+        "slug" : "Pipeline",
+        "x" : -514.46875,
+        "y" : -460.953125
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "p1tUcH58TpQqOGCMnPdUW"
+          "id" : "pZ3HlN74Y0yq1IYmZkRya"
         } ],
         "outputs" : [ {
-          "id" : "g_SYjJ1QK1Iav73yHvhEN"
+          "id" : "z60hqfctdDe_VC7eFPx50"
         } ]
       },
       "settings" : {
@@ -144,7 +144,11 @@
         }
       },
       "properties" : {
-        "code" : ""
+        "pipelineId" : "4088/pipelines/load_acc_status_silver_scala",
+        "configurations" : [ {
+          "key" : "run_date",
+          "value" : "{{start_date}}"
+        } ]
       }
     },
     "Ue_ZYni_tJFaCHUOvnGst" : {
@@ -270,6 +274,12 @@
     "source" : "261T72tIEo6-suQhFific",
     "target" : "JDMykxtGnm1MVksizR6fS",
     "sourcePort" : "EZAfeLxGsD_sFme1A0T2l",
+    "targetPort" : "42PLktsK01d1qJkf_v7L-"
+  }, {
+    "id" : "Vjp2G7DS9jCpMRSZ0hwpk",
+    "source" : "WUN0ZDEurwto95E2P7wHk",
+    "target" : "JDMykxtGnm1MVksizR6fS",
+    "sourcePort" : "z60hqfctdDe_VC7eFPx50",
     "targetPort" : "42PLktsK01d1qJkf_v7L-"
   } ]
 }

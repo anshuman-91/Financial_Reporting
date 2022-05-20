@@ -1,0 +1,186 @@
+{
+  "id" : "k8YaVFldaT-eC6theHJU1",
+  "name" : "k8YaVFldaT-eC6theHJU1",
+  "component" : "WindowFunction",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "id",
+      "exprId" : 11555
+    } ],
+    "destination" : {
+      "port" : "g51pAIKA0oa_iJWIHUqB-",
+      "name" : "id",
+      "exprId" : 11555
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "email",
+      "exprId" : 11556
+    } ],
+    "destination" : {
+      "port" : "g51pAIKA0oa_iJWIHUqB-",
+      "name" : "email",
+      "exprId" : 11556
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "name",
+      "exprId" : 11557
+    } ],
+    "destination" : {
+      "port" : "g51pAIKA0oa_iJWIHUqB-",
+      "name" : "name",
+      "exprId" : 11557
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "addresses",
+      "exprId" : 11558
+    } ],
+    "destination" : {
+      "port" : "g51pAIKA0oa_iJWIHUqB-",
+      "name" : "addresses",
+      "exprId" : 11558
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "updated_at",
+      "exprId" : 11559
+    } ],
+    "destination" : {
+      "port" : "g51pAIKA0oa_iJWIHUqB-",
+      "name" : "updated_at",
+      "exprId" : 11559
+    }
+  }, {
+    "sources" : [ {
+      "port" : "",
+      "name" : "row_num",
+      "exprId" : 11566
+    } ],
+    "destination" : {
+      "port" : "g51pAIKA0oa_iJWIHUqB-",
+      "name" : "row_num",
+      "exprId" : 11566
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "id",
+      "exprId" : 11555
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "id",
+      "exprId" : 11555
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "email",
+      "exprId" : 11556
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "email",
+      "exprId" : 11556
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "name",
+      "exprId" : 11557
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "name",
+      "exprId" : 11557
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "addresses",
+      "exprId" : 11558
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "addresses",
+      "exprId" : 11558
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "updated_at",
+      "exprId" : 11559
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "updated_at",
+      "exprId" : 11559
+    }
+  }, {
+    "sources" : [ {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "id",
+      "exprId" : 11555
+    }, {
+      "port" : "XaHwNiEcONNAW31Eloxar",
+      "name" : "updated_at",
+      "exprId" : 11559
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "row_num",
+      "exprId" : 11566
+    },
+    "transformation" : "row_number() OVER (PARTITION BY `id` ORDER BY `updated_at` DESC NULLS LAST ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)"
+  } ],
+  "inputs" : {
+    "XaHwNiEcONNAW31Eloxar" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11555
+      }, {
+        "name" : "email",
+        "exprId" : 11556
+      }, {
+        "name" : "name",
+        "exprId" : 11557
+      }, {
+        "name" : "addresses",
+        "exprId" : 11558
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11559
+      } ]
+    }
+  },
+  "outputs" : {
+    "g51pAIKA0oa_iJWIHUqB-" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11555
+      }, {
+        "name" : "email",
+        "exprId" : 11556
+      }, {
+        "name" : "name",
+        "exprId" : 11557
+      }, {
+        "name" : "addresses",
+        "exprId" : 11558
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11559
+      }, {
+        "name" : "row_num",
+        "exprId" : 11566
+      } ]
+    }
+  }
+}

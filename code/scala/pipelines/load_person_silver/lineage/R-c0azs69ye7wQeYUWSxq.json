@@ -1,0 +1,108 @@
+{
+  "id" : "R-c0azs69ye7wQeYUWSxq",
+  "name" : "R-c0azs69ye7wQeYUWSxq",
+  "component" : "Aggregate",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "id",
+      "exprId" : 11716
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "id",
+      "exprId" : 11716
+    }
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "email",
+      "exprId" : 11717
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "email",
+      "exprId" : 11732
+    },
+    "transformation" : "first(`email`)"
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "name",
+      "exprId" : 11718
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "name",
+      "exprId" : 11734
+    },
+    "transformation" : "first(`name`)"
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "updated_at",
+      "exprId" : 11719
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "updated_at",
+      "exprId" : 11736
+    },
+    "transformation" : "first(`updated_at`)"
+  }, {
+    "sources" : [ {
+      "port" : "e0OFsSA23cpxQdDYcWTYN",
+      "name" : "address_string",
+      "exprId" : 11720
+    } ],
+    "destination" : {
+      "port" : "voA-ZoHsz1k5TVzBo80UY",
+      "name" : "address_string",
+      "exprId" : 11738
+    },
+    "transformation" : "collect_list(`address_string`)"
+  } ],
+  "inputs" : {
+    "e0OFsSA23cpxQdDYcWTYN" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11716
+      }, {
+        "name" : "email",
+        "exprId" : 11717
+      }, {
+        "name" : "name",
+        "exprId" : 11718
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11719
+      }, {
+        "name" : "address_string",
+        "exprId" : 11720
+      } ]
+    }
+  },
+  "outputs" : {
+    "voA-ZoHsz1k5TVzBo80UY" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11716
+      }, {
+        "name" : "id",
+        "exprId" : 11716
+      }, {
+        "name" : "email",
+        "exprId" : 11732
+      }, {
+        "name" : "name",
+        "exprId" : 11734
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11736
+      }, {
+        "name" : "address_string",
+        "exprId" : 11738
+      } ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id" : "iQm061Hv90qvRwNU0_9VH",
+  "name" : "iQm061Hv90qvRwNU0_9VH",
+  "component" : "Reformat",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "id",
+      "exprId" : 11676
+    } ],
+    "destination" : {
+      "port" : "Hr4d4xPpJiGbuLGoo85_J",
+      "name" : "id",
+      "exprId" : 11676
+    }
+  }, {
+    "sources" : [ {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "email",
+      "exprId" : 11677
+    } ],
+    "destination" : {
+      "port" : "Hr4d4xPpJiGbuLGoo85_J",
+      "name" : "email",
+      "exprId" : 11677
+    }
+  }, {
+    "sources" : [ {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "name",
+      "exprId" : 11678
+    } ],
+    "destination" : {
+      "port" : "Hr4d4xPpJiGbuLGoo85_J",
+      "name" : "name",
+      "exprId" : 11678
+    }
+  }, {
+    "sources" : [ {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "updated_at",
+      "exprId" : 11679
+    } ],
+    "destination" : {
+      "port" : "Hr4d4xPpJiGbuLGoo85_J",
+      "name" : "updated_at",
+      "exprId" : 11679
+    }
+  }, {
+    "sources" : [ {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "address_line1",
+      "exprId" : 11680
+    }, {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "address_line2",
+      "exprId" : 11681
+    }, {
+      "port" : "ao61NUgHpOuCTwbZ1UMIb",
+      "name" : "postal_code",
+      "exprId" : 11682
+    } ],
+    "destination" : {
+      "port" : "Hr4d4xPpJiGbuLGoo85_J",
+      "name" : "address_string",
+      "exprId" : 11692
+    },
+    "transformation" : "concat_ws('$$$', `address_line1`, `address_line2`, `postal_code`)"
+  } ],
+  "inputs" : {
+    "ao61NUgHpOuCTwbZ1UMIb" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11676
+      }, {
+        "name" : "email",
+        "exprId" : 11677
+      }, {
+        "name" : "name",
+        "exprId" : 11678
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11679
+      }, {
+        "name" : "address_line1",
+        "exprId" : 11680
+      }, {
+        "name" : "address_line2",
+        "exprId" : 11681
+      }, {
+        "name" : "postal_code",
+        "exprId" : 11682
+      }, {
+        "name" : "type",
+        "exprId" : 11683
+      } ]
+    }
+  },
+  "outputs" : {
+    "Hr4d4xPpJiGbuLGoo85_J" : {
+      "columns" : [ {
+        "name" : "id",
+        "exprId" : 11676
+      }, {
+        "name" : "email",
+        "exprId" : 11677
+      }, {
+        "name" : "name",
+        "exprId" : 11678
+      }, {
+        "name" : "updated_at",
+        "exprId" : 11679
+      }, {
+        "name" : "address_string",
+        "exprId" : 11692
+      } ]
+    }
+  }
+}

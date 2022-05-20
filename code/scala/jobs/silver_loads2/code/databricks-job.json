@@ -36,20 +36,19 @@
       "language" : "scala"
     }
   }, {
+    "PipelineComponent" : {
+      "id" : "4088/pipelines/load_acc_status_silver_scala",
+      "nodeName" : "Pipeline_2",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.8/4088/load_acc_status_silver.jar",
+      "language" : "scala"
+    }
+  }, {
     "ScriptComponent" : {
       "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/scripts/Financial_Reporting/0.8/4088/silver_loads2/Script_1--342935075.py",
       "nodeName" : "Script_1",
       "id" : "JDMykxtGnm1MVksizR6fS",
       "language" : "python",
       "content" : "print(\"$$$$$$$$$$$$$$$$$$$anshu$$$$$$$$$\")"
-    }
-  }, {
-    "ScriptComponent" : {
-      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/scripts/Financial_Reporting/0.8/4088/silver_loads2/Script_2--342935074.py",
-      "nodeName" : "Script_2",
-      "id" : "VUBGw_Pe7hrZGx7W9qwlD",
-      "language" : "python",
-      "content" : ""
     }
   } ],
   "request" : {
@@ -211,9 +210,34 @@
         "email_notifications" : { },
         "max_retries" : 1
       }, {
+        "task_key" : "Pipeline_2",
+        "new_cluster" : {
+          "spark_version" : "9.1.x-scala2.12",
+          "node_type_id" : "i3.xlarge",
+          "num_workers" : 1,
+          "driver_node_type_id" : "i3.xlarge",
+          "enable_elastic_disk" : false
+        },
+        "spark_jar_task" : {
+          "main_class_name" : "Main",
+          "parameters" : [ "-C", "fabricName=anshuman2", "-C", "run_date={{start_date}}" ]
+        },
+        "libraries" : [ {
+          "maven" : {
+            "coordinates" : "io.prophecy:prophecy-libs_2.12:3.8.rish-3.2.0",
+            "repo" : "https://prophecyio2.jfrog.io/artifactory/sbt-repo"
+          }
+        }, {
+          "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/pipelines/Financial_Reporting/0.8/4088/load_acc_status_silver.jar"
+        } ],
+        "email_notifications" : { },
+        "max_retries" : 1
+      }, {
         "task_key" : "Script_1",
         "depends_on" : [ {
           "task_key" : "Pipeline_1"
+        }, {
+          "task_key" : "Pipeline_2"
         } ],
         "new_cluster" : {
           "spark_version" : "9.1.x-scala2.12",
@@ -224,20 +248,6 @@
         },
         "spark_python_task" : {
           "python_file" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/scripts/Financial_Reporting/0.8/4088/silver_loads2/Script_1--342935075.py"
-        },
-        "email_notifications" : { },
-        "max_retries" : 1
-      }, {
-        "task_key" : "Script_2",
-        "new_cluster" : {
-          "spark_version" : "9.1.x-scala2.12",
-          "node_type_id" : "i3.xlarge",
-          "num_workers" : 1,
-          "driver_node_type_id" : "i3.xlarge",
-          "enable_elastic_disk" : false
-        },
-        "spark_python_task" : {
-          "python_file" : "dbfs:/FileStore/prophecy/artifacts/prophecy/test/scripts/Financial_Reporting/0.8/4088/silver_loads2/Script_2--342935074.py"
         },
         "email_notifications" : { },
         "max_retries" : 1
