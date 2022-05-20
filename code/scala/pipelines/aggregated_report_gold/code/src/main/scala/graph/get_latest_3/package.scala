@@ -4,7 +4,7 @@ import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
-package object SubGraph_1_1 {
+package object get_latest_3 {
 
   def apply(spark: SparkSession, in0: DataFrame): DataFrame = {
     val df_WindowFunction_1_1_1_1 = WindowFunction_1_1_1_1(spark, in0)

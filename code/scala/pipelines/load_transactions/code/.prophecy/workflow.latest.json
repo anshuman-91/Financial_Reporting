@@ -233,7 +233,7 @@
     },
     "sCnwsXjFy797wviRiseHB" : {
       "id" : "sCnwsXjFy797wviRiseHB",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "reconcile",
         "slug" : "reconcile",

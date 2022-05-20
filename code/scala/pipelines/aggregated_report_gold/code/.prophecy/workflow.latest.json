@@ -196,10 +196,10 @@
       "id" : "0Y4HFgaz2aIamlTwb65h-$$pjhWdDO33hFLIe5rpLfD1",
       "component" : "Target",
       "metadata" : {
-        "label" : "Target_1",
-        "slug" : "Target_1",
-        "x" : 71.3125,
-        "y" : 194.75,
+        "label" : "Report",
+        "slug" : "Report",
+        "x" : 81.3125,
+        "y" : 196.75,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -972,6 +972,51 @@
         "targetPort" : "jHfbzncT-MFI0UhxrwgeA$$SQShKJvmsYyEkBde0Yx3Y"
       } ],
       "processes" : {
+        "pQNKqjTGbZpDWZPqUb5uV$$Hgf2baXf-plhL_TPAUeaJ" : {
+          "id" : "pQNKqjTGbZpDWZPqUb5uV$$Hgf2baXf-plhL_TPAUeaJ",
+          "component" : "SchemaTransform",
+          "metadata" : {
+            "label" : "SchemaTransform_1_1",
+            "slug" : "SchemaTransform_1_1",
+            "x" : 693.5,
+            "y" : 272.5,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "kuZlcqFKcNnvUOyt-ZBmh$$muy6n1NOGDktv3YWIb3qN",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "6rfFMuRTiBJPygiF7WR7M$$qCWhq1Iy0aQy83Dqs4BXr",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ "DFct97hj1FWFbzaxGW2Aa$$iAwwRsNBFlHNAZD9XSryr##row_num" ],
+            "transformations" : [ {
+              "kind" : "DropColumn",
+              "DropColumn" : {
+                "sourceColumn" : "row_num"
+              },
+              "RenameColumn" : {
+                "sourceColumn" : "",
+                "targetColumn" : ""
+              },
+              "AddReplaceColumn" : {
+                "sourceColumn" : "",
+                "expression" : {
+                  "format" : "scala",
+                  "expression" : ""
+                }
+              }
+            } ]
+          }
+        },
         "BU8kXHRTi1pGSBZ4M9b9T$$e2AKQsF2sW36fmiVIJVei" : {
           "id" : "BU8kXHRTi1pGSBZ4M9b9T$$e2AKQsF2sW36fmiVIJVei",
           "component" : "Filter",
@@ -1008,8 +1053,8 @@
           "id" : "cdonco1qZOWMvUuLxqa-5$$n8ES6e4DpYnP-DWAaYA_d",
           "component" : "WindowFunction",
           "metadata" : {
-            "label" : "WindowFunction_1_1",
-            "slug" : "WindowFunction_1_1",
+            "label" : "add_row_num",
+            "slug" : "add_row_num",
             "x" : 215,
             "y" : 324,
             "language" : "scala",
@@ -1061,51 +1106,6 @@
             "frameEnd" : null,
             "userSpecifiedStart" : null
           }
-        },
-        "pQNKqjTGbZpDWZPqUb5uV$$Hgf2baXf-plhL_TPAUeaJ" : {
-          "id" : "pQNKqjTGbZpDWZPqUb5uV$$Hgf2baXf-plhL_TPAUeaJ",
-          "component" : "SchemaTransform",
-          "metadata" : {
-            "label" : "SchemaTransform_1_1",
-            "slug" : "SchemaTransform_1_1",
-            "x" : 693.5,
-            "y" : 272.5,
-            "language" : "scala",
-            "phase" : 0,
-            "cache" : false,
-            "detailedStats" : false
-          },
-          "ports" : {
-            "inputs" : [ {
-              "id" : "kuZlcqFKcNnvUOyt-ZBmh$$muy6n1NOGDktv3YWIb3qN",
-              "slug" : "in"
-            } ],
-            "outputs" : [ {
-              "id" : "6rfFMuRTiBJPygiF7WR7M$$qCWhq1Iy0aQy83Dqs4BXr",
-              "slug" : "out"
-            } ],
-            "selectedInputFields" : [ ]
-          },
-          "properties" : {
-            "columnsSelector" : [ "DFct97hj1FWFbzaxGW2Aa$$iAwwRsNBFlHNAZD9XSryr##row_num" ],
-            "transformations" : [ {
-              "kind" : "DropColumn",
-              "DropColumn" : {
-                "sourceColumn" : "row_num"
-              },
-              "RenameColumn" : {
-                "sourceColumn" : "",
-                "targetColumn" : ""
-              },
-              "AddReplaceColumn" : {
-                "sourceColumn" : "",
-                "expression" : {
-                  "format" : "scala",
-                  "expression" : ""
-                }
-              }
-            } ]
-          }
         }
       }
     },
@@ -1113,8 +1113,8 @@
       "id" : "olD7ndfIWBueeNUyi3q_j$$6UYOxj1nFoTGDIrqDcR3F",
       "component" : "Subgraph",
       "metadata" : {
-        "label" : "SubGraph_1",
-        "slug" : "SubGraph_1",
+        "label" : "get_latest_2",
+        "slug" : "get_latest_2",
         "x" : -640.375,
         "y" : 61,
         "language" : "scala",
@@ -1326,10 +1326,10 @@
       "id" : "5LstTl-x-VT2cuoWzdHFF$$-HDAo1h7_ij2PnQOGdkIr",
       "component" : "Subgraph",
       "metadata" : {
-        "label" : "SubGraph_1_1",
-        "slug" : "SubGraph_1_1",
+        "label" : "get_latest_3",
+        "slug" : "get_latest_3",
         "x" : -640.375,
-        "y" : 218,
+        "y" : 217,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
