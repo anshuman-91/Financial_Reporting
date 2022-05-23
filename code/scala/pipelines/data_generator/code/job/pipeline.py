@@ -9,12 +9,14 @@ def pipeline(spark: SparkSession) -> None:
     df_dummy = dummy(spark)
     df_acc_status_2 = acc_status_2(spark, df_dummy)
     df_transactions = transactions(spark, df_dummy)
-    Target_1(spark, df_transactions)
+    trans_tgt(spark, df_transactions)
     df_acc_status_1 = acc_status_1(spark, df_dummy)
     acc_tgt_1(spark, df_acc_status_1)
     acc_tgt_2(spark, df_acc_status_2)
     df_people = people(spark, df_dummy)
-    Target_2(spark, df_people)
+    df_products = products(spark, df_dummy)
+    products_tgt(spark, df_products)
+    people_tgt(spark, df_people)
 
 def main():
     Utils.initializeFromArgs(Utils.parseArgs())

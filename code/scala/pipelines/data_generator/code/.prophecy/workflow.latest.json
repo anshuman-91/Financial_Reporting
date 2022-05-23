@@ -92,6 +92,18 @@
     "sourcePort" : "f8eikZO30UHlPzxwCOmPO$$e02gs1gWF_-ipcr6AdJpH",
     "target" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
     "targetPort" : "9YpE-lqr0qQD-YF_0qkWe$$VlSHwG2D4bpcRlgTLtBWs"
+  }, {
+    "id" : "fYVFMWpUFLYW3retAAG0X",
+    "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
+    "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
+    "target" : "k1aF2GGoXAqMIhGfndFp_$$70z45hGXkdVYiRHUsA3hM",
+    "targetPort" : "MZQ_a2jU1XDEF-lw42b62$$yjbwVdvkHAdSvs0wUWE2L"
+  }, {
+    "id" : "YUj7YeiShqPU9vVaGF5Ni",
+    "source" : "k1aF2GGoXAqMIhGfndFp_$$70z45hGXkdVYiRHUsA3hM",
+    "sourcePort" : "TsCSlVSJ-s4Z-fuPtSjk4$$0vMt74hjw_S7Q4Qzt7-3q",
+    "target" : "NKoCvku1IoFK0RhPild08$$7eDEZ1bMjyARBL3VpY_mI",
+    "targetPort" : "vU12A12ETZ3nfrwfgIxDQ$$8o-NW6rBPfvjKq08rXumL"
   } ],
   "processes" : {
     "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB" : {
@@ -100,8 +112,8 @@
       "metadata" : {
         "label" : "acc_status_2",
         "slug" : "acc_status_2",
-        "x" : -172,
-        "y" : 34,
+        "x" : -190,
+        "y" : -93,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -128,10 +140,10 @@
       "id" : "yAQj1HjegJNR-uUjxM-X8$$_Qo5jmbxnOEQ_elJUHdqF",
       "component" : "Target",
       "metadata" : {
-        "label" : "Target_1",
-        "slug" : "Target_1",
-        "x" : 25.25,
-        "y" : 198.375,
+        "label" : "trans_tgt",
+        "slug" : "trans_tgt",
+        "x" : 193.25,
+        "y" : -12.625,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -180,8 +192,8 @@
       "metadata" : {
         "label" : "acc_tgt_1",
         "slug" : "acc_tgt_1",
-        "x" : 13.25,
-        "y" : -167.75,
+        "x" : 33.25,
+        "y" : -218.75,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -205,8 +217,8 @@
       "metadata" : {
         "label" : "transactions",
         "slug" : "transactions",
-        "x" : -168.75,
-        "y" : 193.375,
+        "x" : -79.75,
+        "y" : -13.625,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -235,8 +247,8 @@
       "metadata" : {
         "label" : "acc_tgt_2",
         "slug" : "acc_tgt_2",
-        "x" : 13.25,
-        "y" : 39.25,
+        "x" : 29.25,
+        "y" : -92.75,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -260,8 +272,8 @@
       "metadata" : {
         "label" : "people",
         "slug" : "people",
-        "x" : -134.75,
-        "y" : 358.375,
+        "x" : -188.75,
+        "y" : 76.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -279,19 +291,74 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "person_json_1 = '''{\"id\":1,\"name\":\"James Jones\",\"email\":\"james_earl_93@gmail.com\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\",\"addresses\":[{\"postal_code\":\"A24011\",\"address_line1\":\"4638 White Pine Lane\",\"address_line2\":\"Roanoke, Virginia\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD36582\",\"address_line1\":\"1268 George Avenue\",\"address_line2\":\"Theodore, Alabama\",\"type\":\"ALTERNATE\"},{\"postal_code\":\"AX85003\",\"address_line1\":\"3881 Coplin Avenue\",\"address_line2\":\"Phoenix, Arizona\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_2 = '''{\"id\":2,\"name\":\"Jonas Smith\",\"updated_at\":\"2022-05-05T16:12:44.252-05:00\",\"email\":\"jjsmith89@yahoo.com\",\"addresses\":[{\"postal_code\":\"AB33614\",\"address_line1\":\"22897 Maryland Avenue, Tampa, Florida\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD21321\",\"address_line1\":\"559 Lake Floyd Circle, New Castle, Delaware\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_3 = '''{\"id\":3,\"name\":\"Adam Boorman\",\"email\":\"adamb213@gmail.com\",\"updated_at\":\"2022-05-05T05:32:55.864-05:00\",\"addresses\":[{\"postal_code\":\"XR96814\",\"address_line1\":\"4558 Indiana Circle\",\"address_line2\":\"Honolulu, Hawai\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CC47906\",\"address_line1\":\"26 Glenwood Drive\",\"address_line2\":\"West Lafayette, IN\",\"type\":\"ALTERNATE\"}]}'''\npeople_df = spark.read.json(sc.parallelize([person_json_1,person_json_2,person_json_3]))\nout0=people_df.coalesce(1)",
+        "script" : "person_json_1 = '''{\"id\":1,\"name\":\"James Jones\",\"email\":\"james_earl_93@gmail.com\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\",\"addresses\":[{\"postal_code\":\"A24011\",\"address_line1\":\"4638 White Pine Lane\",\"address_line2\":\"Roanoke, Virginia\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD36582\",\"address_line1\":\"1268 George Avenue\",\"address_line2\":\"Theodore, Alabama\",\"type\":\"ALTERNATE\"},{\"postal_code\":\"AX85003\",\"address_line1\":\"3881 Coplin Avenue\",\"address_line2\":\"Phoenix, Arizona\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_2 = '''{\"id\":2,\"name\":\"Jonas Smith\",\"updated_at\":\"2022-05-05T16:12:44.252-05:00\",\"email\":\"jjsmith89@yahoo.com\",\"addresses\":[{\"postal_code\":\"AB33614\",\"address_line1\":\"22897 Maryland Avenue, Tampa, Florida\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD21321\",\"address_line1\":\"559 Lake Floyd Circle, New Castle, Delaware\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_3 = '''{\"id\":3,\"name\":\"Adam Boorman\",\"email\":\"adamb213@gmail.com\",\"updated_at\":\"2022-05-05T05:32:55.864-05:00\",\"addresses\":[{\"postal_code\":\"XR96814\",\"address_line1\":\"4558 Indiana Circle\",\"address_line2\":\"Honolulu, Hawai\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CC47906\",\"address_line1\":\"26 Glenwood Drive\",\"address_line2\":\"West Lafayette, IN\",\"type\":\"ALTERNATE\"}]}'''\npeople_df = spark.read.json(sc.parallelize([person_json_1,person_json_2,person_json_3]))\n# people_df.coalesce(1).write.json(path=\"dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/people/people_2022-05-05.json\",mode='overwrite')\nout0=people_df.coalesce(1)",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "k1aF2GGoXAqMIhGfndFp_$$70z45hGXkdVYiRHUsA3hM" : {
+      "id" : "k1aF2GGoXAqMIhGfndFp_$$70z45hGXkdVYiRHUsA3hM",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "products",
+        "slug" : "products",
+        "x" : -186.75,
+        "y" : 219.375,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MZQ_a2jU1XDEF-lw42b62$$yjbwVdvkHAdSvs0wUWE2L",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TsCSlVSJ-s4Z-fuPtSjk4$$0vMt74hjw_S7Q4Qzt7-3q",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "product_json_1 = '''{\"id\":1,\"name\":\"Fixed Term\",\"properties\":{\"bonus_rate\":1.512,\"lock_in_period\":1},\"slug\":\"Fixed Duration 1 Year\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\"}'''\nproduct_json_2 = '''{\"id\":2,\"name\":\"Savings\",\"properties\":{\"bonus_rate\":1.512},\"slug\":\"Online Savings Account\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\"}'''\nproducts_df = spark.read.json(sc.parallelize([product_json_1,product_json_2]))\nout0=products_df.coalesce(1)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "NKoCvku1IoFK0RhPild08$$7eDEZ1bMjyARBL3VpY_mI" : {
+      "id" : "NKoCvku1IoFK0RhPild08$$7eDEZ1bMjyARBL3VpY_mI",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "products_tgt",
+        "slug" : "products_tgt",
+        "x" : 32.25,
+        "y" : 221.375,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "vU12A12ETZ3nfrwfgIxDQ$$8o-NW6rBPfvjKq08rXumL",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/products_external"
       }
     },
     "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ" : {
       "id" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
       "component" : "Target",
       "metadata" : {
-        "label" : "Target_2",
-        "slug" : "Target_2",
-        "x" : 22.25,
-        "y" : 349.375,
+        "label" : "people_tgt",
+        "slug" : "people_tgt",
+        "x" : 31.25,
+        "y" : 76.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -313,8 +380,8 @@
       "metadata" : {
         "label" : "acc_status_1",
         "slug" : "acc_status_1",
-        "x" : -171,
-        "y" : -115,
+        "x" : -188,
+        "y" : -221,
         "language" : "python",
         "phase" : 0,
         "cache" : false,

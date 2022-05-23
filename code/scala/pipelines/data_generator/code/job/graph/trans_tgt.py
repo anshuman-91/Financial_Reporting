@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 from job.config.ConfigStore import *
 from job.udfs.UDFs import *
 
-def Target_1(spark: SparkSession, in0: DataFrame):
+def trans_tgt(spark: SparkSession, in0: DataFrame):
     if Config.fabricName == "recipes_fabric":
         in0.write\
             .format("parquet")\
