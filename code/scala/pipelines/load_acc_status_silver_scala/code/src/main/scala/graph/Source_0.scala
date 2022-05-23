@@ -49,6 +49,25 @@ object Source_0 {
           .load(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/bronze/"
           )
+      case "recipes_fabric" =>
+        spark.read
+          .format("csv")
+          .option("header", true)
+          .option("sep",    ",")
+          .schema(
+            StructType(
+              Array(
+                StructField("acc_id",        StringType, true),
+                StructField("person_id",     StringType, true),
+                StructField("product_id",    StringType, true),
+                StructField("business_date", StringType, true),
+                StructField("balance",       StringType, true)
+              )
+            )
+          )
+          .load(
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/bronze/"
+          )
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }

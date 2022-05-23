@@ -87,12 +87,6 @@
     "target" : "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk",
     "targetPort" : "lsvlmnz3tNuX-8Kc9tu-w$$0y6Ejj3DTnMQD_Z6dn46z"
   }, {
-    "id" : "KWXkh-WtIauc6n6LZsqcj",
-    "source" : "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk",
-    "sourcePort" : "f8eikZO30UHlPzxwCOmPO$$e02gs1gWF_-ipcr6AdJpH",
-    "target" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
-    "targetPort" : "9YpE-lqr0qQD-YF_0qkWe$$VlSHwG2D4bpcRlgTLtBWs"
-  }, {
     "id" : "fYVFMWpUFLYW3retAAG0X",
     "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
     "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
@@ -104,6 +98,18 @@
     "sourcePort" : "TsCSlVSJ-s4Z-fuPtSjk4$$0vMt74hjw_S7Q4Qzt7-3q",
     "target" : "NKoCvku1IoFK0RhPild08$$7eDEZ1bMjyARBL3VpY_mI",
     "targetPort" : "vU12A12ETZ3nfrwfgIxDQ$$8o-NW6rBPfvjKq08rXumL"
+  }, {
+    "id" : "y-wn_l9d-OwSi0C08VpyD",
+    "source" : "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk",
+    "sourcePort" : "f8eikZO30UHlPzxwCOmPO$$e02gs1gWF_-ipcr6AdJpH",
+    "target" : "QhBdOudbrRpR46JNRPvxT$$mhlkpJvCGxIeJzUUfPnhX",
+    "targetPort" : "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX"
+  }, {
+    "id" : "xvpBC7-lJZIsrlthcYVlq",
+    "source" : "QhBdOudbrRpR46JNRPvxT$$mhlkpJvCGxIeJzUUfPnhX",
+    "sourcePort" : "rqXKj5ZX5rCZ37whTKJuc$$nXwatmnWsgSX-2fSaEXEp",
+    "target" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
+    "targetPort" : "9YpE-lqr0qQD-YF_0qkWe$$VlSHwG2D4bpcRlgTLtBWs"
   } ],
   "processes" : {
     "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB" : {
@@ -131,7 +137,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "acc_status_df_second = spark.createDataFrame(data=[\n    (\"1\", \"1\", \"1\", \"2022-05-05\", \"100.00\"),\n    (\"2\", \"2\", \"1\", \"2022-05-05\", \"150.00\"),\n    (\"3\", \"1\", \"2\", \"2022-05-05\", \"1000.00\"),\n], schema='acc_id string,person_id string,product_id string,business_date string,balance string')\nout0 = acc_status_df_second.coalesce(1)",
+        "script" : "acc_status_df_second = spark.createDataFrame(data=[\n    (\"1\", \"A\", \"P1\", \"2022-05-05\", \"100.00\"),\n    (\"2\", \"B\", \"P1\", \"2022-05-05\", \"150.00\"),\n    (\"3\", \"A\", \"P2\", \"2022-05-05\", \"1000.00\"),\n], schema='acc_id string,person_id string,product_id string,business_date string,balance string')\nout0 = acc_status_df_second.coalesce(1)",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
@@ -184,6 +190,70 @@
       },
       "properties" : {
         "datasetId" : "4088/datasets/acc_status_bronze"
+      }
+    },
+    "QhBdOudbrRpR46JNRPvxT$$mhlkpJvCGxIeJzUUfPnhX" : {
+      "id" : "QhBdOudbrRpR46JNRPvxT$$mhlkpJvCGxIeJzUUfPnhX",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -40.125,
+        "y" : 130.1875,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "rqXKj5ZX5rCZ37whTKJuc$$nXwatmnWsgSX-2fSaEXEp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX##email", "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX##updated_at", "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX##id", "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX##name", "ah-XpS7IxzEudgKm43OZ1$$RA1vw2LHMLyhbcRMHOlfX##addresses" ],
+        "expressions" : [ {
+          "target" : "id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "id"
+          },
+          "description" : ""
+        }, {
+          "target" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "name"
+          },
+          "description" : ""
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "target" : "addresses",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "addresses"
+          },
+          "description" : ""
+        }, {
+          "target" : "updated_at",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "updated_at"
+          },
+          "description" : ""
+        } ]
       }
     },
     "EZSClBL47Z3DV04s3hSib$$lFRYCERyHpakfIrkV2cfI" : {
@@ -272,8 +342,8 @@
       "metadata" : {
         "label" : "people",
         "slug" : "people",
-        "x" : -188.75,
-        "y" : 76.375,
+        "x" : -172.75,
+        "y" : 130.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -291,7 +361,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "person_json_1 = '''{\"id\":1,\"name\":\"James Jones\",\"email\":\"james_earl_93@gmail.com\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\",\"addresses\":[{\"postal_code\":\"A24011\",\"address_line1\":\"4638 White Pine Lane\",\"address_line2\":\"Roanoke, Virginia\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD36582\",\"address_line1\":\"1268 George Avenue\",\"address_line2\":\"Theodore, Alabama\",\"type\":\"ALTERNATE\"},{\"postal_code\":\"AX85003\",\"address_line1\":\"3881 Coplin Avenue\",\"address_line2\":\"Phoenix, Arizona\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_2 = '''{\"id\":2,\"name\":\"Jonas Smith\",\"updated_at\":\"2022-05-05T16:12:44.252-05:00\",\"email\":\"jjsmith89@yahoo.com\",\"addresses\":[{\"postal_code\":\"AB33614\",\"address_line1\":\"22897 Maryland Avenue, Tampa, Florida\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD21321\",\"address_line1\":\"559 Lake Floyd Circle, New Castle, Delaware\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_3 = '''{\"id\":3,\"name\":\"Adam Boorman\",\"email\":\"adamb213@gmail.com\",\"updated_at\":\"2022-05-05T05:32:55.864-05:00\",\"addresses\":[{\"postal_code\":\"XR96814\",\"address_line1\":\"4558 Indiana Circle\",\"address_line2\":\"Honolulu, Hawai\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CC47906\",\"address_line1\":\"26 Glenwood Drive\",\"address_line2\":\"West Lafayette, IN\",\"type\":\"ALTERNATE\"}]}'''\npeople_df = spark.read.json(sc.parallelize([person_json_1,person_json_2,person_json_3]))\n# people_df.coalesce(1).write.json(path=\"dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/people/people_2022-05-05.json\",mode='overwrite')\nout0=people_df.coalesce(1)",
+        "script" : "person_json_1 = '''{\"id\":\"A\",\"name\":\"James Jones\",\"email\":\"james_earl_93@gmail.com\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\",\"addresses\":[{\"postal_code\":\"A24011\",\"address_line1\":\"4638 White Pine Lane\",\"address_line2\":\"Roanoke, Virginia\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD36582\",\"address_line1\":\"1268 George Avenue\",\"address_line2\":\"Theodore, Alabama\",\"type\":\"ALTERNATE\"},{\"postal_code\":\"AX85003\",\"address_line1\":\"3881 Coplin Avenue\",\"address_line2\":\"Phoenix, Arizona\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_2 = '''{\"id\":\"B\",\"name\":\"Jonas Smith\",\"updated_at\":\"2022-05-05T16:12:44.252-05:00\",\"email\":\"jjsmith89@yahoo.com\",\"addresses\":[{\"postal_code\":\"AB33614\",\"address_line1\":\"22897 Maryland Avenue, Tampa, Florida\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD21321\",\"address_line1\":\"559 Lake Floyd Circle, New Castle, Delaware\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_3 = '''{\"id\":\"C\",\"name\":\"Adam Boorman\",\"email\":\"adamb213@gmail.com\",\"updated_at\":\"2022-05-05T05:32:55.864-05:00\",\"addresses\":[{\"postal_code\":\"XR96814\",\"address_line1\":\"4558 Indiana Circle\",\"address_line2\":\"Honolulu, Hawai\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CC47906\",\"address_line1\":\"26 Glenwood Drive\",\"address_line2\":\"West Lafayette, IN\",\"type\":\"ALTERNATE\"}]}'''\npeople_df = spark.read.json(sc.parallelize([person_json_1,person_json_2,person_json_3]))\n# people_df.coalesce(1).write.json(path=\"dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/people/people_2022-05-05.json\",mode='overwrite')\nout0=people_df.coalesce(1)",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
@@ -302,8 +372,8 @@
       "metadata" : {
         "label" : "products",
         "slug" : "products",
-        "x" : -186.75,
-        "y" : 219.375,
+        "x" : -184.75,
+        "y" : 282.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -321,7 +391,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "product_json_1 = '''{\"id\":1,\"name\":\"Fixed Term\",\"properties\":{\"bonus_rate\":1.512,\"lock_in_period\":1},\"slug\":\"Fixed Duration 1 Year\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\"}'''\nproduct_json_2 = '''{\"id\":2,\"name\":\"Savings\",\"properties\":{\"bonus_rate\":1.512},\"slug\":\"Online Savings Account\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\"}'''\nproducts_df = spark.read.json(sc.parallelize([product_json_1,product_json_2]))\nout0=products_df.coalesce(1)",
+        "script" : "product_json_1 = '''{\"id\":\"P1\",\"name\":\"Fixed Term\",\"properties\":{\"bonus_rate\":1.512,\"lock_in_period\":1},\"slug\":\"Fixed Duration 1 Year\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\"}'''\nproduct_json_2 = '''{\"id\":\"P2\",\"name\":\"Savings\",\"properties\":{\"bonus_rate\":1.512},\"slug\":\"Online Savings Account\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\"}'''\nproducts_df = spark.read.json(sc.parallelize([product_json_1,product_json_2]))\nout0=products_df.coalesce(1)",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
@@ -332,8 +402,8 @@
       "metadata" : {
         "label" : "products_tgt",
         "slug" : "products_tgt",
-        "x" : 32.25,
-        "y" : 220.375,
+        "x" : 73.25,
+        "y" : 283.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -357,8 +427,8 @@
       "metadata" : {
         "label" : "people_tgt",
         "slug" : "people_tgt",
-        "x" : 31.25,
-        "y" : 76.375,
+        "x" : 126.25,
+        "y" : 130.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,
@@ -399,7 +469,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "acc_status_df_first = spark.createDataFrame(data=[\n    (\"1\", \"1\", \"1\", \"2022-05-04\", \"0.00\"),\n    (\"2\", \"2\", \"1\", \"2022-05-04\", \"0.00\"),\n    (\"3\", \"1\", \"2\", \"2022-05-04\", \"0.00\"),\n], schema='acc_id string,person_id string,product_id string,business_date string,balance string')\nout0 = acc_status_df_first.coalesce(1)",
+        "script" : "acc_status_df_first = spark.createDataFrame(data=[\n    (\"1\", \"A\", \"P1\", \"2022-05-04\", \"0.00\"),\n    (\"2\", \"B\", \"P1\", \"2022-05-04\", \"0.00\"),\n    (\"3\", \"A\", \"P2\", \"2022-05-04\", \"0.00\"),\n], schema='acc_id string,person_id string,product_id string,business_date string,balance string')\nout0 = acc_status_df_first.coalesce(1)",
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
