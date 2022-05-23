@@ -17,6 +17,7 @@ object Main {
     val df_flatten_schema = flatten_schema(spark, df_dedup)
     val df_null_check     = null_check(spark,     df_flatten_schema)
     val df_import_ts      = import_ts(spark,      df_null_check)
+    val df_Script_1       = Script_1(spark)
     Target_1(spark, df_import_ts)
   }
 

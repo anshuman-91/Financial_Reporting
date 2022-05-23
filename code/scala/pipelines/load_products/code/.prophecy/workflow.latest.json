@@ -301,13 +301,43 @@
         } ]
       }
     },
+    "HrnxZE2YSRkC-G-FIVn9O$$Q_S22JXcgFGON8y2NTpIq" : {
+      "id" : "HrnxZE2YSRkC-G-FIVn9O$$Q_S22JXcgFGON8y2NTpIq",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : -2037.5,
+        "y" : -1251.5,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mUfxyQFM9voSVFLifHe2p$$5FZ672mOXjwsFrQh6berb",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "V4acfBPKLKck8EOwYR5NS$$ZvqFtxuiGXDFANuulKMw3",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "",
+        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
+        "scriptMethodFooter" : "    out0\n}"
+      }
+    },
     "Gsr3Ga6WhN0UJaPDD8Crx" : {
       "id" : "Gsr3Ga6WhN0UJaPDD8Crx",
       "component" : "Target",
       "metadata" : {
         "label" : "Target_1",
         "slug" : "Target_1",
-        "x" : -980,
+        "x" : -952,
         "y" : -1047,
         "language" : "scala",
         "phase" : 0,

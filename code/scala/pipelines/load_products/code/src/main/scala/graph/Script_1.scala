@@ -9,11 +9,9 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object dvr_pass {
+object Script_1 {
   def apply(spark: SparkSession, in0: DataFrame): DataFrame = {
     
-    val out0 = in0
-        
     out0
   }
 
