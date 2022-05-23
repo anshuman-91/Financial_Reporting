@@ -1,5 +1,6 @@
 package graph
 
+import io.prophecy.libs._
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._

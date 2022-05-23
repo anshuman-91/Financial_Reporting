@@ -17,12 +17,12 @@ object acc_status {
           .schema(
             StructType(
               Array(
-                StructField("acc_id",        IntegerType,   true),
-                StructField("person_id",     IntegerType,   true),
-                StructField("product_id",    IntegerType,   true),
-                StructField("balance",       DoubleType,    true),
-                StructField("business_date", DateType,      true),
-                StructField("import_ts",     TimestampType, true)
+                StructField("acc_id",        IntegerType,   false),
+                StructField("person_id",     IntegerType,   false),
+                StructField("product_id",    IntegerType,   false),
+                StructField("business_date", DateType,      false),
+                StructField("balance",       DoubleType,    false),
+                StructField("import_ts",     TimestampType, false)
               )
             )
           )

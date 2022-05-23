@@ -1,0 +1,346 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "1010",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "interimMode" : "Full",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "recipes_fabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "anshuman" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "gamedayfabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "anshuman2" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ]
+  },
+  "connections" : [ {
+    "id" : "ZPmZlq_uV0sLdeCSuSbI-",
+    "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
+    "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
+    "target" : "bFerTr-GsLj95vOdSBzr7$$haX7PGdXB6Jqoqsfm4L-H",
+    "targetPort" : "UxLLsBlHp8syWxkjU4YKd$$T_hta2UyGbmCThP15lPfb"
+  }, {
+    "id" : "wlDKwyiS-W-5oR8fxyIew",
+    "source" : "bFerTr-GsLj95vOdSBzr7$$haX7PGdXB6Jqoqsfm4L-H",
+    "sourcePort" : "iZRFbexR0noCVHwEvt28B$$wvzSzFdsst47rVa6eXpVv",
+    "target" : "EZSClBL47Z3DV04s3hSib$$lFRYCERyHpakfIrkV2cfI",
+    "targetPort" : "KVz-1LdiLJjjhGiTi8Caw$$OfnCMIHNybELzAyFOnOZv"
+  }, {
+    "id" : "At-0ucFIqCLcxWZcMq9fh",
+    "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
+    "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
+    "target" : "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB",
+    "targetPort" : "GDOCne463-A7LU4Etnlu9$$iBV71PM6_jFaeUJ0gml45"
+  }, {
+    "id" : "UohLlp6OW_54dc6XU8k8y",
+    "source" : "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB",
+    "sourcePort" : "QPDVaTc9bLI5ZRMSfIRZv$$9hxuZ1STFTBsI-eflCbPw",
+    "target" : "EbPSsGZu5cpQOcqoI5-b2$$ARrdOCq_aS9dqr6o7tYpH",
+    "targetPort" : "Lgny0u9rPLNi9hcMKdZCM$$W4j5HlBGTOqbn1P49cyCe"
+  }, {
+    "id" : "xzrKHLR2nxb7UWWyMqqct",
+    "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
+    "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
+    "target" : "XF39MkvUqZWLfLAnGSKQK$$Z06cGVmM_V6U11x_n3Z9t",
+    "targetPort" : "losqwuFTGFU64G330kJEF$$Hxu3JPsHuD4PjrGNYDhLi"
+  }, {
+    "id" : "Ye3zKq2Ir_C17nWMvddeC",
+    "source" : "XF39MkvUqZWLfLAnGSKQK$$Z06cGVmM_V6U11x_n3Z9t",
+    "sourcePort" : "wjTJCRauVPzQUeI7bpQZW$$nW8_ryTZ5q7We6_37jHq-",
+    "target" : "yAQj1HjegJNR-uUjxM-X8$$_Qo5jmbxnOEQ_elJUHdqF",
+    "targetPort" : "3Q_W6GAHU1I-qaPMroRNG$$WOe8BYKnJZmxCe5_wk33r"
+  }, {
+    "id" : "I0rYPHayJlX7BroW8zn89",
+    "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
+    "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
+    "target" : "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk",
+    "targetPort" : "lsvlmnz3tNuX-8Kc9tu-w$$0y6Ejj3DTnMQD_Z6dn46z"
+  }, {
+    "id" : "KWXkh-WtIauc6n6LZsqcj",
+    "source" : "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk",
+    "sourcePort" : "f8eikZO30UHlPzxwCOmPO$$e02gs1gWF_-ipcr6AdJpH",
+    "target" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
+    "targetPort" : "9YpE-lqr0qQD-YF_0qkWe$$VlSHwG2D4bpcRlgTLtBWs"
+  } ],
+  "processes" : {
+    "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB" : {
+      "id" : "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "acc_status_2",
+        "slug" : "acc_status_2",
+        "x" : -172,
+        "y" : 34,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GDOCne463-A7LU4Etnlu9$$iBV71PM6_jFaeUJ0gml45",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "QPDVaTc9bLI5ZRMSfIRZv$$9hxuZ1STFTBsI-eflCbPw",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "acc_status_df_second = spark.createDataFrame(data=[\n    (\"1\", \"1\", \"1\", \"2022-05-05\", \"100.00\"),\n    (\"2\", \"2\", \"1\", \"2022-05-05\", \"150.00\"),\n    (\"3\", \"1\", \"2\", \"2022-05-05\", \"1000.00\"),\n], schema='acc_id string,person_id string,product_id string,business_date string,balance string')\nout0 = acc_status_df_second.coalesce(1)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "yAQj1HjegJNR-uUjxM-X8$$_Qo5jmbxnOEQ_elJUHdqF" : {
+      "id" : "yAQj1HjegJNR-uUjxM-X8$$_Qo5jmbxnOEQ_elJUHdqF",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 25.25,
+        "y" : 198.375,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3Q_W6GAHU1I-qaPMroRNG$$WOe8BYKnJZmxCe5_wk33r",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/transactions_external"
+      }
+    },
+    "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth" : {
+      "id" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dummy",
+        "slug" : "dummy",
+        "x" : -381.5,
+        "y" : -13.5,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_bronze"
+      }
+    },
+    "EZSClBL47Z3DV04s3hSib$$lFRYCERyHpakfIrkV2cfI" : {
+      "id" : "EZSClBL47Z3DV04s3hSib$$lFRYCERyHpakfIrkV2cfI",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "acc_tgt_1",
+        "slug" : "acc_tgt_1",
+        "x" : 13.25,
+        "y" : -167.75,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KVz-1LdiLJjjhGiTi8Caw$$OfnCMIHNybELzAyFOnOZv",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_external_1"
+      }
+    },
+    "XF39MkvUqZWLfLAnGSKQK$$Z06cGVmM_V6U11x_n3Z9t" : {
+      "id" : "XF39MkvUqZWLfLAnGSKQK$$Z06cGVmM_V6U11x_n3Z9t",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "transactions",
+        "slug" : "transactions",
+        "x" : -168.75,
+        "y" : 193.375,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "losqwuFTGFU64G330kJEF$$Hxu3JPsHuD4PjrGNYDhLi",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "wjTJCRauVPzQUeI7bpQZW$$nW8_ryTZ5q7We6_37jHq-",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "transactions_df = spark.createDataFrame(data=[\n    (\"1\", \"a1x\", \"2022-05-05\", \"200.00\", \"CREDIT\", \"2022-05-05T01:30:00.184-05:00\"),\n    (\"1\", \"a1y\", \"2022-05-05\", \"110.00\", \"DEBIT\", \"2022-05-05T09:45:00.193-05:00\"),\n    (\"1\", \"a1z\", \"2022-05-05\", \"10.00\", \"INTEREST\", \"2022-05-05T12:00:00.564-05:00\"),\n    (\"2\", \"a2a\", \"2022-05-05\", \"50.00\", \"CREDIT\", \"2022-05-05T11:31:22.231-05:00\"),\n    (\"2\", \"a2b\", \"2022-05-05\", \"200.00\", \"CREDIT\", \"2022-05-05T05:04:21.871-05:00\"),\n    (\"2\", \"a2c\", \"2022-05-05\", \"100.00\", \"DEBIT\", \"2022-05-05T12:05:11.135-05:00\"),\n    (\"3\", \"a2d\", \"2022-05-05\", \"449.50\", \"CREDIT\", \"2022-05-05T15:05:15.154-05:00\"),\n    (\"3\", \"a2e\", \"2022-05-05\", \"449.50\", \"CREDIT\", \"2022-05-05T18:05:31.130-05:00\"),\n    (\"3\", \"a2f\", \"2022-05-05\", \"100.00\", \"INTEREST\", \"2022-05-05T22:45:55.116-05:00\"),\n], schema='acc_id string,tran_id string,business_date string,tran_amount string,tran_type string,tran_ts string')\nout0 = transactions_df.coalesce(1)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "EbPSsGZu5cpQOcqoI5-b2$$ARrdOCq_aS9dqr6o7tYpH" : {
+      "id" : "EbPSsGZu5cpQOcqoI5-b2$$ARrdOCq_aS9dqr6o7tYpH",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "acc_tgt_2",
+        "slug" : "acc_tgt_2",
+        "x" : 13.25,
+        "y" : 39.25,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Lgny0u9rPLNi9hcMKdZCM$$W4j5HlBGTOqbn1P49cyCe",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/acc_status_external_2"
+      }
+    },
+    "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk" : {
+      "id" : "DB482FaiXJw5Mz65pvOgT$$DUA_NQXZcuL0GGFdhIBtk",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "people",
+        "slug" : "people",
+        "x" : -134.75,
+        "y" : 358.375,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lsvlmnz3tNuX-8Kc9tu-w$$0y6Ejj3DTnMQD_Z6dn46z",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "f8eikZO30UHlPzxwCOmPO$$e02gs1gWF_-ipcr6AdJpH",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "person_json_1 = '''{\"id\":1,\"name\":\"James Jones\",\"email\":\"james_earl_93@gmail.com\",\"updated_at\":\"2022-05-05T12:00:00.000-05:00\",\"addresses\":[{\"postal_code\":\"A24011\",\"address_line1\":\"4638 White Pine Lane\",\"address_line2\":\"Roanoke, Virginia\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD36582\",\"address_line1\":\"1268 George Avenue\",\"address_line2\":\"Theodore, Alabama\",\"type\":\"ALTERNATE\"},{\"postal_code\":\"AX85003\",\"address_line1\":\"3881 Coplin Avenue\",\"address_line2\":\"Phoenix, Arizona\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_2 = '''{\"id\":2,\"name\":\"Jonas Smith\",\"updated_at\":\"2022-05-05T16:12:44.252-05:00\",\"email\":\"jjsmith89@yahoo.com\",\"addresses\":[{\"postal_code\":\"AB33614\",\"address_line1\":\"22897 Maryland Avenue, Tampa, Florida\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CD21321\",\"address_line1\":\"559 Lake Floyd Circle, New Castle, Delaware\",\"type\":\"ALTERNATE\"}]}'''\nperson_json_3 = '''{\"id\":3,\"name\":\"Adam Boorman\",\"email\":\"adamb213@gmail.com\",\"updated_at\":\"2022-05-05T05:32:55.864-05:00\",\"addresses\":[{\"postal_code\":\"XR96814\",\"address_line1\":\"4558 Indiana Circle\",\"address_line2\":\"Honolulu, Hawai\",\"type\":\"PRIMARY\"},{\"postal_code\":\"CC47906\",\"address_line1\":\"26 Glenwood Drive\",\"address_line2\":\"West Lafayette, IN\",\"type\":\"ALTERNATE\"}]}'''\npeople_df = spark.read.json(sc.parallelize([person_json_1,person_json_2,person_json_3]))\nout0=people_df.coalesce(1)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ" : {
+      "id" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_2",
+        "slug" : "Target_2",
+        "x" : 22.25,
+        "y" : 349.375,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "9YpE-lqr0qQD-YF_0qkWe$$VlSHwG2D4bpcRlgTLtBWs",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { }
+    },
+    "bFerTr-GsLj95vOdSBzr7$$haX7PGdXB6Jqoqsfm4L-H" : {
+      "id" : "bFerTr-GsLj95vOdSBzr7$$haX7PGdXB6Jqoqsfm4L-H",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "acc_status_1",
+        "slug" : "acc_status_1",
+        "x" : -171,
+        "y" : -115,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UxLLsBlHp8syWxkjU4YKd$$T_hta2UyGbmCThP15lPfb",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "iZRFbexR0noCVHwEvt28B$$wvzSzFdsst47rVa6eXpVv",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "acc_status_df_first = spark.createDataFrame(data=[\n    (\"1\", \"1\", \"1\", \"2022-05-04\", \"0.00\"),\n    (\"2\", \"2\", \"1\", \"2022-05-04\", \"0.00\"),\n    (\"3\", \"1\", \"2\", \"2022-05-04\", \"0.00\"),\n], schema='acc_id string,person_id string,product_id string,business_date string,balance string')\nout0 = acc_status_df_first.coalesce(1)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ]
+  }
+}
