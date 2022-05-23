@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "838",
+    "fabricId" : "1010",
     "frontEndLanguage" : "python",
     "mode" : "batch",
     "interimMode" : "Full",
@@ -216,11 +216,9 @@
         "columnsSelector" : [ "4qYk6Q9RSN_hij_iiAc0D##acc_id", "4qYk6Q9RSN_hij_iiAc0D##business_date" ],
         "dedupType" : "any",
         "dedupColumns" : [ {
-          "format" : "python",
-          "expression" : "col(\"acc_id\")"
+          "colName" : "acc_id"
         }, {
-          "format" : "python",
-          "expression" : "col(\"business_date\")"
+          "colName" : "business_date"
         } ]
       }
     },

@@ -3,7 +3,7 @@ schema:
   type: struct
   fields:
   - name: acc_id
-    type: integer
+    type: string
     nullable: true
     metadata: {}
   - name: person_id
@@ -15,10 +15,10 @@ schema:
     nullable: true
     metadata: {}
   - name: business_date
-    type: date
+    type: string
     nullable: true
     metadata: {}
   - name: balance
-    type: double
+    type: string
     nullable: true
     metadata: {}

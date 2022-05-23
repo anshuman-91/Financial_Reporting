@@ -82,8 +82,8 @@
       "metadata" : {
         "label" : "import_ts",
         "slug" : "import_ts",
-        "x" : -1310,
-        "y" : -597.5,
+        "x" : -1341,
+        "y" : -600.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,

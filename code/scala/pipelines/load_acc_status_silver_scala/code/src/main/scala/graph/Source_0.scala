@@ -11,6 +11,25 @@ object Source_0 {
 
   def apply(spark: SparkSession): DataFrame = {
     Config.fabricName match {
+      case "recipes_fabric" =>
+        spark.read
+          .format("csv")
+          .option("header", true)
+          .option("sep",    ",")
+          .schema(
+            StructType(
+              Array(
+                StructField("acc_id",        IntegerType, true),
+                StructField("person_id",     StringType,  true),
+                StructField("product_id",    StringType,  true),
+                StructField("business_date", DateType,    true),
+                StructField("balance",       DoubleType,  true)
+              )
+            )
+          )
+          .load(
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/bronze/"
+          )
       case "anshuman2" =>
         spark.read
           .format("csv")
@@ -31,25 +50,6 @@ object Source_0 {
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/bronze/"
           )
       case "anshuman" =>
-        spark.read
-          .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
-          .schema(
-            StructType(
-              Array(
-                StructField("acc_id",        StringType, true),
-                StructField("person_id",     StringType, true),
-                StructField("product_id",    StringType, true),
-                StructField("business_date", StringType, true),
-                StructField("balance",       StringType, true)
-              )
-            )
-          )
-          .load(
-            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/bronze/"
-          )
-      case "recipes_fabric" =>
         spark.read
           .format("csv")
           .option("header", true)
