@@ -13,9 +13,9 @@ object Main {
   def apply(spark: SparkSession): Unit = {
     val df_Source_0   = Source_0(spark)
     val df_null_check = null_check(spark, df_Source_0)
-    val df_import_ts  = import_ts(spark,  df_null_check)
-    val df_dedupe     = dedupe(spark,     df_import_ts)
-    val df_dvr        = dvr(spark,        df_dedupe)
+    val df_dedupe     = dedupe(spark,     df_null_check)
+    val df_import_ts  = import_ts(spark,  df_dedupe)
+    val df_dvr        = dvr(spark,        df_import_ts)
     Target_1(spark, df_dvr)
   }
 

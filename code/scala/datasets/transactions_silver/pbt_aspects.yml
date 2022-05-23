@@ -10,6 +10,10 @@ schema:
     type: string
     nullable: true
     metadata: {}
+  - name: business_date
+    type: date
+    nullable: true
+    metadata: {}
   - name: tran_amount
     type: double
     nullable: true
@@ -22,11 +26,7 @@ schema:
     type: timestamp
     nullable: true
     metadata: {}
-  - name: business_date
-    type: date
-    nullable: true
-    metadata: {}
   - name: import_ts
-    type: string
-    nullable: true
+    type: timestamp
+    nullable: false
     metadata: {}

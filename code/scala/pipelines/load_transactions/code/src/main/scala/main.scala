@@ -15,7 +15,8 @@ object Main {
     val df_load       = load(spark)
     val df_null_check = null_check(spark, df_load)
     val df_import_ts  = import_ts(spark,  df_null_check)
-    val df_dvr        = dvr(spark,        df_import_ts)
+    val df_dedup      = dedup(spark,      df_import_ts)
+    val df_dvr        = dvr(spark,        df_dedup)
     reconcile.apply(spark, df_dvr)
     Target_1(spark,        df_dvr)
   }

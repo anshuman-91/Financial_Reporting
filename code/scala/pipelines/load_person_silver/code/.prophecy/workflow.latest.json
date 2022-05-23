@@ -699,7 +699,7 @@
           "targetTokens" : [ "addresses", "type" ],
           "target" : "type"
         } ],
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "Xohzv1oLioUZOcxcEu8qT##id", "Xohzv1oLioUZOcxcEu8qT##email", "Xohzv1oLioUZOcxcEu8qT##name", "Xohzv1oLioUZOcxcEu8qT##updated_at", "Xohzv1oLioUZOcxcEu8qT##addresses", "Xohzv1oLioUZOcxcEu8qT##addresses.address_line1", "Xohzv1oLioUZOcxcEu8qT##addresses.address_line2", "Xohzv1oLioUZOcxcEu8qT##addresses.postal_code", "Xohzv1oLioUZOcxcEu8qT##addresses.type" ],
         "explodeColumns" : [ "addresses" ],
         "delimiter" : "-"
       }

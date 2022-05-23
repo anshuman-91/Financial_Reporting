@@ -57,12 +57,6 @@
     "target" : "gKxsEqyxhOYP87qa1uyJG",
     "targetPort" : "J1DGc1TRMEV7MeVPr34cc"
   }, {
-    "id" : "rzW6VlZAE1V4PUWOkBohz",
-    "source" : "gKxsEqyxhOYP87qa1uyJG",
-    "sourcePort" : "iyfYf0pvxFSd1tlbB2Spw",
-    "target" : "Wj0sXv8Th-TSQio-IgExX",
-    "targetPort" : "0HYwZ5V93-6uJ-SSneV97"
-  }, {
     "id" : "q91_3YNzNkKaU044JsRt7",
     "source" : "Wj0sXv8Th-TSQio-IgExX",
     "sourcePort" : "AqGKPEZOeUkvFbuQDj0M6",
@@ -74,6 +68,18 @@
     "sourcePort" : "AqGKPEZOeUkvFbuQDj0M6",
     "target" : "EE20tDULYqjpvgdMo0tY0",
     "targetPort" : "Lvm8KY65WanGCVgb5GlOM"
+  }, {
+    "id" : "Hq52PBvfZ6bO1v2oEy8Eu",
+    "source" : "gKxsEqyxhOYP87qa1uyJG",
+    "sourcePort" : "iyfYf0pvxFSd1tlbB2Spw",
+    "target" : "0waaXAvX_6aSYlsxOLB0F$$Gc0cZuvUIqcUJ2gUE1L2V",
+    "targetPort" : "PdrpDGsmXH5z1FviCSDFR$$l2TWj1O4SVemBdXQe9z1a"
+  }, {
+    "id" : "33H0BRNFE6jGGETwj3WD4",
+    "source" : "0waaXAvX_6aSYlsxOLB0F$$Gc0cZuvUIqcUJ2gUE1L2V",
+    "sourcePort" : "R1TcWDQyvpyaMsbOEd7Mu$$EKuSTO0XnWEpWdo7a9pfX",
+    "target" : "Wj0sXv8Th-TSQio-IgExX",
+    "targetPort" : "0HYwZ5V93-6uJ-SSneV97"
   } ],
   "processes" : {
     "gKxsEqyxhOYP87qa1uyJG" : {
@@ -82,8 +88,8 @@
       "metadata" : {
         "label" : "import_ts",
         "slug" : "import_ts",
-        "x" : -1341,
-        "y" : -600.5,
+        "x" : -1534,
+        "y" : -602.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -121,14 +127,46 @@
         } ]
       }
     },
+    "0waaXAvX_6aSYlsxOLB0F$$Gc0cZuvUIqcUJ2gUE1L2V" : {
+      "id" : "0waaXAvX_6aSYlsxOLB0F$$Gc0cZuvUIqcUJ2gUE1L2V",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "dedup",
+        "slug" : "dedup",
+        "x" : -1337.875,
+        "y" : -603,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PdrpDGsmXH5z1FviCSDFR$$l2TWj1O4SVemBdXQe9z1a",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "R1TcWDQyvpyaMsbOEd7Mu$$EKuSTO0XnWEpWdo7a9pfX",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "PdrpDGsmXH5z1FviCSDFR$$l2TWj1O4SVemBdXQe9z1a##tran_id" ],
+        "dedupType" : "any",
+        "dedupColumns" : [ {
+          "colName" : "tran_id"
+        } ]
+      }
+    },
     "Wj0sXv8Th-TSQio-IgExX" : {
       "id" : "Wj0sXv8Th-TSQio-IgExX",
       "component" : "Script",
       "metadata" : {
         "label" : "dvr",
         "slug" : "dvr",
-        "x" : -1164,
-        "y" : -597.5,
+        "x" : -1163,
+        "y" : -603.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -157,8 +195,8 @@
       "metadata" : {
         "label" : "null_check",
         "slug" : "null_check",
-        "x" : -1484,
-        "y" : -598,
+        "x" : -1679,
+        "y" : -602,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -212,8 +250,8 @@
       "metadata" : {
         "label" : "load",
         "slug" : "load",
-        "x" : -1662,
-        "y" : -598,
+        "x" : -1856,
+        "y" : -602,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
