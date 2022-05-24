@@ -12,14 +12,11 @@ object Target_1 {
   def apply(spark: SparkSession, in: DataFrame): Unit = {
     Config.fabricName match {
       case "recipes_fabric" =>
-        in.write
-          .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
-          .mode("append")
-          .save(
-            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/person/bronze"
-          )
+        var writer = in.write.format("json")
+        writer = writer
+        writer.save(
+          "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/person/bronze/"
+        )
       case "anshuman2" =>
         var writer = in.write.format("json")
         writer = writer

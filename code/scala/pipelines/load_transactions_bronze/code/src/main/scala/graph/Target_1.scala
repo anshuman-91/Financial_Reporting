@@ -13,10 +13,7 @@ object Target_1 {
     Config.fabricName match {
       case "recipes_fabric" =>
         in.write
-          .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
-          .mode("append")
+          .format("parquet")
           .save(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/transactions/bronze/"
           )

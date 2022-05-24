@@ -14,21 +14,8 @@ object Source_0 {
       case "recipes_fabric" =>
         spark.read
           .format("parquet")
-          .option("recursiveFileLookup", true)
-          .schema(
-            StructType(
-              Array(
-                StructField("acc_id",        StringType, true),
-                StructField("tran_id",       StringType, true),
-                StructField("business_date", StringType, true),
-                StructField("tran_amount",   StringType, true),
-                StructField("tran_type",     StringType, true),
-                StructField("tran_ts",       StringType, true)
-              )
-            )
-          )
           .load(
-            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/transactions/"
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/transactions/transactions_2022-05-05.parquet"
           )
       case _ =>
         throw new Exception("No valid dataset present to read fabric")

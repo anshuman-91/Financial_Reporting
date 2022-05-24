@@ -3,12 +3,12 @@ schema:
   type: struct
   fields:
   - name: id
-    type: integer
-    nullable: false
+    type: string
+    nullable: true
     metadata: {}
   - name: name
     type: string
-    nullable: false
+    nullable: true
     metadata: {}
   - name: properties
     type:
@@ -16,19 +16,19 @@ schema:
       fields:
       - name: bonus_rate
         type: double
-        nullable: false
-        metadata: {}
-      - name: lock_in_period
-        type: integer
         nullable: true
         metadata: {}
-    nullable: false
+      - name: lock_in_period
+        type: long
+        nullable: true
+        metadata: {}
+    nullable: true
     metadata: {}
   - name: slug
     type: string
-    nullable: false
+    nullable: true
     metadata: {}
   - name: updated_at
-    type: timestamp
-    nullable: false
+    type: string
+    nullable: true
     metadata: {}
