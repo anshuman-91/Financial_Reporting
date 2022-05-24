@@ -45,21 +45,21 @@
     "externalDependencies" : [ ]
   },
   "connections" : [ {
-    "id" : "thFcjOMUTWqYvy-cz2zIW",
-    "source" : "rPp_dD7XMCc-AZereHQpu$$nRSGpDTYKkPqJkI6FatXi",
-    "sourcePort" : "btfl4-Lv_EI23IlQSXVM7$$8hMQAcnEuAxI-6IyQD9_c",
-    "target" : "rr92LbB3ycxu7s6W_8F53$$ixfqFnD0jl8dBEjx9TISS",
-    "targetPort" : "-7L04FptrgNVsKc8xZJkq$$m9wDbPvmMMpjieIK2MCZT"
+    "id" : "oTAjxi5mx8Ix6MSf1q7mr",
+    "source" : "u87j-8iQiRgKIsOpfDrI0$$aYGlBucCCUx7tYhe_GTWR",
+    "sourcePort" : "oESmuFKy_hC-BLz2X0Bd2$$fxBVmMr_dDfZWEchc0BRA",
+    "target" : "ONKvRD3ednglAeebbgDZi$$SY96hUTHvAN1XbrDwv3rq",
+    "targetPort" : "v2Ur0_3ViaZTkM7qUdlDS$$HR5R1HuwMP5Rv5Mo-4hd3"
   } ],
   "processes" : {
-    "rr92LbB3ycxu7s6W_8F53$$ixfqFnD0jl8dBEjx9TISS" : {
-      "id" : "rr92LbB3ycxu7s6W_8F53$$ixfqFnD0jl8dBEjx9TISS",
+    "ONKvRD3ednglAeebbgDZi$$SY96hUTHvAN1XbrDwv3rq" : {
+      "id" : "ONKvRD3ednglAeebbgDZi$$SY96hUTHvAN1XbrDwv3rq",
       "component" : "Target",
       "metadata" : {
         "label" : "Target_1",
         "slug" : "Target_1",
-        "x" : 646,
-        "y" : 146,
+        "x" : 648,
+        "y" : 132,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -67,24 +67,24 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "-7L04FptrgNVsKc8xZJkq$$m9wDbPvmMMpjieIK2MCZT",
+          "id" : "v2Ur0_3ViaZTkM7qUdlDS$$HR5R1HuwMP5Rv5Mo-4hd3",
           "slug" : "in"
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "datasetId" : "4088/datasets/transactions_bronze"
+        "datasetId" : "4088/datasets/products_bronze"
       }
     },
-    "rPp_dD7XMCc-AZereHQpu$$nRSGpDTYKkPqJkI6FatXi" : {
-      "id" : "rPp_dD7XMCc-AZereHQpu$$nRSGpDTYKkPqJkI6FatXi",
+    "u87j-8iQiRgKIsOpfDrI0$$aYGlBucCCUx7tYhe_GTWR" : {
+      "id" : "u87j-8iQiRgKIsOpfDrI0$$aYGlBucCCUx7tYhe_GTWR",
       "component" : "Source",
       "metadata" : {
         "label" : "Source_0",
         "slug" : "Source_0",
-        "x" : 358,
-        "y" : 149,
+        "x" : 371,
+        "y" : 133,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -93,13 +93,13 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "btfl4-Lv_EI23IlQSXVM7$$8hMQAcnEuAxI-6IyQD9_c",
+          "id" : "oESmuFKy_hC-BLz2X0Bd2$$fxBVmMr_dDfZWEchc0BRA",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "datasetId" : "4088/datasets/transactions_external"
+        "datasetId" : "4088/datasets/products_external"
       }
     }
   },

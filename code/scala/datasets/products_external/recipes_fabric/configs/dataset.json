@@ -1,0 +1,1 @@
+{"format":"avro","recordName":null,"path":"dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/products/","writeMode":null,"compression":null,"avroschema":"","recursiveFileLookup":true,"partitionColumns":null,"ignoreExtension":null,"modifiedBefore":null,"recordNamespace":null,"pathGlobFilter":null,"datasetType":"File","useSchema":true,"modifiedAfter":null}

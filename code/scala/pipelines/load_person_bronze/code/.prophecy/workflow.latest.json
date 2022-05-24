@@ -45,45 +45,20 @@
     "externalDependencies" : [ ]
   },
   "connections" : [ {
-    "id" : "thFcjOMUTWqYvy-cz2zIW",
-    "source" : "rPp_dD7XMCc-AZereHQpu$$nRSGpDTYKkPqJkI6FatXi",
-    "sourcePort" : "btfl4-Lv_EI23IlQSXVM7$$8hMQAcnEuAxI-6IyQD9_c",
-    "target" : "rr92LbB3ycxu7s6W_8F53$$ixfqFnD0jl8dBEjx9TISS",
-    "targetPort" : "-7L04FptrgNVsKc8xZJkq$$m9wDbPvmMMpjieIK2MCZT"
+    "id" : "IiwVdrMYx4D7urIuh990Y",
+    "source" : "sgC2A7Db0ycBadp6_8L5l$$90iDsf-ZIX6nTDkr3vABz",
+    "sourcePort" : "84iezB5PUnUTlEevLHQjL$$5v1oqPZvb4Ays80iq3bX_",
+    "target" : "0mOLGsFqQnO-_Rbt_8XGn$$8esW8mACB07VYvkxYNjCD",
+    "targetPort" : "HwVmoXSv3w6AAI_i3fJns$$png5Wn_ksXadLT9_W1jcw"
   } ],
   "processes" : {
-    "rr92LbB3ycxu7s6W_8F53$$ixfqFnD0jl8dBEjx9TISS" : {
-      "id" : "rr92LbB3ycxu7s6W_8F53$$ixfqFnD0jl8dBEjx9TISS",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "Target_1",
-        "slug" : "Target_1",
-        "x" : 646,
-        "y" : 146,
-        "language" : "scala",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "-7L04FptrgNVsKc8xZJkq$$m9wDbPvmMMpjieIK2MCZT",
-          "slug" : "in"
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "datasetId" : "4088/datasets/transactions_bronze"
-      }
-    },
-    "rPp_dD7XMCc-AZereHQpu$$nRSGpDTYKkPqJkI6FatXi" : {
-      "id" : "rPp_dD7XMCc-AZereHQpu$$nRSGpDTYKkPqJkI6FatXi",
+    "sgC2A7Db0ycBadp6_8L5l$$90iDsf-ZIX6nTDkr3vABz" : {
+      "id" : "sgC2A7Db0ycBadp6_8L5l$$90iDsf-ZIX6nTDkr3vABz",
       "component" : "Source",
       "metadata" : {
         "label" : "Source_0",
         "slug" : "Source_0",
-        "x" : 358,
+        "x" : 428,
         "y" : 149,
         "language" : "scala",
         "phase" : 0,
@@ -93,13 +68,38 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "btfl4-Lv_EI23IlQSXVM7$$8hMQAcnEuAxI-6IyQD9_c",
+          "id" : "84iezB5PUnUTlEevLHQjL$$5v1oqPZvb4Ays80iq3bX_",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "datasetId" : "4088/datasets/transactions_external"
+        "datasetId" : "4088/datasets/person_external"
+      }
+    },
+    "0mOLGsFqQnO-_Rbt_8XGn$$8esW8mACB07VYvkxYNjCD" : {
+      "id" : "0mOLGsFqQnO-_Rbt_8XGn$$8esW8mACB07VYvkxYNjCD",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 723,
+        "y" : 152,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HwVmoXSv3w6AAI_i3fJns$$png5Wn_ksXadLT9_W1jcw",
+          "slug" : "in"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4088/datasets/person_bronze"
       }
     }
   },

@@ -1,0 +1,28 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: acc_id
+    type: string
+    nullable: true
+    metadata: {}
+  - name: tran_id
+    type: string
+    nullable: true
+    metadata: {}
+  - name: business_date
+    type: string
+    nullable: true
+    metadata: {}
+  - name: tran_amount
+    type: string
+    nullable: true
+    metadata: {}
+  - name: tran_type
+    type: string
+    nullable: true
+    metadata: {}
+  - name: tran_ts
+    type: string
+    nullable: true
+    metadata: {}

@@ -17,6 +17,19 @@ pipelines:
       outputs:
       - 4088/datasets/person_silver
     dependencies: {}
+  pipelines/load_person_bronze:
+    name: load_person_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-24 11:01:07'
+    datasets:
+      inputs:
+      - 4088/datasets/person_external
+      outputs:
+      - 4088/datasets/person_bronze
+    dependencies: {}
   pipelines/load_transactions:
     name: load_transactions_silver
     description: ''
@@ -30,6 +43,19 @@ pipelines:
       - 4088/datasets/acc_status_silver
       outputs:
       - 4088/datasets/transactions_silver
+    dependencies: {}
+  pipelines/load_products_bronze:
+    name: load_products_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-24 11:14:39'
+    datasets:
+      inputs:
+      - 4088/datasets/products_external
+      outputs:
+      - 4088/datasets/products_bronze
     dependencies: {}
   pipelines/load_products:
     name: load_products_silver
@@ -65,8 +91,10 @@ pipelines:
     language: scala
     createdAt: '2022-05-24 10:50:17'
     datasets:
-      inputs: []
-      outputs: []
+      inputs:
+      - 4088/datasets/transactions_external
+      outputs:
+      - 4088/datasets/transactions_bronze
     dependencies: {}
   pipelines/aggregated_report_gold:
     name: aggregated_report_gold
@@ -92,6 +120,12 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 13:33:04'
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-24 10:59:45'
   datasets/products_silver:
     name: products_silver
     description: ''
@@ -104,6 +138,18 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 15:30:22'
+  datasets/transactions_external:
+    name: transactions_external
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-24 10:59:00'
+    physicalDatasets:
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-24 10:59:00'
   datasets/person_silver:
     name: person_silver
     description: ''
@@ -140,6 +186,12 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-08 14:59:54'
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-24 11:17:45'
   datasets/gold_fin_reporting:
     name: gold_fin_reporting
     description: ''
@@ -170,6 +222,30 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-07 11:07:27'
+  datasets/products_external:
+    name: products_external
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-24 11:17:19'
+    physicalDatasets:
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-24 11:17:19'
+  datasets/person_external:
+    name: person_external
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-24 11:09:12'
+    physicalDatasets:
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-24 11:09:12'
   datasets/transactions_silver:
     name: transactions_silver
     description: ''
