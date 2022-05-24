@@ -427,8 +427,8 @@
       "metadata" : {
         "label" : "people_tgt",
         "slug" : "people_tgt",
-        "x" : 126.25,
-        "y" : 130.375,
+        "x" : 127.25,
+        "y" : 129.375,
         "language" : "python",
         "phase" : 0,
         "cache" : false,

@@ -226,8 +226,8 @@
       "id" : "BZYMDuL1Giz5OI_Cew1Rf",
       "component" : "Target",
       "metadata" : {
-        "label" : "Target_1",
-        "slug" : "Target_1",
+        "label" : "acc_status_silver",
+        "slug" : "acc_status_silver",
         "x" : -164,
         "y" : -485.5,
         "language" : "scala",
@@ -251,8 +251,8 @@
       "id" : "BGnGX1MIcUQl3eapfr2gY",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_0",
-        "slug" : "Source_0",
+        "label" : "acc_status_bronze",
+        "slug" : "acc_status_bronze",
         "x" : -1062,
         "y" : -480,
         "language" : "scala",
