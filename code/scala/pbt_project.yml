@@ -31,17 +31,6 @@ pipelines:
       outputs:
       - 4088/datasets/transactions_silver
     dependencies: {}
-  pipelines/aggregated_report_gold:
-    name: aggregated_report_gold
-    description: ''
-    author: anshuman@simpledatalabs.com
-    mode: batch
-    language: scala
-    createdAt: '2022-05-10 11:50:19'
-    datasets:
-      inputs: []
-      outputs: []
-    dependencies: {}
   pipelines/load_products:
     name: load_products_silver
     description: ''
@@ -67,6 +56,28 @@ pipelines:
       - 4088/datasets/acc_status_bronze
       outputs:
       - 4088/datasets/acc_status_silver
+    dependencies: {}
+  pipelines/load_transactions_bronze:
+    name: load_transactions_bronze
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-24 10:50:17'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+  pipelines/aggregated_report_gold:
+    name: aggregated_report_gold
+    description: ''
+    author: anshuman@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-05-10 11:50:19'
+    datasets:
+      inputs: []
+      outputs: []
     dependencies: {}
 datasets:
   datasets/transactions_bronze:
