@@ -108,7 +108,7 @@
     },
     "gK5_c_lwm_OuDzO0WU2KB" : {
       "id" : "gK5_c_lwm_OuDzO0WU2KB",
-      "component" : "SubGraph",
+      "component" : "Subgraph",
       "metadata" : {
         "label" : "dedup",
         "slug" : "dedup",

@@ -13,15 +13,8 @@ object Source_0 {
     Config.fabricName match {
       case "recipes_fabric" =>
         import org.apache.avro.Schema
-        var reader = spark.read
-          .format("avro")
-          .option("ignoreExtension",     false)
-          .option("recursiveFileLookup", true)
-        reader = reader.option("avroSchema",
-                               new Schema.Parser()
-                                 .parse("com.databricks.spark.avro".stripMargin)
-                                 .toString()
-        )
+        var reader = spark.read.format("avro")
+        reader = reader
         reader.load(
           "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/products/"
         )
