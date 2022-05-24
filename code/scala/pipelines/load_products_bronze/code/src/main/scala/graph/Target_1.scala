@@ -15,6 +15,7 @@ object Target_1 {
         import org.apache.avro.Schema
         var writer = in.write.format("avro")
         writer = writer
+        writer = writer.mode("append")
         writer.save(
           "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/products/bronze/"
         )

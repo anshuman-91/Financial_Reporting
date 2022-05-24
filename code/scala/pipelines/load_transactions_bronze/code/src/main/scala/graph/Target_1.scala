@@ -14,6 +14,7 @@ object Target_1 {
       case "recipes_fabric" =>
         in.write
           .format("parquet")
+          .mode("append")
           .save(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/transactions/bronze/"
           )

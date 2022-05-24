@@ -12,7 +12,7 @@ object Target_1 {
   def apply(spark: SparkSession, in: DataFrame): Unit = {
     Config.fabricName match {
       case "recipes_fabric" =>
-        var writer = in.write.format("json")
+        var writer = in.write.format("json").mode("append")
         writer = writer
         writer.save(
           "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/person/bronze/"
