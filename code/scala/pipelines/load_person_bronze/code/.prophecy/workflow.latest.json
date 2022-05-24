@@ -83,8 +83,8 @@
       "metadata" : {
         "label" : "Target_1",
         "slug" : "Target_1",
-        "x" : 723,
-        "y" : 152,
+        "x" : 700,
+        "y" : 149,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
