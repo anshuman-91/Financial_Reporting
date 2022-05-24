@@ -2,7 +2,33 @@ version: 1
 schema:
   type: struct
   fields:
-  - name: _corrupt_record
+  - name: id
+    type: string
+    nullable: true
+    metadata: {}
+  - name: name
+    type: string
+    nullable: true
+    metadata: {}
+  - name: properties
+    type:
+      type: struct
+      fields:
+      - name: bonus_rate
+        type: double
+        nullable: true
+        metadata: {}
+      - name: lock_in_period
+        type: long
+        nullable: true
+        metadata: {}
+    nullable: true
+    metadata: {}
+  - name: slug
+    type: string
+    nullable: true
+    metadata: {}
+  - name: updated_at
     type: string
     nullable: true
     metadata: {}

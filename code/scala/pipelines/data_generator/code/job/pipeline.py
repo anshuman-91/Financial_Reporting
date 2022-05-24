@@ -15,6 +15,7 @@ def pipeline(spark: SparkSession) -> None:
     df_acc_status_1 = acc_status_1(spark, df_dummy)
     acc_tgt_1(spark, df_acc_status_1)
     acc_tgt_2(spark, df_acc_status_2)
+    Target_1(spark, df_dummy)
     df_products = products(spark, df_dummy)
     products_tgt(spark, df_products)
     people_tgt(spark, df_Reformat_1)
