@@ -19,21 +19,7 @@ object Source_0 {
           .schema(
             StructType(
               Array(
-                StructField(
-                  "addresses",
-                  ArrayType(
-                    StructType(
-                      Array(
-                        StructField("address_line1", StringType, true),
-                        StructField("address_line2", StringType, true),
-                        StructField("postal_code",   StringType, true),
-                        StructField("type",          StringType, true)
-                      )
-                    ),
-                    true
-                  ),
-                  true
-                ),
+                StructField("addresses",  StringType, true),
                 StructField("email",      StringType, true),
                 StructField("id",         LongType,   true),
                 StructField("name",       StringType, true),

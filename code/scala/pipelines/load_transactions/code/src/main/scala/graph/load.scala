@@ -30,6 +30,14 @@ object load {
           .load(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/transactions/bronze/"
           )
+      case "recipes_fabric" =>
+        spark.read
+          .format("csv")
+          .option("header", true)
+          .option("sep",    ",")
+          .load(
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/transactions/bronze/"
+          )
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }

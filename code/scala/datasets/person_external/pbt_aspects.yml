@@ -3,28 +3,7 @@ schema:
   type: struct
   fields:
   - name: addresses
-    type:
-      type: array
-      elementType:
-        type: struct
-        fields:
-        - name: address_line1
-          type: string
-          nullable: true
-          metadata: {}
-        - name: address_line2
-          type: string
-          nullable: true
-          metadata: {}
-        - name: postal_code
-          type: string
-          nullable: true
-          metadata: {}
-        - name: type
-          type: string
-          nullable: true
-          metadata: {}
-      containsNull: true
+    type: string
     nullable: true
     metadata: {}
   - name: email
