@@ -110,12 +110,6 @@
     "sourcePort" : "rqXKj5ZX5rCZ37whTKJuc$$nXwatmnWsgSX-2fSaEXEp",
     "target" : "OPmtzGG9S3nYD-FnCXjvn$$s8f_r-HOmALm-kDX8BDXZ",
     "targetPort" : "9YpE-lqr0qQD-YF_0qkWe$$VlSHwG2D4bpcRlgTLtBWs"
-  }, {
-    "id" : "PzU_wmJoHbmsyAEomPUHW",
-    "source" : "Te11eTr4dh6UKkntUhuwx$$ZerrYFXkfPTkHpdhDeuth",
-    "sourcePort" : "PLiqIBbcy3gpGSvd2bNIo$$tNu6cP__OCO91cdNHEJS0",
-    "target" : "uJIlJV1rXpsLazWGXOXD5$$2dHX2f_uGrIZw6HiWbZoo",
-    "targetPort" : "1gQHtXFidyndL23V9KQ7u$$d-UWuJJYwcAF3htZYF52r"
   } ],
   "processes" : {
     "uovZiRTgRoyfD3eYYeAgA$$RWZ9_aQN--ejLl5LqjhJB" : {
@@ -371,29 +365,6 @@
         "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
-    },
-    "uJIlJV1rXpsLazWGXOXD5$$2dHX2f_uGrIZw6HiWbZoo" : {
-      "id" : "uJIlJV1rXpsLazWGXOXD5$$2dHX2f_uGrIZw6HiWbZoo",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "Target_1",
-        "slug" : "Target_1",
-        "x" : 384.875,
-        "y" : 218.1875,
-        "language" : "python",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "1gQHtXFidyndL23V9KQ7u$$d-UWuJJYwcAF3htZYF52r",
-          "slug" : "in"
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : { }
     },
     "k1aF2GGoXAqMIhGfndFp_$$70z45hGXkdVYiRHUsA3hM" : {
       "id" : "k1aF2GGoXAqMIhGfndFp_$$70z45hGXkdVYiRHUsA3hM",
