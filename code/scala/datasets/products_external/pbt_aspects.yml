@@ -12,16 +12,11 @@ schema:
     metadata: {}
   - name: properties
     type:
-      type: struct
-      fields:
-      - name: bonus_rate
-        type: double
-        nullable: true
-        metadata: {}
-      - name: lock_in_period
-        type: long
-        nullable: true
-        metadata: {}
+      type: array
+      elementType:
+        type: struct
+        fields: []
+      containsNull: true
     nullable: true
     metadata: {}
   - name: slug
@@ -29,6 +24,6 @@ schema:
     nullable: true
     metadata: {}
   - name: updated_at
-    type: string
+    type: timestamp
     nullable: true
     metadata: {}

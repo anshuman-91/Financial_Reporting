@@ -3,7 +3,12 @@ schema:
   type: struct
   fields:
   - name: addresses
-    type: string
+    type:
+      type: array
+      elementType:
+        type: struct
+        fields: []
+      containsNull: true
     nullable: true
     metadata: {}
   - name: email
@@ -11,7 +16,7 @@ schema:
     nullable: true
     metadata: {}
   - name: id
-    type: long
+    type: string
     nullable: true
     metadata: {}
   - name: name
@@ -19,6 +24,6 @@ schema:
     nullable: true
     metadata: {}
   - name: updated_at
-    type: string
+    type: timestamp
     nullable: true
     metadata: {}

@@ -19,11 +19,14 @@ object Source_0 {
           .schema(
             StructType(
               Array(
-                StructField("addresses",  StringType, true),
-                StructField("email",      StringType, true),
-                StructField("id",         LongType,   true),
-                StructField("name",       StringType, true),
-                StructField("updated_at", StringType, true)
+                StructField("addresses",
+                            ArrayType(StructType(Array()), true),
+                            true
+                ),
+                StructField("email",      StringType,    true),
+                StructField("id",         StringType,    true),
+                StructField("name",       StringType,    true),
+                StructField("updated_at", TimestampType, true)
               )
             )
           )

@@ -15,6 +15,20 @@ object Source_0 {
         import org.apache.avro.Schema
         var reader = spark.read.format("avro")
         reader = reader
+        reader = reader.schema(
+          StructType(
+            Array(
+              StructField("id",   StringType, true),
+              StructField("name", StringType, true),
+              StructField("properties",
+                          ArrayType(StructType(Array()), true),
+                          true
+              ),
+              StructField("slug",       StringType,    true),
+              StructField("updated_at", TimestampType, true)
+            )
+          )
+        )
         reader.load(
           "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/external/products/products_2022-05-05.avro"
         )
