@@ -12,12 +12,13 @@ import graph.dedup
 object Main {
 
   def apply(spark: SparkSession): Unit = {
-    val df_Source_0       = Source_0(spark)
-    val df_dedup          = dedup.apply(spark,    df_Source_0)
-    val df_flatten_schema = flatten_schema(spark, df_dedup)
-    val df_null_check     = null_check(spark,     df_flatten_schema)
-    val df_import_ts      = import_ts(spark,      df_null_check)
-    Target_1(spark, df_import_ts)
+    val df_Source_0            = Source_0(spark)
+    val df_dedup               = dedup.apply(spark,         df_Source_0)
+    val df_flatten_schema      = flatten_schema(spark,      df_dedup)
+    val df_null_check          = null_check(spark,          df_flatten_schema)
+    val df_import_ts           = import_ts(spark,           df_null_check)
+    val df_validate_bonus_rate = validate_bonus_rate(spark, df_import_ts)
+    Target_1(spark, df_validate_bonus_rate)
   }
 
   def main(args: Array[String]): Unit = {

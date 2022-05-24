@@ -1,6 +1,6 @@
 name: Financial_Reporting
 description: ''
-version: 0.8-SNAPSHOT
+version: 0.9-SNAPSHOT
 author: anshuman@simpledatalabs.com
 language: scala
 pipelines:
@@ -193,6 +193,18 @@ datasets:
         description: ''
         author: anshuman@simpledatalabs.com
         createdAt: '2022-05-15 17:55:29'
+  datasets/acc_status_external_1:
+    name: acc_status_external_1
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-23 07:08:09'
+    physicalDatasets:
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-23 07:08:10'
   datasets/acc_status_bronze:
     name: acc_status_bronze
     description: ''
@@ -252,7 +264,19 @@ datasets:
         datasetType: File
         description: ''
         author: anshuman@simpledatalabs.com
-        createdAt: '2022-05-08 14:08:42'
+        createdAt: '2022-05-23 05:14:26'
+  datasets/products_external:
+    name: products_external
+    description: ''
+    author: anshuman@simpledatalabs.com
+    createdAt: '2022-05-23 07:24:19'
+    physicalDatasets:
+      recipes_fabric:
+        fabricId: 1010
+        datasetType: File
+        description: ''
+        author: anshuman@simpledatalabs.com
+        createdAt: '2022-05-23 07:24:19'
   datasets/acc_status_archive:
     name: acc_status_archive
     description: ''

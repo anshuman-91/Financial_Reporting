@@ -21,10 +21,10 @@ object Main {
     val df_collect  = collect(spark,  df_compress)
     val df_primary_join_alternate =
       primary_join_alternate(spark, df_address_distributor_out0, df_collect)
-    val df_null_check = null_check(spark, df_primary_join_alternate)
-    val df_import_ts  = import_ts(spark,  df_null_check)
-    val df_dvr_pass   = dvr_pass(spark,   df_import_ts)
-    Target_1(spark, df_dvr_pass)
+    val df_null_check     = null_check(spark,     df_primary_join_alternate)
+    val df_import_ts      = import_ts(spark,      df_null_check)
+    val df_validate_email = validate_email(spark, df_import_ts)
+    Target_1(spark, df_validate_email)
   }
 
   def main(args: Array[String]): Unit = {

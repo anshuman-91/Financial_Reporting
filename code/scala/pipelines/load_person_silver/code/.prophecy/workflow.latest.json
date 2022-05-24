@@ -699,7 +699,7 @@
           "targetTokens" : [ "addresses", "type" ],
           "target" : "type"
         } ],
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "Xohzv1oLioUZOcxcEu8qT##id", "Xohzv1oLioUZOcxcEu8qT##email", "Xohzv1oLioUZOcxcEu8qT##name", "Xohzv1oLioUZOcxcEu8qT##updated_at", "Xohzv1oLioUZOcxcEu8qT##addresses", "Xohzv1oLioUZOcxcEu8qT##addresses.address_line1", "Xohzv1oLioUZOcxcEu8qT##addresses.address_line2", "Xohzv1oLioUZOcxcEu8qT##addresses.postal_code", "Xohzv1oLioUZOcxcEu8qT##addresses.type" ],
         "explodeColumns" : [ "addresses" ],
         "delimiter" : "-"
       }
@@ -797,8 +797,8 @@
       "id" : "BI6AtLg783dbsB3TRHCYv",
       "component" : "Script",
       "metadata" : {
-        "label" : "dvr_pass",
-        "slug" : "dvr_pass",
+        "label" : "validate_email",
+        "slug" : "validate_email",
         "x" : -304,
         "y" : -939.5,
         "language" : "scala",
@@ -818,7 +818,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "\nval out0 = in0\n    ",
+        "script" : "if(in0.withColumn(\"is_valid_email\",\n    when(col(\"email\").rlike(\"^(.+@.+\\\\.com)(; .+@.+\\\\.com)*$\"),\"valid\")\n    .otherwise(\"invalid\"))\n    .filter(col(\"is_valid_email\") === \"invalid\").count() > 0){\n        throw new RuntimeException(\"Found invalid email addresses\")\n    }\nval out0 = in0\n    ",
         "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame): DataFrame = {",
         "scriptMethodFooter" : "    out0\n}"
       }

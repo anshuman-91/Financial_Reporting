@@ -4,23 +4,23 @@ schema:
   fields:
   - name: acc_id
     type: integer
-    nullable: false
+    nullable: true
     metadata: {}
   - name: person_id
-    type: integer
-    nullable: false
+    type: string
+    nullable: true
     metadata: {}
   - name: product_id
-    type: integer
-    nullable: false
+    type: string
+    nullable: true
     metadata: {}
   - name: business_date
     type: date
-    nullable: false
+    nullable: true
     metadata: {}
   - name: balance
     type: double
-    nullable: false
+    nullable: true
     metadata: {}
   - name: import_ts
     type: timestamp
