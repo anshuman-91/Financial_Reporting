@@ -25,8 +25,7 @@ pipelines:
     language: scala
     createdAt: '2022-05-24 11:19:56'
     datasets:
-      inputs:
-      - 4088/datasets/acc_status_external
+      inputs: []
       outputs: []
     dependencies: {}
   pipelines/load_person_bronze:

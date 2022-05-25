@@ -602,7 +602,7 @@
       "metadata" : {
         "label" : "FlattenSchema_1",
         "slug" : "FlattenSchema_1",
-        "x" : -1330,
+        "x" : -1331,
         "y" : -1094,
         "language" : "scala",
         "phase" : 0,

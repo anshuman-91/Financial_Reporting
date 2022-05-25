@@ -47,6 +47,26 @@ object balances_1 {
           .load(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/silver/"
           )
+      case "recipes_fabric" =>
+        spark.read
+          .format("csv")
+          .option("header", true)
+          .option("sep",    ",")
+          .schema(
+            StructType(
+              Array(
+                StructField("acc_id",        IntegerType,   true),
+                StructField("person_id",     StringType,    true),
+                StructField("product_id",    StringType,    true),
+                StructField("business_date", DateType,      true),
+                StructField("balance",       DoubleType,    true),
+                StructField("import_ts",     TimestampType, false)
+              )
+            )
+          )
+          .load(
+            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/silver"
+          )
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }

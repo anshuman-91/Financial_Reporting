@@ -32,9 +32,7 @@ object load {
           )
       case "recipes_fabric" =>
         spark.read
-          .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
+          .format("parquet")
           .load(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/transactions/bronze/"
           )
