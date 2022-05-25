@@ -38,13 +38,12 @@ object Source_0 {
           "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/products/bronze"
         )
       case "recipes_fabric" =>
-        spark.read
-          .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
-          .load(
-            "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/products/bronze/"
-          )
+        import org.apache.avro.Schema
+        var reader = spark.read.format("avro")
+        reader = reader
+        reader.load(
+          "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/products/bronze/"
+        )
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }
