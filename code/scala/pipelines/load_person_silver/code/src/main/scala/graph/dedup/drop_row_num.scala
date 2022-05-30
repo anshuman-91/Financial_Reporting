@@ -9,9 +9,6 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Filter_1 {
-
-  def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(col("row_num") === lit(1))
-
+object drop_row_num {
+  def apply(spark: SparkSession, in: DataFrame): DataFrame = in
 }

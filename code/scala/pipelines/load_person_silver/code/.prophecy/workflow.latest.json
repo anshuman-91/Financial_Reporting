@@ -393,9 +393,15 @@
         "target" : "HqoQRZw2r4LlJ6-h-Ccj9",
         "targetPort" : "e646SCQ9QBHtrrFlu7Hez"
       }, {
-        "id" : "b7wixNZHBw24qZwa9mMW1",
+        "id" : "C6bayO8j8OKcwzn7vQpvF",
         "source" : "HqoQRZw2r4LlJ6-h-Ccj9",
         "sourcePort" : "LvSIz-Z168Z25E6CMgJh7",
+        "target" : "yawXYXSl6yGauCFGys8jh$$zeSxaP0-dBGuOmq4FdEfx",
+        "targetPort" : "8NOCGYxM0ezOGxj4C6AXN$$NR-r69l-fVuABsv9QBKJX"
+      }, {
+        "id" : "vK32heKXGSIO7UptUDi-h",
+        "source" : "yawXYXSl6yGauCFGys8jh$$zeSxaP0-dBGuOmq4FdEfx",
+        "sourcePort" : "b9q-_Z2plfKSpsEERTI4j$$8C1Gm-z-GHlBQtQKZoAjG",
         "target" : "s6CDvhs-NnSgw0GZn2ZHk",
         "targetPort" : "gwQ3VW-hpaItHbvaDa_YP"
       } ],
@@ -404,10 +410,10 @@
           "id" : "k8YaVFldaT-eC6theHJU1",
           "component" : "WindowFunction",
           "metadata" : {
-            "label" : "WindowFunction_1",
-            "slug" : "WindowFunction_1",
-            "x" : 171,
-            "y" : 215,
+            "label" : "add_row_num",
+            "slug" : "add_row_num",
+            "x" : -77,
+            "y" : 142,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -459,10 +465,10 @@
           "id" : "HqoQRZw2r4LlJ6-h-Ccj9",
           "component" : "Filter",
           "metadata" : {
-            "label" : "Filter_1",
-            "slug" : "Filter_1",
-            "x" : 1084,
-            "y" : 271,
+            "label" : "row_num_eq1",
+            "slug" : "row_num_eq1",
+            "x" : 349,
+            "y" : 142,
             "language" : "scala",
             "phase" : 0,
             "cache" : false,
@@ -485,6 +491,35 @@
               "format" : "sql",
               "expression" : "row_num = 1"
             }
+          }
+        },
+        "yawXYXSl6yGauCFGys8jh$$zeSxaP0-dBGuOmq4FdEfx" : {
+          "id" : "yawXYXSl6yGauCFGys8jh$$zeSxaP0-dBGuOmq4FdEfx",
+          "component" : "SchemaTransform",
+          "metadata" : {
+            "label" : "drop_row_num",
+            "slug" : "drop_row_num",
+            "x" : 802.2,
+            "y" : 143.6,
+            "language" : "scala",
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "8NOCGYxM0ezOGxj4C6AXN$$NR-r69l-fVuABsv9QBKJX",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "b9q-_Z2plfKSpsEERTI4j$$8C1Gm-z-GHlBQtQKZoAjG",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ ],
+            "transformations" : [ ]
           }
         }
       }

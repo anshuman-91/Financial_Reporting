@@ -8,9 +8,10 @@ import org.apache.spark.sql.types._
 package object dedup {
 
   def apply(spark: SparkSession, in0: DataFrame): DataFrame = {
-    val df_WindowFunction_1 = WindowFunction_1(spark, in0)
-    val df_Filter_1         = Filter_1(spark,         df_WindowFunction_1)
-    df_Filter_1
+    val df_add_row_num  = add_row_num(spark,  in0)
+    val df_row_num_eq1  = row_num_eq1(spark,  df_add_row_num)
+    val df_drop_row_num = drop_row_num(spark, df_row_num_eq1)
+    df_drop_row_num
   }
 
 }

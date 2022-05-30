@@ -44,22 +44,16 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ]
   },
-  "connections" : [ {
-    "id" : "-zxb9xjHEuIAT3S5hRdzD",
-    "source" : "hIwb_Ug0mC8yzcJddhlhY$$kFxqBJThfwTERotxIUzeA",
-    "sourcePort" : "uA3DL3Q1DvnZT6CLMZuSN$$Ehgb8b7jftocQ3D7iNTNS",
-    "target" : "wT1jrGq0-iJ_As5Yu6wQI$$g-P7lWPa40P5WHMKAa8oM",
-    "targetPort" : "ISMdaAx3ywP_z61AqVq0Q$$ZP7LZP1A-AYc29aYX2bFr"
-  } ],
+  "connections" : [ ],
   "processes" : {
-    "hIwb_Ug0mC8yzcJddhlhY$$kFxqBJThfwTERotxIUzeA" : {
-      "id" : "hIwb_Ug0mC8yzcJddhlhY$$kFxqBJThfwTERotxIUzeA",
+    "Whj-VYvuGo3eShVqrCeXh$$vQ2hXdFnB3h-UpJQIf51E" : {
+      "id" : "Whj-VYvuGo3eShVqrCeXh$$vQ2hXdFnB3h-UpJQIf51E",
       "component" : "Source",
       "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : 3.25,
-        "y" : 29,
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : -506.125,
+        "y" : -98.5,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -68,32 +62,9 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "uA3DL3Q1DvnZT6CLMZuSN$$Ehgb8b7jftocQ3D7iNTNS",
+          "id" : "SKvnbErTILgY0uKZK8KOq$$jDgF7FIkwAhHNgtDNkpkP",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : { }
-    },
-    "wT1jrGq0-iJ_As5Yu6wQI$$g-P7lWPa40P5WHMKAa8oM" : {
-      "id" : "wT1jrGq0-iJ_As5Yu6wQI$$g-P7lWPa40P5WHMKAa8oM",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "Target_2",
-        "slug" : "Target_2",
-        "x" : 286.5,
-        "y" : 30,
-        "language" : "scala",
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "ISMdaAx3ywP_z61AqVq0Q$$ZP7LZP1A-AYc29aYX2bFr",
-          "slug" : "in"
-        } ],
-        "outputs" : [ ],
         "selectedInputFields" : [ ]
       },
       "properties" : { }

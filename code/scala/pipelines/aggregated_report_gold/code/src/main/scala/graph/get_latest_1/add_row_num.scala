@@ -13,13 +13,13 @@ object add_row_num {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame = {
     import org.apache.spark.sql.expressions.{Window, WindowSpec}
-    val windowWithFrame: Option[WindowSpec] = Some(
-      Window
-        .partitionBy(col("tran_id"), col("business_date"))
-        .orderBy(col("import_ts").desc)
+    in.withColumn("row_num",
+                  row_number().over(
+                    Window
+                      .partitionBy(col("tran_id"), col("business_date"))
+                      .orderBy(col("import_ts").desc)
+                  )
     )
-    if (windowWithFrame.isEmpty) in.withColumn("row_num", row_number().over())
-    else in.withColumn("row_num",                         row_number().over(windowWithFrame.get))
   }
 
 }

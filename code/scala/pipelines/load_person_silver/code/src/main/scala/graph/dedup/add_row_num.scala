@@ -9,7 +9,7 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object WindowFunction_1 {
+object add_row_num {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame = {
     import org.apache.spark.sql.expressions.{Window, WindowSpec}
