@@ -14,8 +14,7 @@ object load_bronze {
       case "anshuman2" =>
         spark.read
           .format("json")
-          .option("multiLine", true)
-          .option("mode",      "FAILFAST")
+          .option("mode", "FAILFAST")
           .schema(
             StructType(
               Array(
