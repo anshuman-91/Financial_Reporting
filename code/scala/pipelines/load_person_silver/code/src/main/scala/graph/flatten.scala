@@ -9,7 +9,7 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object FlattenSchema_1 {
+object flatten {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
     in.withColumn("addresses", explode_outer(col("addresses")))

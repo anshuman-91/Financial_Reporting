@@ -7,7 +7,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import config.ConfigStore._
 
-object Source_0 {
+object load_bronze {
 
   def apply(spark: SparkSession): DataFrame = {
     Config.fabricName match {

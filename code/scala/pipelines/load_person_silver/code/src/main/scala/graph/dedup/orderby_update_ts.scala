@@ -9,6 +9,9 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object drop_row_num {
-  def apply(spark: SparkSession, in: DataFrame): DataFrame = in
+object orderby_update_ts {
+
+  def apply(spark: SparkSession, in: DataFrame): DataFrame =
+    in.orderBy(col("updated_at").desc)
+
 }
