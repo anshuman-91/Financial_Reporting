@@ -19,17 +19,17 @@ object load_bronze {
           .schema(
             StructType(
               Array(
-                StructField("id",    IntegerType, false),
-                StructField("email", StringType,  false),
-                StructField("name",  StringType,  true),
+                StructField("id",    StringType, true),
+                StructField("email", StringType, true),
+                StructField("name",  StringType, true),
                 StructField(
                   "addresses",
                   ArrayType(
                     StructType(
                       Array(
-                        StructField("address_line1", StringType, false),
+                        StructField("address_line1", StringType, true),
                         StructField("address_line2", StringType, true),
-                        StructField("postal_code",   StringType, false),
+                        StructField("postal_code",   StringType, true),
                         StructField("type",          StringType, true)
                       )
                     ),
@@ -37,7 +37,7 @@ object load_bronze {
                   ),
                   true
                 ),
-                StructField("updated_at", TimestampType, false)
+                StructField("updated_at", TimestampType, true)
               )
             )
           )

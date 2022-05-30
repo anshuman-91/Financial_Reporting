@@ -2,7 +2,7 @@ version: 1
 schema:
   type: struct
   fields:
-  - name: addresses
+  - name: id
     type: string
     nullable: true
     metadata: {}
@@ -10,15 +10,36 @@ schema:
     type: string
     nullable: true
     metadata: {}
-  - name: id
-    type: long
-    nullable: true
-    metadata: {}
   - name: name
     type: string
     nullable: true
     metadata: {}
+  - name: addresses
+    type:
+      type: array
+      elementType:
+        type: struct
+        fields:
+        - name: address_line1
+          type: string
+          nullable: true
+          metadata: {}
+        - name: address_line2
+          type: string
+          nullable: true
+          metadata: {}
+        - name: postal_code
+          type: string
+          nullable: true
+          metadata: {}
+        - name: type
+          type: string
+          nullable: true
+          metadata: {}
+      containsNull: true
+    nullable: true
+    metadata: {}
   - name: updated_at
-    type: string
+    type: timestamp
     nullable: true
     metadata: {}
