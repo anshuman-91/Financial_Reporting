@@ -16,7 +16,7 @@ object acc_status_silver {
           .format("csv")
           .option("header", true)
           .option("sep",    ",")
-          .mode("error")
+          .mode("append")
           .save(
             "dbfs:/Prophecy/anshuman@simpledatalabs.com/fin_reporting/acc_status/silver"
           )
