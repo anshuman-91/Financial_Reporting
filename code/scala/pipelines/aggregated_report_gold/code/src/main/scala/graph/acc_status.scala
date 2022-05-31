@@ -20,7 +20,7 @@ object acc_status {
               Array(
                 StructField("acc_id",        IntegerType,   false),
                 StructField("person_id",     StringType,    false),
-                StructField("product_id",    IntegerType,   false),
+                StructField("product_id",    StringType,    false),
                 StructField("business_date", DateType,      false),
                 StructField("balance",       DoubleType,    false),
                 StructField("import_ts",     TimestampType, false)

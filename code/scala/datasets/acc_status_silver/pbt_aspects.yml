@@ -11,7 +11,7 @@ schema:
     nullable: false
     metadata: {}
   - name: product_id
-    type: integer
+    type: string
     nullable: false
     metadata: {}
   - name: business_date
