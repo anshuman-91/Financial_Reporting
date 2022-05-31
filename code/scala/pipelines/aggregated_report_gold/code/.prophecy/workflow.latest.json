@@ -415,7 +415,7 @@
             "format" : "python",
             "expression" : "(col(\"in0.acc_id\") == col(\"in1.acc_id\")) & (col(\"in0.business_date\") == col(\"in1.business_date\"))"
           },
-          "joinType" : "inner"
+          "joinType" : "left_outer"
         } ],
         "expressions" : [ {
           "_row_id" : null,
@@ -482,7 +482,7 @@
           },
           "description" : ""
         } ],
-        "activeTab" : "expressions",
+        "activeTab" : "conditions",
         "columnsSelector" : [ "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##acc_id", "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D##acc_id", "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##business_date", "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D##business_date", "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##acc_id", "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##business_date", "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##person_id", "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##product_id", "7fO_3YJzoYKKym0Q8ATqT$$puG65BOlJ4eqxavpYjriw##balance", "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D##total_inflows", "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D##total_outflows", "_Zukqci3rcoAaG7sVQUL7$$d5WNnj6dqImzhuFaMnT9D##interest_inflow" ],
         "whereClause" : null,
         "headAlias" : "in0"

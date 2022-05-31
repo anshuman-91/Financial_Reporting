@@ -17,7 +17,7 @@ object join_transactions {
       .join(in1.as("in1"),
             (col("in0.acc_id") === col("in1.acc_id"))
               .and(col("in0.business_date") === col("in1.business_date")),
-            "inner"
+            "left_outer"
       )
       .select(
         col("in0.acc_id").as("acc_id"),
