@@ -14,11 +14,12 @@ object acc_status {
       case "anshuman2" =>
         spark.read
           .format("parquet")
+          .option("recursiveFileLookup", true)
           .schema(
             StructType(
               Array(
                 StructField("acc_id",        IntegerType,   false),
-                StructField("person_id",     IntegerType,   false),
+                StructField("person_id",     StringType,    false),
                 StructField("product_id",    IntegerType,   false),
                 StructField("business_date", DateType,      false),
                 StructField("balance",       DoubleType,    false),
