@@ -13,6 +13,6 @@ object import_ts {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
     in.withColumn("import_ts",     current_timestamp())
-      .withColumn("business_date", current_date())
+      .withColumn("business_date", to_date(lit("2022-05-05"), "yyyy-MM-dd"))
 
 }

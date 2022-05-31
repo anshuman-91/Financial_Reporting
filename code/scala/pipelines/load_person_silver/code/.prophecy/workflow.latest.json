@@ -272,7 +272,7 @@
             "sourceColumn" : "business_date",
             "expression" : {
               "format" : "sql",
-              "expression" : "current_date()"
+              "expression" : "to_date(lit(\"2022-05-05\"),\"yyyy-MM-dd\")"
             }
           },
           "DropColumn" : {
